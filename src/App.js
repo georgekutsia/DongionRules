@@ -1,16 +1,11 @@
 import {Navigate, Route, Routes} from 'react-router-dom'
 import React from 'react';
 import {NavBar} from './component';
-import { PjScreen, FrontpageScreen, NotesScreen, PjDetailScreen,
-  RegisterScreen, ShopScreen, RuleScreen,  NoteDetailScreen, LoginScreeen, 
-  EventsScreen, FrontFrontpage, MonstersScreen, DongionsDetail} from "./screens"
-import { useContext, useState } from 'react';
-import { AuthContext } from './context/AuthContext';
-// import { neonCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js'
+import {  FrontpageScreen, ShopScreen, RuleScreen,
+  EventsScreen, FrontFrontpage, DongionsDetail} from "./screens"
 
 
 function App() {
-  const connected = useContext(AuthContext)
 
   return (
     <div >
