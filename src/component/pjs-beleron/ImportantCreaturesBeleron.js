@@ -4,7 +4,6 @@ import React from 'react';
 import Searchbar from "./searchbar"
 import {useEffect, useState} from "react"
 import FadeInOut from "../FadeInOut";
-import Comunicados from "./Comunicados";
 
 function ImportantCreaturesBeleron() {
   const [showPage, setShowPage] = useState(false)
@@ -16,19 +15,10 @@ function ImportantCreaturesBeleron() {
   const [enemies, setEnemies] = useState(false)
   const [alies, setAlies] = useState(false)
   const [weird, setWeird] = useState(false)
-  const [comunicado, setComunicado] = useState(false)
 
-  const[showTable, setShowTable] = useState(false);
   
   return(
       <div align="center">
-                {/* {comunicado && 
-                  <FadeInOut show={showPage} duration={1000}>
-                        <div>
-                                <Comunicados/>
-                        </div>
-                </FadeInOut>
-                } */}
           <FadeInOut show={true} duration={1000}>
           <div className="m-1">
               <Searchbar  search={search} setSearch={setSearch} filterEnemies={setEnemies} enemies={enemies} filterAlies={setAlies} alies={alies} filterWeird={setWeird} weird={weird} />

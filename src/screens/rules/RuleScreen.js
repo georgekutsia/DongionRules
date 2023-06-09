@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, Talents, SorinMarkov } from '../../component'
+import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, SorinMarkov } from '../../component'
 import { EquipmentScreen, ArmorScreen } from '../index';
 import Rules from '../../component/guide/EstadisticasPj'
 import FadeInOut from "../../component/FadeInOut";
@@ -55,8 +55,8 @@ function RuleScreen() {
   const luck = () => setrLu(true)
   const perception = () => setrPer(true)
   const kinesthesia = () => setrKi(true)
-  const effort = () =>setREffort(true)
-  const combat = () =>setRCombat(true)
+  // const effort = () =>setREffort(true)
+  // const combat = () =>setRCombat(true)
 
   const [onMark, setOnMark] = useState(true)
   const [onJace, setOnJace] = useState(false)
