@@ -3,7 +3,11 @@ import React from 'react'
 function Combat() {
   return (
     <>
-      <h1 id="combat" align="center" className='texto-resaltado-combate'> Combate</h1>
+    <div className='combat-images-top'>
+      <img className='combat-top-img' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1686322667/donGions%20imgs/ruleImages/combate-izquierda_jtjuow.png" alt="" />
+        <h1 id="combat" align="center" className='texto-resaltado-combate'> Combate</h1>
+      <img className='combat-top-img' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1686322666/donGions%20imgs/ruleImages/combate-derecha_f5rlbi.png" alt="" />
+    </div>
       <h1 id="s-tiempo" align="center" className='texto-resaltado-combate-tiempo'> Tiempo de combate</h1>
       <article className="definicion-concepto"> &nbsp;&nbsp;&nbsp; Cuando el grupo ataque o sea atacado, empieza el combate, las rondas y las cuentas.
             Cada comienzo de combate reinicia los ataques, hechizos, habilidades etc que tengan usos limitados por combate. Mientras haya transcurrido suficiente tiempo

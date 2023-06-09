@@ -41,13 +41,13 @@ function RuleScreen() {
   const [rKi, setrKi] = useState(false)
 
   const [rEffort, setREffort] = useState(false)
-  const [rCombat, setRCombat] = useState(false)
+  const [rCombat, setRCombat] = useState(true)
   const [rNonSpecific, setRNonSpecific] = useState(false)
   const [rNpc, setRNpc] = useState(false)
   const [rEquipment, setREquipment] = useState(false)
   const [rArmor, setRArmor] = useState(false)
   const [rDungeon, setRDungeon] = useState(false)
-  const [rTalent, setRTalent] = useState(true)
+  const [rTalent, setRTalent] = useState(false)
 
   const stats = () => setBasic(true)
   const presence = () => setrPre(true)
@@ -58,7 +58,7 @@ function RuleScreen() {
   // const effort = () =>setREffort(true)
   // const combat = () =>setRCombat(true)
 
-  const [onMark, setOnMark] = useState(true)
+  const [onMark, setOnMark] = useState(false)
   const [onJace, setOnJace] = useState(false)
   const [onTeferi, setOnTeferi] = useState(false)
   const [onAjani, setOnAjani] = useState(false)

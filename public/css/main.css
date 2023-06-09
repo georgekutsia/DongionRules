@@ -59,22 +59,30 @@ button:disabled {
   height: 300px;
 }
 .div-neon {
-  width:50%;
+  width:10%;
   margin-top: calc(50px + 10%);
   border-radius: 20%;
+  max-width: 70%;
   animation: border-flicker 3s linear;
 }
 .div-neon:hover {
   background-color: #ffffff;
   transition: all 3s ease-in-out;
 }
-
+.combat-top-img{
+  width: 25%;
+  max-width: 100px;
+}
+.combat-images-top{
+  display: flex;
+  justify-content: center;
+}
 
 .h1-neon {
   color:#f60000;
   font-family: 'Tangerine';
   font-weight: 900;
-  font-size: calc(20px + 4vw);
+  font-size: calc(20px + 2vw);
   letter-spacing:5px;
   animation: text-flicker 8s linear infinite;
 }
