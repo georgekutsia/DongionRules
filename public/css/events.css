@@ -1,0 +1,10 @@
+.table-event-creature{
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.table-event-creature thead tr th{
+  font-size: calc(12px + 1.3vw);
+  text-align: center;
+}

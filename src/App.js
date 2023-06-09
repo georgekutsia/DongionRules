@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import {Navigate, Route, Routes} from 'react-router-dom'
+import React from 'react';
+import {NavBar} from './component';
+import { PjScreen, FrontpageScreen, NotesScreen, PjDetailScreen,
+  RegisterScreen, ShopScreen, RuleScreen,  NoteDetailScreen, LoginScreeen, 
+  EventsScreen, FrontFrontpage, MonstersScreen, DongionsDetail} from "./screens"
+import { useContext, useState } from 'react';
+import { AuthContext } from './context/AuthContext';
+// import { neonCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js'
+
+
+
+function AuthGuard() {
+}
 
 function App() {
+  const connected = useContext(AuthContext)
+const [countMons, setCountMons] = useState(4)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+    <NavBar/>
+          <div className="cur1" >
+            <Routes>
+              <Route path="/" element={<FrontFrontpage/>} />
+              <Route path="/eventos" element={<EventsScreen/>}/>
+              <Route path="/shop" element={<ShopScreen/>}/>
+              <Route path="/rules" element={<RuleScreen/>}/>
+              <Route path="/frontpage" element={<FrontpageScreen/>}/>
+              <Route path="/dongionsdDetail" element={<DongionsDetail/>}/>
+            </Routes>
+          </div>
     </div>
   );
 }
