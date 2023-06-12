@@ -17,7 +17,7 @@ function Instinct() {
         </article>
         <article align="center" className='background-list-actions'>
         &nbsp;&nbsp;&nbsp; El DM estará atento de avisar al jugador con puntos de instinto cuando se le active. Al tirar por instinto, se sabrá cómo reacciona
-        el jugador y qué tipo de información obtiene. 
+        el jugador y qué tipo de información obtiene.  buga buga
         </article>
         <ul>
           <li><i className="fa-solid fa-arrows-up-down-left-right"></i> &nbsp;  Por cada punto de Instinto obtienes +2 en cada tirada de Intinto</li>
