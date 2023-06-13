@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, SorinMarkov } from '../../component'
+import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, Talents, SorinMarkov } from '../../component'
 import { EquipmentScreen, ArmorScreen } from '../index';
 import Rules from '../../component/guide/EstadisticasPj'
 import FadeInOut from "../../component/FadeInOut";
@@ -9,6 +9,7 @@ import AjaniGoldmane from '../../component/guide/talents/TalentPlanes/AjaniGoldm
 import TeferiAkosa from '../../component/guide/talents/TalentPlanes/TeferiAkosa';
 
 function RuleScreen() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [showPage, setShowPage] = useState(false)
   useEffect(() => {
       setShowPage(true)
@@ -16,13 +17,21 @@ function RuleScreen() {
         setDude(false)
       }, 5000)
   }, [])
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 600);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize(); 
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
 
   const [dude, setDude] = useState(false)
   const [rDice, setRDice] =useState(false)
 
-  const [basic, setBasic] = useState(true)
-  const [char, setChar] = useState(false)
+  const [basic, setBasic] = useState(false)
+  const [char, setChar] = useState(true)
   const [inspi1, setInpsi1] = useState(false)
   const [inspi2, setInpsi2] = useState(false)
   const [inspi3, setInpsi3] = useState(false)
@@ -55,10 +64,10 @@ function RuleScreen() {
   const luck = () => setrLu(true)
   const perception = () => setrPer(true)
   const kinesthesia = () => setrKi(true)
-  // const effort = () =>setREffort(true)
-  // const combat = () =>setRCombat(true)
+  const effort = () =>setREffort(true)
+  const combat = () =>setRCombat(true)
 
-  const [onMark, setOnMark] = useState(false)
+  const [onMark, setOnMark] = useState(true)
   const [onJace, setOnJace] = useState(false)
   const [onTeferi, setOnTeferi] = useState(false)
   const [onAjani, setOnAjani] = useState(false)
@@ -146,7 +155,17 @@ const handleingOff = () =>{
         </div>
         </FadeInOut>
         }
-          <div className='nav-show-stats-rules'> 
+          <div className={isSmallScreen? '':'nav-show-stats-rules'}> 
+            <div>
+              <button className='btn-rules-toggle' style={{color:"violet", fontSize:"calc(14px + 0.3vw)"}} 
+              onClick={()=>{handleingOn()}}>
+                    <span></span><span></span><span></span><span></span><i className="fa-regular fa-folder-open"></i>  
+              </button>
+              <button className='btn-rules-toggle' style={{color:"blue", fontSize:"calc(14px + 0.3vw)"}} 
+              onClick={()=>{handleingOff()}}>
+                    <span></span><span></span><span></span><span></span><i className="fa-solid fa-folder-closed"></i>
+              </button>
+            </div>
             <div>
                     <button className={basic ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setBasic(!basic)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-list"></i>Básico
@@ -187,16 +206,6 @@ const handleingOff = () =>{
                     <button className={rTalent ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRTalent(!rTalent)}}>
                         <span></span><span></span><span></span><span></span><i className="iconoir-3d-arc-center-pt"></i>Talentos
                     </button>
-              </div>
-              <div>
-                <button className='btn-rules-toggle' style={{color:"violet", fontSize:"calc(14px + 0.3vw)"}} 
-                onClick={()=>{handleingOn()}}>
-                      <span></span><span></span><span></span><span></span><i className="fa-regular fa-folder-open"></i>  
-                </button>
-                <button className='btn-rules-toggle' style={{color:"blue", fontSize:"calc(14px + 0.3vw)"}} 
-                onClick={()=>{handleingOff()}}>
-                      <span></span><span></span><span></span><span></span><i className="fa-solid fa-folder-closed"></i>
-                </button>
               </div>
             </div>
         <div className='bla'>
