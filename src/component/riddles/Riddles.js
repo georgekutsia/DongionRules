@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function Riddles({ respuesta, nombrePrueba, placeHolder }) {
+function Riddles({ respuesta1,respuesta2, respuesta3,mensajeBienHecho,mensajePruebaFallida, nombrePrueba, placeHolder }) {
   const [calculating, setCalculating] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [message, setMessage] = useState('Verificar');
@@ -36,11 +36,11 @@ function Riddles({ respuesta, nombrePrueba, placeHolder }) {
     setMessage("Verificando respuesta");
     setColorBack("white")
     setTimeout(() => {
-      if (inputValue.toLowerCase() === respuesta.toLowerCase()) {
-        setMessage('¡Buen trabajo!');
+      if (inputValue.toLowerCase() === respuesta1.toLowerCase() || inputValue.toLowerCase() === respuesta2.toLowerCase()|| inputValue.toLowerCase() === respuesta3.toLowerCase()) {
+        setMessage(`${mensajeBienHecho}`);
         setColorBack("rgb(0, 255, 85)");
       } else {
-        setMessage('Prueba fallida');
+        setMessage(`${mensajePruebaFallida}`);
         setColorBack("red");
       }
       setInputValue('');
@@ -58,7 +58,7 @@ function Riddles({ respuesta, nombrePrueba, placeHolder }) {
           <input className='input-riddle' type="text" value={inputValue} onChange={handleInputChange} onKeyPress={handleKeyPress} placeholder={placeHolder}/>
           <div>
             <button className='button-riddle' style={{ backgroundColor: `${colorBack}` }} onClick={checkInputValue} disabled={calculating}>
-              {message + '.'.repeat(dotsCount)}
+            {message + '.'.repeat(dotsCount)}
             </button>
           </div>
         </div>

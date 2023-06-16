@@ -1,20 +1,24 @@
 .riddles-big-box{
-display: block;
-text-align: center;
-}
-.input-riddle{
-  width: 90%;
-  max-width: 350px;
-}
-.button-riddle{
-  width: 90%;
-  max-width: 350px;
-  background-color: rgb(255, 200, 0);
-}
-.button-show-riddle{
-  margin: 10px 5%;
-  width: 40%;
-  max-width: 350px;
-  color: white;
-  background-color: black;
-}
+  display: block;
+  text-align: center;
+  }
+  .input-riddle{
+    width: 90%;
+    max-width: 350px;
+  }
+  .button-riddle{
+    width: 90%;
+    max-width: 350px;
+    background-color: rgb(255, 200, 0);
+  }
+  .button-show-riddle{
+    margin: 10px 5%;
+    width: 40%;
+    max-width: 350px;
+    color: white;
+    background-color: black;
+  }
+  .prueba-robot{
+    background-color: rgb(72, 72, 103);
+    margin: 0 20%;
+  }
