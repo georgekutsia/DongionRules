@@ -14,7 +14,7 @@ function EventsScreen() {
     <div>
       <BackgroundFloatingBuble
         floatingBalls={
-          "url(https://res.cloudinary.com/dfrda73uc/image/upload/v1666533826/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-23T160336.939_kn2n5c.png)"
+          "url(https://res.cloudinary.com/dfrda73uc/image/upload/v1665619992/donGions%20imgs/backgroundEffects/pngwing.com_69_bljsta.png)"
         }
         widthBall={"15px"}
         heigthBall={"15px"}
