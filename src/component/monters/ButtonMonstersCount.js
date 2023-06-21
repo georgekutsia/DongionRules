@@ -4,7 +4,12 @@ function ButtonCounts({ dead, colorDead, colorText, tu0}) {
   const [count, setCount] = useState(0);
   const[turns, setTurns] = useState(0)
   const[something, setSomething] = useState(0)
+  const [monsterName, setMonsterName] = useState('');
 
+  const handleMonsterNameChange = (event) => {
+    setMonsterName(event.target.value);
+  };
+  
   let words = "Sin Dañar"
   let borderCount = null
   let widthCount = "53px"
@@ -16,7 +21,7 @@ function ButtonCounts({ dead, colorDead, colorText, tu0}) {
     if(count >= 30){
       colorText = "rgb(244, 128, 128)"
       borderCount = ""
-      words = "Daño considerable"
+      words = "Daño notable"
     } 
     if (count >= 60){
       colorText = "rgb(243, 73, 73)"
@@ -42,6 +47,12 @@ function ButtonCounts({ dead, colorDead, colorText, tu0}) {
       widthCount = "83px"
       words = "¡¡Sin piedad!!"
     }
+    if(count >= 160){
+      colorText="rgb(243, 0, 0)"
+      borderCount = "4px double red"
+      widthCount = "83px"
+      words = "¡¿Es inmortal?!"
+    }
   const reset = () => setCount(0);
   const countUp = () => setCount((countPrev) => countPrev < 200 ? countPrev + 5 : countPrev);
   const countUpH = () => setCount((countPrev) => countPrev < 200 ? countPrev + 1 : countPrev);
@@ -58,10 +69,10 @@ function ButtonCounts({ dead, colorDead, colorText, tu0}) {
   
 
   return (
-    <div align="center">
-        <div> 
-            <h3>{words}</h3>
-        </div>
+    <div align="center" className='button-monster-size'>
+        <div>
+        <input className='input-monster-name' placeholder='Escribe el nombre...' type="text" value={monsterName} onChange={handleMonsterNameChange} />
+      </div>
         <div>
             <div>
               <button  className="btn-add-stats" onClick={countUp} disabled={count === 200}><i className="fa-solid fa-plus">5</i></button>
@@ -75,14 +86,9 @@ function ButtonCounts({ dead, colorDead, colorText, tu0}) {
         <div className='bulala'>
         </div>
           <div> 
-              <button style={{scale:"0.8", marginRight:"-20px", marginLeft:"-15px"}} className="btn-rest-stats" onClick={countTurnsDown} disabled={turns === 0}><i className="fa-solid fa-minus"></i>1</button>
-              <button style={{color:`${colorText}`, scale:"0.7", margin:"0px"}} className="btn-reset-stats" onClick={resetTurn}><h1> {turns !==0  ? turns :<i style={{color:`${colorDead}`}} className={`fa-solid ${tu0}`}></i>}</h1></button>
-              <button style={{scale:"0.8", marginRight:"-10px", marginLeft:"-20px"}} className="btn-add-stats" onClick={countTurnsUp} disabled={turns === 200}><i className="fa-solid fa-plus">1</i></button>
-          </div>  
-          <div >
-              <button style={{scale:"0.8", marginRight:"-20px", marginLeft:"-10px"}} className="btn-rest-stats" onClick={countSomethingDown} disabled={something === 0}><i className="fa-solid fa-minus"></i>1</button>
-              <button style={{color:`${colorText}`, scale:"0.7", margin:"0px"}} className="btn-reset-stats" onClick={resetSomthing}><h1> {something !==0  ? something :<i style={{color:`${colorDead}`}} className={`fa-solid fa-clock`}></i>}</h1></button>
-              <button style={{scale:"0.8", marginRight:"-10px", marginLeft:"-20px"}} className="btn-add-stats" onClick={countSomethingUp} disabled={something === 200}><i className="fa-solid fa-plus">1</i></button>
+              <button style={{scale:"0.8", marginRight:"-10px", marginLeft:"-5px"}} className="btn-rest-stats" onClick={countTurnsDown} disabled={turns === 0}><i className="fa-solid fa-minus"></i>1</button>
+              <button style={{color:`${colorText}`, scale:"0.9", marginLeft:"10px"}} className="btn-reset-stats" onClick={resetTurn}><h1> {turns !==0  ? turns :<i style={{color:`${colorDead}`}} className={`fa-solid ${tu0}`}></i>}</h1></button>
+              <button style={{scale:"0.8", marginRight:"-10px", marginLeft:"0px"}} className="btn-add-stats" onClick={countTurnsUp} disabled={turns === 200}><i className="fa-solid fa-plus">1</i></button>
           </div>  
         </div>
     </div>

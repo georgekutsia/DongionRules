@@ -4,16 +4,16 @@ import ButtonMonstersCount from './ButtonMonstersCount'
 import FadeInOut from "../../component/FadeInOut";
 
 
-  const a = Math.floor(Math.random() * 130)
-  const b = Math.floor(Math.random() * 130)
-  const c = Math.floor(Math.random() * 130)
-  const d = Math.floor(Math.random() * 130)
-  const e = Math.floor(Math.random() * 130)
-  const f = Math.floor(Math.random() * 130)
-  const g = Math.floor(Math.random() * 130)
-  const h = Math.floor(Math.random() * 130)
-  const i = Math.floor(Math.random() * 130)
-  const j = Math.floor(Math.random() * 130)
+  const a = Math.floor(Math.random() * 230)
+  const b = Math.floor(Math.random() * 230)
+  const c = Math.floor(Math.random() * 230)
+  const d = Math.floor(Math.random() * 230)
+  const e = Math.floor(Math.random() * 230)
+  const f = Math.floor(Math.random() * 230)
+  const g = Math.floor(Math.random() * 230)
+  const h = Math.floor(Math.random() * 230)
+  const i = Math.floor(Math.random() * 230)
+  const j = Math.floor(Math.random() * 230)
 
 function BigMonster() {
   const [showMonster1, setShowMonster1] = useState(false)
@@ -30,7 +30,7 @@ function BigMonster() {
   return (
     <div className='big-monster-scroller'>
         <div style={{borderRadius:"5px", backgroundColor: `rgb(${a}, ${j}, ${c})`, margin:"2px", }}>
-            <Link  className='link-name-monster' onClick={()=> setShowMonster1(!showMonster1)}>Monstraco 1</Link>
+            <Link className='link-name-monster' onClick={()=> setShowMonster1(!showMonster1)}>Monstraco 1</Link>
               {showMonster1 &&
               <FadeInOut show={showMonster1} duration={1000}>
                 <ButtonMonstersCount  dead="fa-skull"  colorDead="grey" colorText={"rgb(238, 173, 173)"} cTurn={0} tu0={"fa-hourglass"}/>

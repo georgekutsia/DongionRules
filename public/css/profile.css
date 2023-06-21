@@ -109,7 +109,10 @@ border-radius: 10px;
   color: white;
   font-size: 25px;
   text-shadow: 2px 2px green, 1px 1px rgb(32, 83, 3);
-  display: inline-block;
+
+}
+.button-monster-size{
+  width: 150px;
 }
 .link-name-monster-show {
   display: flex;
@@ -148,7 +151,7 @@ border-radius: 10px;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   color: white;
-  width: 30%;
+  width: 40px;
   padding: 0;
   border-radius: 10px;
 }
@@ -161,7 +164,7 @@ border-radius: 10px;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   color: white;
-  width: 30%;
+  width: 50px;
   border-radius: 10px;
 }
 .btn-add-stats:hover {
@@ -361,4 +364,11 @@ border-radius: 10px;
 }
 .material-item-ul{
   padding: 3px;
+}
+
+.input-monster-name{
+  width: 95%;
+  font-size: 14px;
+  background-color: black;
+  color: white;
 }
