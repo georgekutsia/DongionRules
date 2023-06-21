@@ -71,3 +71,6 @@ export {default as TalentTree1} from "./guide/talents/TalentTree1"
 export {default as TalentText} from "./guide/talents/TalentText"
 
 export {default as SorinMarkov} from "./guide/talents/TalentPlanes/SorinMarkov"
+
+export {default as BigMonster} from "./monters/BigMonster"
+export {default as ButtonMonstersCount} from "./monters/ButtonMonstersCount"

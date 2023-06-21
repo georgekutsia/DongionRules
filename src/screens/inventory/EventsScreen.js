@@ -50,17 +50,18 @@ function EventsScreen() {
                 <h1><button onClick={() => {setRobot1(!robot1);}} 
                 className="btn btn-round b-level-2 b-type-show-creatures"> <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1686945258/donGions%20imgs/Eventos/robot_hetmaf.png" alt="robot" width={"100px"} /></button> </h1>
               </div>
-                <FadeInOut show={robot1} duration={500}>
-                  <div className="prueba-robot">
-                    <Riddles nombrePrueba={"Objetivo 1"} respuesta1={"ppdpppipppip"} respuesta2={"pdpppippppip"} respuesta3={"dongions&drogas"} placeHolder={"Objetivo 1"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Primer objetivo conseguido!"}/>
-                    <Riddles nombrePrueba={"Objetivo 2"} respuesta1={"pdppppipppp"} respuesta2={"pipppppdpppp"} respuesta3={"pdppippppippp"} placeHolder={"Objetivo 2"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Buen trabajo!"}/>
-                    <Riddles nombrePrueba={"Objetivo 3"} respuesta1={"pi3xpd8xpd7xpd2xp"} respuesta2={"2xpi3xpd7xpd7xpd2xp"} respuesta3={"dongions&drogas"}  placeHolder={"Objetivo 3"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Tercer objetivo conseguido!"}/>
-                    <Riddles nombrePrueba={"Objetivo 4"} respuesta1={"4x(pdpi)"} respuesta2={"2x(pdpi)ppip"} respuesta3={"dongions&drogas"}  placeHolder={"Objetivo 4"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"Cuarto objetivo conseguido. ¡Sólo queda uno!"}/>
-                    <Riddles nombrePrueba={"Objetivo 5"} respuesta1={"2x(ippdp)2x(pdppi)"} respuesta2={"2x(i2xpdp)2x(pd2xpi)"} respuesta3={"dongions&drogas"}  placeHolder={"Objetivo 5"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Lo has logrado! Prueba superada"}/>
-                  </div>
+                  <FadeInOut show={robot1} duration={500}>
+                    <div className="prueba-robot">
+                      <Riddles nombrePrueba={"Objetivo 1"} respuesta1={"ppdpppipppip"} respuesta2={"pdpppippppip"} respuesta3={"dongions&drogas"} placeHolder={"Objetivo 1"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Primer objetivo conseguido!"}/>
+                      <Riddles nombrePrueba={"Objetivo 2"} respuesta1={"pdppppipppp"} respuesta2={"pipppppdpppp"} respuesta3={"pdppippppippp"} placeHolder={"Objetivo 2"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Buen trabajo!"}/>
+                      <Riddles nombrePrueba={"Objetivo 3"} respuesta1={"pi3xpd8xpd7xpd2xp"} respuesta2={"2xpi3xpd7xpd7xpd2xp"} respuesta3={"dongions&drogas"}  placeHolder={"Objetivo 3"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Tercer objetivo conseguido!"}/>
+                      <Riddles nombrePrueba={"Objetivo 4"} respuesta1={"4x(pdpi)"} respuesta2={"2x(pdpi)ppip"} respuesta3={"dongions&drogas"}  placeHolder={"Objetivo 4"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"Cuarto objetivo conseguido. ¡Sólo queda uno!"}/>
+                      <Riddles nombrePrueba={"Objetivo 5"} respuesta1={"2x(ippdp)2x(pdppi)"} respuesta2={"2x(i2xpdp)2x(pd2xpi)"} respuesta3={"dongions&drogas"}  placeHolder={"Objetivo 5"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Lo has logrado! Prueba superada"}/>
+                    </div>
                 </FadeInOut>
               <Riddles nombrePrueba={"Prueba 1"} respuesta1={"he"} respuesta2={"pdpppippppip"} respuesta3={"dongions&drogas"}  placeHolder={"prueba 1"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Primer objetivo conseguido!"}/>
               <Riddles nombrePrueba={"Prueba 2"} respuesta1={"huha"} respuesta2={"pdpppippppip"} respuesta3={"dongions&drogas"}  placeHolder={"prueba 2"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Primer objetivo conseguido!"}/>
+              <Riddles nombrePrueba={"Prueba 3"} respuesta1={"huha"} respuesta2={"pdpppippppip"} respuesta3={"dongions&drogas"}  placeHolder={"prueba 3"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Primer objetivo conseguido!"}/>
               <Riddles nombrePrueba={"Prueba 4"} respuesta1={"huha"} respuesta2={"pdpppippppip"} respuesta3={"dongions&drogas"}  placeHolder={"prueba 4"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Primer objetivo conseguido!"}/>
               <Riddles nombrePrueba={"Prueba 5"} respuesta1={"huha"} respuesta2={"pdpppippppip"} respuesta3={"dongions&drogas"}  placeHolder={"prueba 5"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Primer objetivo conseguido!"}/>
               <Riddles nombrePrueba={"Prueba 6"} respuesta1={"huha"} respuesta2={"pdpppippppip"} respuesta3={"dongions&drogas"}  placeHolder={"prueba 6"} mensajePruebaFallida={"Objetivo no conseguido"} mensajeBienHecho={"¡Primer objetivo conseguido!"}/>

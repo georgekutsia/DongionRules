@@ -2,7 +2,8 @@
   overflow: auto;
   white-space: nowrap;
   width: 90%;
-  margin-left: 10%
+  margin-left: 10%; 
+  display: flex;
 }
 .monster-scroller{
   overflow: auto;

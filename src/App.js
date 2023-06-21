@@ -1,7 +1,7 @@
 import { Route, Routes} from 'react-router-dom'
 import React from 'react';
 import {NavBar} from './component';
-import { ShopScreen, RuleScreen, EventsScreen, DongionsDetail, FrontFrontpage} from "./screens"
+import { ShopScreen, RuleScreen, EventsScreen, DongionsDetail, FrontFrontpage, CounterScreen} from "./screens"
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
               <Route path="/shop" element={<ShopScreen/>}/>
               <Route path="/rules" element={<RuleScreen/>}/>
               <Route path="/dongionsdDetail" element={<DongionsDetail/>}/>
+              <Route path="/counter" element={<CounterScreen/>}/>
             </Routes>
           </div>
     </div>

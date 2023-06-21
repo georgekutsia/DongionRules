@@ -18,6 +18,9 @@ function NavBar() {
                 <li>
                   <NavLink to="/shop" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Tienda </NavLink>
                 </li>
+                <li>
+                  <NavLink to="/counter" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Contador</NavLink>
+                </li>
               </ul>
         </nav>
     </>
