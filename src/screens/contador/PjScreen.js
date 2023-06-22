@@ -30,10 +30,6 @@ function PjScreen({counterForMonster}) {
   return (
     <FadeInOut show={showPage} duration={800}>
         <div className={back ? "moving-background-scenary" : "moving-background-part"} id='profile-size-box'>
-            {showBigMonster && 
-            <FadeInOut show={showBigMonster} duration={400}>
-
-            </FadeInOut>}
             <FadeInOut show={showPage} duration={1200}>
               <div align="center">
                   <div className='inner-box-stats' >

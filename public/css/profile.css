@@ -178,7 +178,7 @@ border-radius: 10px;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   color: white;
-  width: 70px;
+  width: 50px;
   padding: 0;
   border-radius: 10px;
 }
@@ -187,18 +187,7 @@ border-radius: 10px;
   transition: all 0.2s ease-in-out;
   background-color: rgba(255, 255, 255, 0.103);
 }
-.btn-add-stats {
-  background-color: transparent;
-  transition: all 0.2s ease-in-out;
-  color: white;
-  width: 70px;
-  border-radius: 10px;
-}
-.btn-add-stats:hover {
-  transition: all 0.2s ease-in-out;
-  border: 2px white solid;
-  background-color: rgba(255, 255, 255, 0.103);
-}
+
 .btn-reset-stats {
   background-color: transparent;
   transition: all 0.2s ease-in-out;
@@ -250,7 +239,6 @@ border-radius: 10px;
 
 #profile-size-box {
   height: auto;
-  padding: 0.5%;
   text-shadow: 1px 1px grey;
   text-align: center;
 }
@@ -259,10 +247,13 @@ border-radius: 10px;
   background-repeat: no-repeat;
   background-size: 100px;
 }
+.img-count{
+  width: 600px;
+}
 .stats-salud-block {
   background-color: black;
   margin: 0;
-  padding:0;
+  padding:1px;
   display: flex;
 }
 .stats-salud {
@@ -271,7 +262,7 @@ border-radius: 10px;
   border: 1px rgb(0, 238, 255) solid;
   width: 100%;
   font-size: calc(14px + 1vw);
-  padding: 13px;
+  padding: 0px 13px;
 }
 .stats-defence-block {
   display: flex;
@@ -323,7 +314,7 @@ border-radius: 10px;
 }
 
 .inner-box-stats {
-  border: 20px rgb(74, 82, 83) ridge;
+  border: 10px rgb(74, 82, 83) ridge;
   border-radius: 10px;
   padding: 10px;
   overflow: auto;

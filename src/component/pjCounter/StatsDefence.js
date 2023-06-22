@@ -36,15 +36,14 @@ function StatsDefence( {dColor}) {
   return (
   <div >
     <div  style={{border:`3px ${dColor} solid`}}   className="stats-salud-block">
-      <div  className="">
+      {/* <div  className="">
       <div className="stats-defense justify-content-between"  style={{color:`white`}}>Esquiva: <span ><ButtonCounts max={20}  dead="fa-skull-crossbones"  colorDead="green" colorText={"darksalmon"}/></span>  </div>
       <div className="stats-defense justify-content-between"  style={{color:`white`}}>Resistencia: <span ><ButtonCounts max={20}  dead="fa-skull-crossbones"  colorDead="green" colorText={"darksalmon"}/></span>  </div>
       </div>
       <div   className="">
       <div className="stats-defense justify-content-between"  style={{color:`white`}}>Bloqueo: <span ><ButtonCounts max={20}  dead="fa-skull-crossbones"  colorDead="green" colorText={"darksalmon"}/></span>  </div>
       <div className="stats-defense justify-content-between"  style={{color:`white`}}>Parada: <span ><ButtonCounts max={20}  dead="fa-skull-crossbones"  colorDead="green" colorText={"darksalmon"}/></span>  </div>
-
-      </div>
+      </div> */}
     </div>
   </div>
   )

@@ -12,12 +12,12 @@ function ButtonCounts({ stat, dead, colorDead, colorText}) {
   const countDownH = () => setCount((countPrev) => countPrev > 0.4 ? countPrev - 0.5 : countPrev);
 
   return (
-    <div className='d-flex '>
-        <button style={{transform: "scale(0.4)", margin:"-15px"}} className="btn-rest-stats" onClick={countDownH} disabled={count === 0}><i className="fa-solid fa-minus"></i></button>
+    <div align="center" className='d-flex'>
+        <button style={{transform: "scale(0.5)", margin:"0px -10px 0px -20px"}} className="btn-rest-stats" onClick={countDownH} disabled={count === 0}><i className="fa-solid fa-minus"></i></button>
         <button className="btn-rest-stats" onClick={countDown} disabled={count === 0}><i className="fa-solid fa-minus"></i></button>
         <button style={{color:`${colorText}`}} className="btn-reset-stats" onClick={reset}><h1> {count !==0  ? count :<i style={{color:`${colorDead}`}} className={`fa-solid ${dead}`}></i>}</h1></button>
-        <button  className="btn-add-stats" onClick={countUp} disabled={count === 20}><i className="fa-solid fa-plus"></i></button>
-        <button style={{transform: "scale(0.4)", margin:"-15px"}}  className="btn-add-stats" onClick={countUpH} disabled={count === stat}><i className="fa-solid fa-plus"></i></button>
+        <button  className="btn-rest-stats" onClick={countUp} disabled={count === 50}><i className="fa-solid fa-plus"></i></button>
+        <button style={{transform: "scale(0.5)", margin:"0px -20px 0px -10px"}}  className="btn-rest-stats" onClick={countUpH} disabled={count === stat}><i className="fa-solid fa-plus"></i></button>
     </div>
   )
 }

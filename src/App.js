@@ -5,7 +5,7 @@ import { ShopScreen, RuleScreen, EventsScreen, DongionsDetail, FrontFrontpage, C
 
 function App() {
   const [vida, setVida] = useState(0);
-  const [pjScreenVisible, setPjScreenVisible] = useState(false);
+  const [pjScreenVisible, setPjScreenVisible] = useState(true);
 
   const togglePjScreen = () => {
     setPjScreenVisible(!pjScreenVisible);
@@ -14,12 +14,12 @@ function App() {
   return (
     <div>
       <NavBar />
-
       <button onClick={togglePjScreen}>
         {pjScreenVisible ? "Ocultar PjScreen" : "Mostrar PjScreen"}
       </button>
-      {pjScreenVisible && <PjScreen />}
-
+      <div style={{ position: "absolute", zIndex: "20", display: pjScreenVisible ? "block" : "none" }}>
+        <PjScreen />
+      </div>
       <div className="cur1">
         <Routes>
           <Route path="/" element={<FrontFrontpage />} />
