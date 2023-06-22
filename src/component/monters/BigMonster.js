@@ -12,7 +12,7 @@ function BigMonster({ r, g, b, position}) {
 
   return (
     <div className='big-monster-scroller'>
-        <div style={{borderRadius:"5px", backgroundColor: `rgb(${r}, ${g}, ${b})`, margin:"2px", }}>
+        <div align="center"  style={{borderRadius:"5px", backgroundColor: `rgb(${r}, ${g}, ${b})`, margin:"2px", }}>
             <Link className='link-name-monster' onClick={()=> setShowMonster1(!showMonster1)}>Monstraco {position}</Link>
               {showMonster1 &&
               <FadeInOut show={showMonster1} duration={1000}>

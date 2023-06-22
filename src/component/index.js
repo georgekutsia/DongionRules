@@ -74,3 +74,10 @@ export {default as SorinMarkov} from "./guide/talents/TalentPlanes/SorinMarkov"
 
 export {default as BigMonster} from "./monters/BigMonster"
 export {default as ButtonMonstersCount} from "./monters/ButtonMonstersCount"
+
+
+export {default as StatsDam} from "./pjCounter/StatsDam"
+export {default as StatsDefence} from "./pjCounter/StatsDefence"
+export {default as StatsPlusFight} from "./pjCounter/StatsPlusFight"
+export {default as StatsSalud} from "./pjCounter/StatsSalud"
+export {default as StatsChar} from "./pjCounter/StatsChar"

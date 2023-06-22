@@ -1,14 +1,17 @@
 import { Route, Routes} from 'react-router-dom'
-import React from 'react';
+import React, { useState } from 'react';
 import {NavBar} from './component';
-import { ShopScreen, RuleScreen, EventsScreen, DongionsDetail, FrontFrontpage, CounterScreen} from "./screens"
+import { ShopScreen, RuleScreen, EventsScreen, DongionsDetail, FrontFrontpage, CounterScreen, PjScreen} from "./screens"
 
 
 function App() {
+  const [vida, setVida] = useState(0)
 
   return (
     <div >
     <NavBar/>
+    
+    <PjScreen/>
           <div className="cur1" >
             <Routes>
               <Route path="/" element={<FrontFrontpage/>} />

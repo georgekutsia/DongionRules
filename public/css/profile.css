@@ -133,9 +133,10 @@ border-radius: 10px;
   text-decoration: none;
   padding: 3px;
   color: white;
-  font-size: 25px;
+  font-size: 23px;
   text-shadow: 2px 2px green, 1px 1px rgb(32, 83, 3);
-
+  text-align: center;
+  margin: 0 auto
 }
 .button-monster-size{
   width: 150px;
@@ -262,13 +263,14 @@ border-radius: 10px;
   background-color: black;
   margin: 0;
   padding:0;
+  display: flex;
 }
 .stats-salud {
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666461663/donGions%20imgs/backgroundEffects/dsa914.411_l6xp0l.png");
   background-size: cover;
   border: 1px rgb(0, 238, 255) solid;
   width: 100%;
-  font-size: 3vmax;
+  font-size: calc(14px + 1vw);
   padding: 13px;
 }
 .stats-defence-block {
@@ -287,6 +289,8 @@ border-radius: 10px;
 .stats-damage-block {
   background-color: black;
   width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .stats-damage {
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666461441/donGions%20imgs/backgroundEffects/dsa_gsdxir.png");
@@ -322,11 +326,9 @@ border-radius: 10px;
   border: 20px rgb(74, 82, 83) ridge;
   border-radius: 10px;
   padding: 10px;
-  width: 90%;
-  height: 500px;
   overflow: auto;
   white-space: nowrap;
-  max-width: 500px;
+  max-width: 700px;
 }
 .button-mostrar-mejoradas {
   text-decoration: none;
