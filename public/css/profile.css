@@ -1,14 +1,29 @@
 .big-monster-scroller{
   overflow: auto;
   white-space: nowrap;
-  width: 90%;
-  margin-left: 10%; 
-  display: flex;
+  width: 155px;
+  margin-left: 31%; 
+  display: inline-block;
 }
 .monster-scroller{
   overflow: auto;
   white-space: nowrap;
 }
+.botón-borrar-monstruo{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: red;
+  background-color: black;
+  border-radius: 50%;
+  transition: 1s ease-in-out;
+}
+.botón-borrar-monstruo:hover{
+  color: white;
+  background-color: red;
+  scale: 2;
+}
+
 
 .background-pj-text-area h2{
 background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666130956/donGions%20imgs/shop/wood_b25uub.jpg");
@@ -151,7 +166,7 @@ border-radius: 10px;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   color: white;
-  width: 40px;
+  width: 70px;
   padding: 0;
   border-radius: 10px;
 }
@@ -164,7 +179,7 @@ border-radius: 10px;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   color: white;
-  width: 50px;
+  width: 70px;
   border-radius: 10px;
 }
 .btn-add-stats:hover {
@@ -371,4 +386,8 @@ border-radius: 10px;
   font-size: 14px;
   background-color: black;
   color: white;
+}
+.lista-de-monstruos{
+  display: inline-block;
+  width: 900px;
 }
