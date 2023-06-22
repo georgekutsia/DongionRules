@@ -12,10 +12,10 @@
 .botón-borrar-monstruo{
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 35%;
   color: red;
   background-color: black;
-  border-radius: 50%;
+  border-radius: 90px;
   transition: 1s ease-in-out;
 }
 .botón-borrar-monstruo:hover{
@@ -23,8 +23,19 @@
   background-color: red;
   scale: 2;
 }
+.botón-añadir{
+  margin: 10px;
+  padding: 10px 5px;
+  border-radius: 90px;
+  background-color: rgb(20, 174, 188);
+  box-shadow: 4px 5px white;
+  transition: 0.2s ease-in-out;
 
-
+}
+.botón-añadir:hover{
+  background-color: rgb(0, 234, 255);
+  box-shadow: 1px 1px white;
+}
 .background-pj-text-area h2{
 background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666130956/donGions%20imgs/shop/wood_b25uub.jpg");
 width: 25%;

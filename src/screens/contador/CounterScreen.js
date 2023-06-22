@@ -17,7 +17,7 @@ function CounterScreen() {
   
   return (
     <>
-      <button onClick={addMonster}>Añadir BigMonster</button>
+      <button className='botón-añadir' onClick={addMonster}>Añadir Criatura</button>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {monsters.map((monster, index) => (
           <div key={index} style={{ marginRight: '10px', marginBottom: '10px', position: 'relative' }}>
