@@ -41,12 +41,7 @@ function EventsScreen() {
           </h1>
         </div>
       </div>
-      <div className="error-404">
-        <div>
-          <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687523229/donGions%20imgs/WhatsApp-Video-2023-06-23-at-13.17.33_wjpe6x.gif" alt="gif 404" />
-        </div>
-        <NavLink className="error-message" to={"/rules"}>¡¿Cómo has llegado aqui?!  Vuelve a las reglas del juego...</NavLink>
-      </div>
+
           <FadeInOut show={showNPC} duration={500}>
               <ImportantCreaturesBeleron />
           </FadeInOut>

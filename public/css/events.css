@@ -14,9 +14,7 @@
 .error-404{
   text-align: center;
 }
-.error-404>div>img{
-  width: 30%;
-}
+
 .error-message{
   background: linear-gradient(-45deg, red, #ffffff,red, #ffffff,red, #ffffff, red);
   background-size: 500%;
