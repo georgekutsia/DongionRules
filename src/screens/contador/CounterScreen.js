@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BigMonster } from '../../component';
-import PjScreen from './PjScreen';
 
 function CounterScreen() {
   const [monsters, setMonsters] = useState([]);
@@ -18,7 +17,6 @@ function CounterScreen() {
   
   return (
     <>
-    <PjScreen></PjScreen>
       <button className='botón-añadir' onClick={addMonster}>Añadir Criatura</button>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {monsters.map((monster, index) => (
