@@ -41,7 +41,6 @@ function EventsScreen() {
           </h1>
         </div>
       </div>
-
           <FadeInOut show={showNPC} duration={500}>
               <ImportantCreaturesBeleron />
           </FadeInOut>
