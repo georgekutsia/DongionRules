@@ -8,23 +8,21 @@ function PjScreen({counterForMonster}) {
 
   const [showPage, setShowPage] = useState(true)
   const [showPlusStats, setShowPlusStats] = useState(false)
-  const [char, setChar] = useState(false)
-  const [dispStats, setDispStats] = useState(true)
+  const [char, setChar] = useState(true)
   const [back, setBack] = useState(false)
-  const [dude, setDude] = useState(true)
-  const [showMonster1, setShowMonster1] = useState(true)
-  const [chest, setChest] = useState(false)
-  const [smoller, setSmoller] = useState(true)
-  const [background, setBackground] = useState(false)
-  const [showBigMonster, setShowBigMonster] = useState(false)
-  const [showMonster, setShowMonster] = useState(false)
-  const [sideBar, setSideBar] = useState(false)
+
+
+  const toggleStatsMejoradas = () => {
+    setShowPlusStats(!showPlusStats);
+  };
+  const toggleChar = () => {
+    setChar(!char);
+  };
+
 
   useEffect(() => {
     setShowPage(true)
-    setDude(true)
     setTimeout(() => {
-      setDude(false)
     }, 8000)
   }, [])
   return (
@@ -33,18 +31,18 @@ function PjScreen({counterForMonster}) {
             <FadeInOut show={showPage} duration={1200}>
               <div align="center">
                   <div className='inner-box-stats' >
-                        <Link onClick={() => setShowPlusStats(!showPlusStats)} className='button-mostrar-mejoradas mx-4'>Estadísticas Mejoradas</Link>
-                        <Link onClick={() => setChar(!char)} className='button-mostrar-mejoradas'>Carácter</Link>
-                        {showPlusStats && 
-                          <FadeInOut show={showPage} duration={1000}>
+                  <Link className='button-mostrar-mejoradas' onClick={toggleStatsMejoradas}>{showPlusStats ? "Ocultar Estadísticas Mejoradas -" : "Mostrar Estadísticas Mejoradas -"}</Link>
+                  <Link className='button-mostrar-mejoradas' onClick={toggleChar}>{char ? "Ocultar Carácter" : "Mostrar Carácter"}</Link>
+                        <div style={{  display: showPlusStats ? "flex" : "none" }}> 
+                          <FadeInOut show={showPage} duration={400}>
                             <StatsPlusFight/>
                           </FadeInOut>
-                        }
-                        {char && 
-                          <FadeInOut show={char} duration={1000}>
+                        </div>
+                        <div style={{  display: char ? "flex" : "none" }}> 
+                          <FadeInOut show={char} duration={400}>
                             <StatsChar/>
                           </FadeInOut>
-                        }
+                        </div>
                         <StatsSalud/>
                         <StatsDam />
                         <StatsDefence/>

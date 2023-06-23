@@ -17,7 +17,7 @@ function App() {
       <button onClick={togglePjScreen}>
         {pjScreenVisible ? "Ocultar PjScreen" : "Mostrar PjScreen"}
       </button>
-      <div style={{ position: "absolute", zIndex: "20", display: pjScreenVisible ? "block" : "none" }}>
+      <div className='app-container-pj' align="center" style={{  display: pjScreenVisible ? "flex" : "none" }}>
         <PjScreen />
       </div>
       <div className="cur1">

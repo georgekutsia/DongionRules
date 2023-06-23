@@ -1,61 +1,25 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import ButtonCounts from "./ButtonCounts";
 
 
 function StatsDam() {
-  // const stats = useContext(0)
-  // const st = stats.pj.stats
-  // const eq = stats.pj.equipped
-
-  //   const dFis = st.damFis + +eq.damFis
-  //   let dDisFis = "white"
-  //   if(dFis > st.damFis){
-  //     dDisFis = "orangered"
-  //   }
-
-  //   const dDist = st.damDist + +eq.damDist
-  //   let dDisDist = "white"
-  //   if(dDist > st.damDist){
-  //     dDisDist = "orangered"
-  //   }
-    
-  //   const dMag = st.damMag + +eq.damMag
-  //   let dDisMag = "white"
-  //   if(dMag > st.damMag){
-  //     dDisMag = "orangered"
-  //   }
-
-  //   const aFis = st.acFis - eq.acFis
-  //   let acmag = "white"
-  //   if(aFis < st.acFis){
-  //     acmag = "darksalmon"
-  //   }
-
-  //   const aDist = st.acDist - eq.acDist
-  //   let acdist = "white"
-  //   if(aDist < st.acDist){
-  //     acdist = "darksalmon"
-  //   }
-
-  //   const aMag = st.acMag - eq.acMag
-  //   let acMag = "white"
-  //   if(aMag < st.acMag){
-  //     acMag = "darksalmon"
-  //   }
+  const [stat, setStat] = useState(5)
 
   return (
-    <div className="stats-damage-block">
-      <div>
-        <div className="stats-damage  justify-content-between" style={{color: "red"}}>Daño Físico: <span style={{transform: "scale(0.7)"}}><ButtonCounts max={20}  dead="fa-0"  colorDead="grey" colorText={"red"}/></span>  </div>
-        <div className="stats-damage  justify-content-between" style={{color: "red"}}>Daño Mágico: <span style={{transform: "scale(0.7)"}}><ButtonCounts max={20}  dead="fa-0"  colorDead="grey" colorText={"red"}/></span>  </div>
-        <div className="stats-damage  justify-content-between" style={{color: "red"}}>Daño Distan: <span style={{transform: "scale(0.7)"}}><ButtonCounts max={20}  dead="fa-0"  colorDead="grey" colorText={"red"}/></span>  </div>
+    <>
+      <div className="stats-salud-block">
+        <div>
+          <div className="stats-salud stats-damage" style={{color:`Red`}} >Daño Físico<span><ButtonCounts  stat={stat} dead=""  colorDead="red" colorText={"rgb(0, 245, 0)"}/></span></div>
+          <div className="stats-salud stats-damage" style={{color:`Red`}}>Daño Mágico<span style={{color:"#00e5ff"}}><ButtonCounts stat={stat} dead="" colorDead="lightblue" colorText={"#00e5ff"}/></span></div>
+          <div className="stats-salud stats-damage" style={{color:`Red`}}>Daño Dist.<span style={{color:"#00e5ff"}}><ButtonCounts stat={stat} dead="" colorDead="lightblue" colorText={"#00e5ff"}/></span></div>
+        </div>
+        <div>
+          <div className="stats-salud stats-damage"  style={{color:`Grey`}}>Ac. Físico:<span style={{color:"burlywood"}}><ButtonCounts stat={stat} dead="" colorDead="grey" colorText={"burlywood"}/></span></div>
+          <div className="stats-salud stats-damage"  style={{color:`Grey`}}>Ac. Mágico:<span style={{color:"burlywood"}}><ButtonCounts stat={stat} dead="" colorDead="grey" colorText={"burlywood"}/></span></div>
+          <div className="stats-salud stats-damage" style={{color:`Grey`}}>Ac. Dist.<span style={{color:"rgb(247, 0, 255"}}><ButtonCounts stat={stat} dead="" colorDead="grey" colorText={"rgb(247, 0, 255"}/></span></div>
+        </div>
       </div>
-    <div>
-      <div className="stats-damage  justify-content-between" style={{color: "red"}}>Ac Físico: <span style={{transform: "scale(0.7)"}}><ButtonCounts max={20}  dead="fa-0"  colorDead="grey" colorText={"darksalmon"}/></span>  </div>
-          <div className="stats-damage  justify-content-between" style={{color: "red"}}>Ac Mágico: <span style={{transform: "scale(0.7)"}}><ButtonCounts max={20}  dead="fa-0"  colorDead="grey" colorText={"darksalmon"}/></span>  </div>
-          <div className="stats-damage  justify-content-between" style={{color: "red"}}>Ac Distan: <span style={{transform: "scale(0.7)"}}><ButtonCounts max={20}  dead="fa-0"  colorDead="grey" colorText={"darksalmon"}/></span>  </div>
-      </div>
-    </div>
+    </>
   )
 }
 
