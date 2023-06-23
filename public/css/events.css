@@ -11,3 +11,27 @@
 .contraseña-guilds{
   min-width: 350px;
 }
+.error-404{
+  text-align: center;
+}
+.error-404>div>img{
+  width: 30%;
+}
+.error-message{
+  background: linear-gradient(-45deg, red, #ffffff,red, #ffffff,red, #ffffff, red);
+  background-size: 500%;
+  animation: errorBackground 10s ease-in-out infinite;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+@keyframes errorBackground {
+  0% { background-position: 0 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0 50% }
+}
+.error-message:hover{
+
+  animation: errorBackground 1s ease-in-out infinite;
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import { BackgroundFloatingBuble, ImportantCreaturesBeleron, Guilds, Riddles } from "../../component";
 import FadeInOut from "../../component/FadeInOut";
 
@@ -22,6 +23,7 @@ function EventsScreen() {
         heigthBall={"15px"}
         idFlow={"circle-container"}
       />
+      
       <div className="d-flex justify-content-evenly">
         <div  className="d-flex justify-content-evenly">
             <h1><button onClick={() => {setShowNPC(!showNPC); setShowGuilds(false); setRidles(false)}} 
@@ -38,6 +40,12 @@ function EventsScreen() {
           className="btn btn-round b-level-2 b-type-show-creatures">Pruebas</button>
           </h1>
         </div>
+      </div>
+      <div className="error-404">
+        <div>
+          <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687523229/donGions%20imgs/WhatsApp-Video-2023-06-23-at-13.17.33_wjpe6x.gif" alt="gif 404" />
+        </div>
+        <NavLink className="error-message" to={"/rules"}>¡¿Cómo has llegado aqui?!  Vuelve a las reglas del juego...</NavLink>
       </div>
           <FadeInOut show={showNPC} duration={500}>
               <ImportantCreaturesBeleron />
