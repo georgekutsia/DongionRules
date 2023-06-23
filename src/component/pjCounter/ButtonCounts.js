@@ -14,14 +14,14 @@ function ButtonCounts({ stat, dead, colorDead, colorText}) {
   return (
     <div className='d-flex button-align'>
     <div>
-        <button style={{transform: "scale(0.5)"}} className="btn-rest-stats d-block" onClick={countDownH} disabled={count === 0}><i className="fa-solid fa-minus"></i></button>
+        <button style={{transform: "scale(0.6)"}} className="btn-rest-stats d-block" onClick={countDownH} disabled={count === 0}><i className="fa-solid fa-minus"></i></button>
         <button className="btn-rest-stats d-block" onClick={countDown} disabled={count === 0}><i className="fa-solid fa-minus"></i></button>
     </div>
         <div>
         <button style={{color:`${colorText}`}} className="btn-reset-stats" onClick={reset}><h1> {count !==0  ? count :<i style={{color:`${colorDead}`}} className={`fa-solid ${dead}`}></i>}</h1></button>
         </div>
         <div>
-        <button style={{transform: "scale(0.5)"}}  className="btn-rest-stats d-block" onClick={countUpH} disabled={count === stat}><i className="fa-solid fa-plus"></i></button>
+        <button style={{transform: "scale(0.6)"}}  className="btn-rest-stats d-block" onClick={countUpH} disabled={count === stat}><i className="fa-solid fa-plus"></i></button>
         <button  className="btn-rest-stats d-block" onClick={countUp} disabled={count === 50}><i className="fa-solid fa-plus"></i></button>
         </div>
     </div>

@@ -178,7 +178,8 @@ border-radius: 10px;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   color: white;
-  width: 40px;
+  width: 60px;
+  margin-top: -10px;
   padding: 0;
   border-radius: 10px;
 }
@@ -278,28 +279,25 @@ border-radius: 10px;
   justify-content: space-between;
 
 }
-.stats-defense {
+.stats-defence {
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666461261/donGions%20imgs/backgroundEffects/meral_kcimmw.png");
 }
 .stats-damage {
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666461441/donGions%20imgs/backgroundEffects/dsa_gsdxir.png");
 }
-.stats-chars-box {
+.stats-chars-box{
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666696984/donGions%20imgs/shop/dark-abstract-black-minimal-4k-q0-960x540_ki3zxx.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  font-size: 10px;
   transition: all 0.4s ease-in-out;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-
 .stats-chars {
   border: 1px rgba(255, 255, 255, 0.352) solid;
   border-radius: 15px;
-  font-size: calc(15px + .4vw);
+  font-size: calc(13px + .4vw);
   padding: 2px 3px;
-  margin: 3px 7px;
   flex-grow: 1;
 }
 .stats-chars-title {
@@ -315,20 +313,20 @@ border-radius: 10px;
   white-space: nowrap;
   max-width: 700px;
 }
+.inner-box-stats>div{
+ display: flex;
+ justify-content: space-evenly;
+}
 .button-mostrar-mejoradas {
   text-decoration: none;
-  font-size: calc(12px + .4vw);
-  color: beige;
-  text-shadow: 2px 2px grey;
-  border-bottom: rgb(141, 141, 141) 1px solid;
-  padding: 3px;
-  border-radius: 10px;
+  font-size: calc(26px + .9vw);
+  color: rgb(57, 18, 26);
+  text-shadow: 2px 2px rgb(0, 0, 0);
   transition: all 0.4s ease-in-out;
 }
 .button-mostrar-mejoradas:hover {
-  background-color: grey;
   transition: all 0.4s ease-in-out;
-  color: black;
+  color: rgb(120, 7, 7);
 }
 
 .material-container {
@@ -351,7 +349,12 @@ border-radius: 10px;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
+.big-stats-box{
+  
+  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666696571/donGions%20imgs/shop/dsa_nombre_xihoas.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 .material-item {
   color: rgb(222, 179, 132);
   text-shadow: 1px 1px #1f1b10;
@@ -388,4 +391,19 @@ border-radius: 10px;
 .lista-de-monstruos{
   display: inline-block;
   width: 900px;
+}
+.button-pj{
+  position: absolute;
+  display: block;
+  z-index: 40;
+  position: fixed;
+  border:outset 3px grey;
+  background-color: rgba(0, 0, 0, 0.773);
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.button-pj:hover{
+background-color: rgb(9, 0, 37);
+border:inset 3px rgb(180, 174, 174);
+
 }

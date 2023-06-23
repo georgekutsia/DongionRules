@@ -4,8 +4,7 @@ import { NavBar } from './component';
 import { ShopScreen, RuleScreen, EventsScreen, DongionsDetail, FrontFrontpage, CounterScreen, PjScreen } from "./screens"
 
 function App() {
-  const [vida, setVida] = useState(0);
-  const [pjScreenVisible, setPjScreenVisible] = useState(true);
+  const [pjScreenVisible, setPjScreenVisible] = useState(false);
 
   const togglePjScreen = () => {
     setPjScreenVisible(!pjScreenVisible);
@@ -14,10 +13,10 @@ function App() {
   return (
     <div>
       <NavBar />
-      <button onClick={togglePjScreen}>
-        {pjScreenVisible ? "Ocultar PjScreen" : "Mostrar PjScreen"}
+      <button className='button-pj' onClick={togglePjScreen}>
+        {pjScreenVisible ? "Ocultar Estadísticas" : "Mostrar Estadísticas"}
       </button>
-      <div className='app-container-pj' align="center" style={{  display: pjScreenVisible ? "flex" : "none" }}>
+      <div className='app-container-pj' align="center" style={{display: pjScreenVisible ? "flex" : "none"}}>
         <PjScreen />
       </div>
       <div className="cur1">

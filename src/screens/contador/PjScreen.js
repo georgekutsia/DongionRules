@@ -8,7 +8,7 @@ function PjScreen({counterForMonster}) {
 
   const [showPage, setShowPage] = useState(true)
   const [showPlusStats, setShowPlusStats] = useState(false)
-  const [char, setChar] = useState(true)
+  const [char, setChar] = useState(false)
   const [back, setBack] = useState(false)
 
 
@@ -29,16 +29,18 @@ function PjScreen({counterForMonster}) {
     <FadeInOut show={showPage} duration={800}>
         <div className={back ? "moving-background-scenary" : "moving-background-part"} id='profile-size-box'>
             <FadeInOut show={showPage} duration={1200}>
-              <div align="center">
+              <div className='big-stats-box'  align="center">
                   <div className='inner-box-stats' >
-                  <Link className='button-mostrar-mejoradas' onClick={toggleStatsMejoradas}>{showPlusStats ? "Ocultar Estadísticas Mejoradas -" : "Mostrar Estadísticas Mejoradas -"}</Link>
-                  <Link className='button-mostrar-mejoradas' onClick={toggleChar}>{char ? "Ocultar Carácter" : "Mostrar Carácter"}</Link>
-                        <div style={{  display: showPlusStats ? "flex" : "none" }}> 
+                    <div>
+                    <Link className='button-mostrar-mejoradas' onClick={toggleStatsMejoradas}>{showPlusStats ? <i className="fa-regular fa-hand-back-fist"></i> : <i className="fa-solid fa-hand-back-fist"></i>}</Link>
+                    <Link className='button-mostrar-mejoradas' onClick={toggleChar}>{char ? <i className="fa-solid fa-user"></i> :<i className="fa-solid fa-user-secret"></i>}</Link>
+                    </div>
+                        <div style={{  display: showPlusStats ? "block" : "none" }}> 
                           <FadeInOut show={showPage} duration={400}>
                             <StatsPlusFight/>
                           </FadeInOut>
                         </div>
-                        <div style={{  display: char ? "flex" : "none" }}> 
+                        <div style={{  display: char ? "block" : "none" }}> 
                           <FadeInOut show={char} duration={400}>
                             <StatsChar/>
                           </FadeInOut>
