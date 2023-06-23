@@ -2,7 +2,6 @@
   overflow: auto;
   white-space: nowrap;
   width: 155px;
-  margin-left: 31%; 
   display: inline-block;
 }
 .monster-scroller{
@@ -31,10 +30,28 @@
   box-shadow: 4px 5px rgb(105, 102, 102);
   transition: 0.2s ease-in-out;
   color: black;
+  font-weight: 800;
 }
 .botón-añadir:hover{
   background-color: rgb(0, 234, 255);
   box-shadow: 1px 1px white;
+}
+.botón-borrar{
+  margin: 10px;
+  padding: 10px 5px;
+  border-radius: 90px;
+  background-color: rgb(75, 5, 5);
+  box-shadow: 4px 5px rgb(105, 102, 102);
+  transition: 0.2s ease-in-out;
+  color: black;
+  font-weight: 800;
+}
+.botón-borrar:hover{
+  background-color: rgb(255, 0, 0);
+  box-shadow: 1px 1px white;
+}
+.btn-monstruos{
+  text-align: center;
 }
 .background-pj-text-area h2{
 background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666130956/donGions%20imgs/shop/wood_b25uub.jpg");
@@ -197,6 +214,14 @@ border-radius: 10px;
   transition: all 0.2s ease-in-out;
   color: white;
   width: 100%;
+  padding-top: 10px;
+  border-radius: 40px;
+}
+.btn-reset-stats-time {
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  width: 40%;
   padding-top: 10px;
   border-radius: 40px;
 }
@@ -395,13 +420,15 @@ border-radius: 10px;
   display: block;
   z-index: 40;
   position: fixed;
-  border:outset 3px grey;
+  border: outset 3px grey;
   background-color: rgba(0, 0, 0, 0.773);
   color: white;
   transition: 0.2s ease-in-out;
+  font-size: calc(26px + 0.5vw);
+  padding: 2px 15px;
 }
 .button-pj:hover{
 background-color: rgb(9, 0, 37);
-border:inset 3px rgb(180, 174, 174);
-
+border: inset 6px rgb(180, 174, 174);
+padding: 0px 13px;
 }

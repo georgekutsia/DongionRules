@@ -6,7 +6,6 @@ function NavbarVertical({ statistics, stkinesthesia,stperception, stluck, stchar
   const [nav, setNav] = useState(false)
 
   return (
-    <div className="mt-4">
       <div className="iconBar">
         <Link onClick={() => setNav(!nav)} className="active" >
         <i className={!nav ? "fa-solid fa-folder-tree":"fa-solid fa-folder-minus"}></i>
@@ -24,7 +23,6 @@ function NavbarVertical({ statistics, stkinesthesia,stperception, stluck, stchar
                 </>
             }
       </div>
-    </div>
   );
 }
 

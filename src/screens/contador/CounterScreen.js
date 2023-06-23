@@ -14,10 +14,16 @@ function CounterScreen() {
   const removeMonster = (index) => {
     setMonsters(monsters.filter((_, i) => i !== index));
   };
+  const removeAllMonsters = () => {
+    setMonsters([]);
+  };
   
   return (
     <>
+    <div className='btn-monstruos'>
       <button className='botón-añadir' onClick={addMonster}>Añadir Criatura</button>
+      <button className='botón-borrar' onClick={removeAllMonsters}>Borrar Todos</button>
+    </div>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {monsters.map((monster, index) => (
           <div key={index} style={{ marginRight: '10px', marginBottom: '10px', position: 'relative' }}>

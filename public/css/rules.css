@@ -37,6 +37,7 @@
   position: fixed;
   z-index: 10;
   backdrop-filter: blur(3px);
+  margin-top: 55px
 }
 
 .iconBar a {
@@ -57,8 +58,7 @@
   font-size: calc(10px + 1vw);
 }
 .iconBar a:hover {
-  background-color: #ffffff;
-  color: rgb(122, 3, 37);
+  color: rgb(125, 255, 227);
 }
 
 

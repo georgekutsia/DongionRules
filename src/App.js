@@ -14,7 +14,7 @@ function App() {
     <div>
       <NavBar />
       <button className='button-pj' onClick={togglePjScreen}>
-        {pjScreenVisible ? "Ocultar Estadísticas" : "Mostrar Estadísticas"}
+        {pjScreenVisible ? <i className="fa-solid fa-person-military-pointing fa-fade"></i>: <i className="fa-solid fa-person-military-rifle fa-bounce"></i>}
       </button>
       <div className='app-container-pj' align="center" style={{display: pjScreenVisible ? "flex" : "none"}}>
         <PjScreen />

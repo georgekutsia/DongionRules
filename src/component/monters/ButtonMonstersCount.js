@@ -81,20 +81,20 @@ function ButtonCounts({ dead, colorDead, colorText, tu0}) {
       </div>
         <div>
             <div>
-              <button  className="btn-add-stats" onClick={countUp} disabled={count === 200}><i className="fa-solid fa-plus">5</i></button>
-              <button  className="btn-add-stats" onClick={countUpH} disabled={count === 200}><i className="fa-solid fa-plus">1</i></button>
+              <button style={{scale:"1.2", marginRight:"15px"}} className="btn-rest-stats" onClick={countUp} disabled={count === 200}><i className="fa-solid fa-plus">5</i></button>
+              <button  className="btn-rest-stats" onClick={countUpH} disabled={count === 200}><i className="fa-solid fa-plus">1</i></button>
             </div>
                 <button style={{color:`${colorText}`, border:`${borderCount}`, width:`${widthCount}`,height:`56px`, padding:"2px"}} className="btn-reset-stats" onClick={reset}><h1> {count !==0  ? count :<i style={{color:`${colorDead}`}} className={`fa-solid ${dead}`}></i>}</h1></button>
             <div>
               <button className="btn-rest-stats" onClick={countDownH} disabled={count === 0}><i className="fa-solid fa-minus">1</i></button>
-              <button className="btn-rest-stats" onClick={countDown} disabled={count === 0}><i className="fa-solid fa-minus"></i>5</button>
+              <button style={{scale:"1.2", marginRight:"5px", marginLeft:"20px"}} className="btn-rest-stats" onClick={countDown} disabled={count === 0}><i className="fa-solid fa-minus"></i>5</button>
             </div>
         <div className='bulala'>
         </div>
           <div> 
-              <button style={{scale:"0.7", marginRight:"-15px", marginLeft:"-5px"}} className="btn-rest-stats" onClick={countTurnsDown} disabled={turns === 0}><i className="fa-solid fa-minus"></i>1</button>
-              <button style={{color:`${colorText}`, scale:"0.9", marginLeft:"4px"}} className="btn-reset-stats" onClick={resetTurn}><h1> {turns !==0  ? turns :<i style={{color:`${colorDead}`}} className={`fa-solid ${tu0}`}></i>}</h1></button>
-              <button style={{scale:"0.7", marginRight:"-10px", marginLeft:"-10px"}} className="btn-add-stats" onClick={countTurnsUp} disabled={turns === 200}><i className="fa-solid fa-plus">1</i></button>
+              <button style={{scale:"0.8", marginRight:"-15px", marginLeft:"-8px"}} className="btn-rest-stats" onClick={countTurnsDown} disabled={turns === 0}><i className="fa-solid fa-minus"></i>1</button>
+              <button style={{color:`${colorText}`, scale:"0.9", marginLeft:"4px"}} className="btn-reset-stats-time" onClick={resetTurn}><h1> {turns !==0  ? turns :<i style={{color:`${colorDead}`}} className={`fa-solid ${tu0}`}></i>}</h1></button>
+              <button style={{scale:"0.8", marginRight:"-10px", marginLeft:"-10px"}} className="btn-rest-stats" onClick={countTurnsUp} disabled={turns === 200}><i className="fa-solid fa-plus">1</i></button>
           </div>  
         </div>
     </div>
