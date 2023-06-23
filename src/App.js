@@ -4,7 +4,7 @@ import { NavBar } from './component';
 import { ShopScreen, RuleScreen, EventsScreen, DongionsDetail, FrontFrontpage, CounterScreen, PjScreen } from "./screens"
 
 function App() {
-  const [pjScreenVisible, setPjScreenVisible] = useState(false);
+  const [pjScreenVisible, setPjScreenVisible] = useState(true);
 
   const togglePjScreen = () => {
     setPjScreenVisible(!pjScreenVisible);
