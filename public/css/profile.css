@@ -187,12 +187,15 @@ border-radius: 10px;
   transition: all 0.2s ease-in-out;
   background-color: rgba(255, 255, 255, 0.103);
 }
-
+.button-align{
+  display: flex;
+  justify-content: space-evenly;
+}
 .btn-reset-stats {
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   color: white;
-  width: 30%;
+  width: 100%;
   padding-top: 10px;
   border-radius: 40px;
 }
@@ -271,16 +274,13 @@ border-radius: 10px;
   width: 100%;
   font-size: calc(14px + 1vw);
   padding: 0px 10px;
-  min-width: 200px;
+  min-width: 185px;
   justify-content: space-between;
 
 }
-
 .stats-defense {
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666461261/donGions%20imgs/backgroundEffects/meral_kcimmw.png");
-
 }
-
 .stats-damage {
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666461441/donGions%20imgs/backgroundEffects/dsa_gsdxir.png");
 }
