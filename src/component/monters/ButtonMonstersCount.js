@@ -14,14 +14,12 @@ function ButtonCounts({ dead, colorDead, colorText, tu0}) {
   let borderCount = null
   let widthCount = "53px"
   if(count >= 1){
-    widthCount = "63px"
     words = "¡Dañado!"
 
   } 
   if(count >= 2){
     widthCount = "63px"
     words = "Daño mínimo"
-
   } 
     if(count >= 30){
       colorText = "rgb(244, 128, 128)"
@@ -77,14 +75,14 @@ function ButtonCounts({ dead, colorDead, colorText, tu0}) {
     <div align="center" className='button-monster-size'>
         <div>
             <h5>{words}</h5>
-        <input className='input-monster-name' placeholder='Escribe el nombre...' type="text" value={monsterName} onChange={handleMonsterNameChange} />
+        <input className='input-monster-name' placeholder='Nombre...' type="text" value={monsterName} onChange={handleMonsterNameChange} />
       </div>
         <div>
             <div>
               <button style={{scale:"1.2", marginRight:"15px"}} className="btn-rest-stats" onClick={countUp} disabled={count === 200}><i className="fa-solid fa-plus">5</i></button>
               <button  className="btn-rest-stats" onClick={countUpH} disabled={count === 200}><i className="fa-solid fa-plus">1</i></button>
             </div>
-                <button style={{color:`${colorText}`, border:`${borderCount}`, width:`${widthCount}`,height:`56px`, padding:"2px"}} className="btn-reset-stats" onClick={reset}><h1> {count !==0  ? count :<i style={{color:`${colorDead}`}} className={`fa-solid ${dead}`}></i>}</h1></button>
+                <button style={{color:`${colorText}`, border:`${borderCount}`, width:`${widthCount}`,height:`50px`, padding:"2px"}} className="btn-reset-stats-time" onClick={reset}><h1> {count !==0  ? count : <i style={{color:`${colorDead}`}} className={`fa-solid ${dead}`}></i>}</h1></button>
             <div>
               <button className="btn-rest-stats" onClick={countDownH} disabled={count === 0}><i className="fa-solid fa-minus">1</i></button>
               <button style={{scale:"1.2", marginRight:"5px", marginLeft:"20px"}} className="btn-rest-stats" onClick={countDown} disabled={count === 0}><i className="fa-solid fa-minus"></i>5</button>

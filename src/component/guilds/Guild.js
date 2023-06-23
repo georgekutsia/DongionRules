@@ -11,7 +11,7 @@ function Guild({name, description, img, weird, enemies, where}) {
     handleResize(); 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
+  
   return(
 <tr style={{backgroundColor: weird ? "rgb(52, 6, 52, 0.5)" : "", borderTop: "1px solid white"}}>
   <td className={isSmallScreen ? "responsive-td" : "responsive-tf"} style={{width:"100%", minWidth:"150px", fontSize:"calc(12px+0.5vw)", paddingLeft:"10px", textAlign:"justify"}}>

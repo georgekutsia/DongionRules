@@ -9,6 +9,8 @@ function ListGuild({search, place, food, character, damage, where, potions, expl
     gun, tatu, throww, action, ability, light, dice, concent, money, maz, mutate, hit, heal, 
     weight,esence,objects,maz3,maz4, nonDefined }) {
     const [guild, setGuild] = useState([])
+    const [password, setPassword] = useState('');
+    const [showGuilds, setShowGuilds] = useState(false);
 
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -21,8 +23,33 @@ function ListGuild({search, place, food, character, damage, where, potions, expl
     if (guild.length === 0){
         return <center className="mt-5"><img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682904601/donGions%20imgs/loading2_s9mu8u.gif" width="200px" alt="Loading img" /></center>
     }
+
+
+  const handleShowGuilds = () => {
+    if (password === 'bulala') {
+      setShowGuilds(true);
+    } else {
+      alert('Contraseña incorrecta');
+    }
+  };
+  const handleInputChange = (event) => {
+    const enteredPassword = event.target.value;
+    setPassword(enteredPassword);
+
+    if (enteredPassword === 'bulala') {
+      setShowGuilds(true);
+    } else {
+      setShowGuilds(false);
+    }
+  };
+
+
   return(
     <div>
+        {!showGuilds &&
+            <input className="contraseña-guilds" type="password" value={password} onChange={handleInputChange}  placeholder="Introduce la contraseña para ver hermandades..." />
+        }
+        {showGuilds && 
         <FadeInOut show={guild} duration={500}>
         <table className="table-event-creature">
             <tbody>
@@ -73,6 +100,7 @@ function ListGuild({search, place, food, character, damage, where, potions, expl
                 </tbody>
         </table>
         </FadeInOut>
+        }
     </div>
    )
 }

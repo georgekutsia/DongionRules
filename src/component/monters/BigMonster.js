@@ -13,7 +13,7 @@ function BigMonster({ r, g, b, position}) {
   return (
     <div className='big-monster-scroller'>
         <div align="center"  style={{borderRadius:"5px", backgroundColor: `rgb(${r}, ${g}, ${b})`, margin:"2px", }}>
-            <Link className='link-name-monster' onClick={()=> setShowMonster1(!showMonster1)}>Monstraco {position}</Link>
+            <Link className='link-name-monster' onClick={()=> setShowMonster1(!showMonster1)}>Criatura {position}</Link>
               {showMonster1 &&
               <FadeInOut show={showMonster1} duration={1000}>
                 <ButtonMonstersCount  dead="fa-skull"  colorDead="grey" colorText={"rgb(238, 173, 173)"} cTurn={0} tu0={"fa-hourglass"}/>

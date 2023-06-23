@@ -8,3 +8,6 @@
   font-size: calc(12px + 1.3vw);
   text-align: center;
 }
+.contraseña-guilds{
+  min-width: 350px;
+}
