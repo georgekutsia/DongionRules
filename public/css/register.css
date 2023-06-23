@@ -306,11 +306,16 @@ margin-right: 20px;
   transition: all .4s ease-in-out; 
   opacity: 1;
   font-size: calc(10px + 0.5vw);
+  transition-delay: 2s; /* Agrega el retraso de 2 segundos */
 }
-.box-steps-creator-rules:hover{
-  height: 10%;
+
+.box-steps-creator-rules:hover {
+  height: 20%;
   border: 2px solid;
-} 
+  transition-delay: 0s; /* Agrega el retraso de 2 segundos */
+  
+}
+
 .box-steps-creator:nth-child(2) {
   border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
   animation: borderRadial var(--d) linear infinite forwards;
