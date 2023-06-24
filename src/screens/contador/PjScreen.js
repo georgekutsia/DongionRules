@@ -45,12 +45,11 @@ function PjScreen({counterForMonster}) {
                             <StatsChar/>
                           </FadeInOut>
                         </div>
-                        <StatsSalud/>
-                        <StatsDam />
-                        <StatsDefence/>
+                          <StatsSalud/>
+                          <StatsDam />
+                          <StatsDefence/>
                   </div>
               </div>
-            {/* <h5>Lugar {info.pj.place}</h5> */}
               </FadeInOut>
             </div>
         </FadeInOut>
@@ -58,3 +57,6 @@ function PjScreen({counterForMonster}) {
 }
 
 export default PjScreen
+
+
+

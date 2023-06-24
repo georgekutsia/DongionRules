@@ -81,3 +81,5 @@ export {default as StatsDefence} from "./pjCounter/StatsDefence"
 export {default as StatsPlusFight} from "./pjCounter/StatsPlusFight"
 export {default as StatsSalud} from "./pjCounter/StatsSalud"
 export {default as StatsChar} from "./pjCounter/StatsChar"
+
+export {default as Infos} from "./Infos/Infos"

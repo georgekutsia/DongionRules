@@ -433,3 +433,18 @@ background-color: rgb(9, 0, 37);
 border: inset 6px rgb(180, 174, 174);
 padding: 0px 13px;
 }
+
+
+.text-on-hover-box{
+position: absolute;
+font-size: calc(16px + 0.4vw);
+z-index: 60;
+width: 100%;
+}
+.text-on-hover-box div{
+  background-color: rgba(0, 0, 0, 0.74);
+  width: fit-content;
+  padding: 0px 8px;
+  border-radius: 10px;
+}
+

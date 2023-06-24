@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { useState } from "react";
+import Infos from "../Infos/Infos";
 import ButtonCounts from "./ButtonCounts";
 
 function StatsSalud() {
@@ -13,10 +14,10 @@ function StatsSalud() {
    const [carga, setCarga] = useState(8)
 
   return (
-    <div >
+    <div align="center">
       <div className="stats-salud-block">
-        <div>
-          <div className="stats-salud" style={{color:`rgb(0, 245, 0)`}}><i className="fa-solid fa-heart-pulse fa-beat"></i> Vida<span><ButtonCounts stat={vida} dead="fa-skull-crossbones"  colorDead="red" colorText={"rgb(0, 245, 0)"}/></span>  </div>
+        <div >
+          <div className="stats-salud" style={{color:`rgb(0, 245, 0)`}}><i className="fa-solid fa-heart-pulse fa-beat"></i><span className="hey"><Infos/></span> Vida<span><ButtonCounts stat={vida} dead="fa-skull-crossbones"  colorDead="red" colorText={"rgb(0, 245, 0)"}/></span></div>
           <div className="stats-salud" style={{color:`#00e5ff`}}><i className="fa-solid fa-droplet fa-fade"></i> Maná<span style={{color:"#00e5ff"}}><ButtonCounts stat={mana} dead="fa-droplet-slash" colorDead="lightblue" colorText={"#00e5ff"}/></span></div>
           <div className="stats-salud" style={{color:`rgba(97, 46, 192)`}}><i className="fa-solid fa-bolt fa-beat-fade"></i> Esencia<span style={{color:"#00e5ff"}}><ButtonCounts stat={esencia} dead="fa-bolt" colorDead="lightblue" colorText={"#00e5ff"}/></span></div>
           <div className="stats-salud" style={{color:`#00e5ff`}}> <i className="fa-solid fa-hourglass-start"></i><span style={{color:"#00e5ff"}}><ButtonCounts stat={tiempo} dead="fa-hourglass-end" colorDead="lightblue" colorText={"#00e5ff"}/></span></div>
