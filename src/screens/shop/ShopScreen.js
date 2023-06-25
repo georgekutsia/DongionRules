@@ -19,10 +19,10 @@ function ShopScreen() {
     setShowPage(true);
   }, []);
 
-  const [armeria, setArmeria] = useState(false);
+  const [armeria, setArmeria] = useState(true);
   const [hability, setHability] = useState(false);
   const [book, setBook] = useState(false);
-  const [trast, setTrast] = useState(true);
+  const [trast, setTrast] = useState(false);
   const [special, setSpecial] = useState(false);
 
   const showArm = () => setArmeria(true);

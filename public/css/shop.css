@@ -15,8 +15,20 @@
   transform: scale(1.5);
   border-radius: 12px;
   border: 2px solid white;
-  z-index: 80;
 }
+.img-card-single{
+  width: calc(200px + 1.7vw);
+  border-radius: 12px;
+  border: 2px solid grey;
+  transition: all 0.2s ease-in-out;
+margin-top: 10px;
+}
+.img-card-single:hover{
+  transform: scale(1.5);
+  border-radius: 12px;
+  border: 2px solid white;
+}
+
 .scrolling-space {
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666130985/donGions%20imgs/shop/wood_rs0mwz.jpg");
   width: 80%;
@@ -30,19 +42,16 @@
 .title-shop {
   font-family: "Blaka", cursive;
   text-align: center;
-  font-size: calc(20px + 2.5vw);
-  margin-bottom: 25px;
-  margin-top: 20px;
+  font-size: calc(30px + .5vw);
+  margin: 25px 0px 5px 0px;
   color: rgb(255, 205, 113);
   text-shadow: 8px 5px 3px rgb(15, 67, 79);
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666129238/donGions%20imgs/shop/pngwing.com_-_2022-10-18T233709.140_imjlkq.png");
-  background-size: 100%;
-  max-width: 60%;
-  min-width: 70%;
+  background-size: fit-content;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding: 10px 0px;
+
 }
 .shop-div{
   justify-content: center;
