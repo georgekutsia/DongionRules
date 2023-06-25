@@ -42,18 +42,7 @@ function ShopScreen() {
         <FadeInOut show={showPage} duration={600}>
           {showPage && (
             <>
-              <Shop
-                armOn={showArm}
-                armOff={hideArm}
-                habOn={showHab}
-                habOff={hideHab}
-                bookOn={showBook}
-                bookOff={hideBook}
-                trastOn={showTrast}
-                trastOff={hideTrast}
-                speOn={showSpecial}
-                speOff={hideSpecial}
-              />
+              <Shop armOn={showArm} armOff={hideArm} habOn={showHab} habOff={hideHab} bookOn={showBook} bookOff={hideBook} trastOn={showTrast} trastOff={hideTrast} speOn={showSpecial} speOff={hideSpecial}/>
             </>
           )}
           <div className="shop-div"> 

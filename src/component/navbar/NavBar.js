@@ -6,7 +6,7 @@ function NavBar() {
 
   
   return (
-    <>
+    <div id='background-navbar-father'>
         <nav id='background-navbar'>
             <ul className="background-navbar-ul">
                 <li>
@@ -23,7 +23,7 @@ function NavBar() {
                 </li>
               </ul>
         </nav>
-    </>
+    </div>
   )
 }
 

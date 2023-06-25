@@ -17,19 +17,19 @@ function ArmeriaScreen() {
               <div style={{borderColor:"teal", height:"700px"}} className='scrolling-space m-1'>
                     <div className="scrolling-wrapper" style={{height:"700px"}}>
                         {obs.map((ob) =>( 
-                            <div key={ob.capa}  className="mx-2 card"><h2><img className='img-card' width="205px" src={ob.armbasic} alt="En fabricación"/> <img className='img-card' width="205px" src={ob.armbasic1} alt="En fabricación"/></h2>
+                            <div key={ob.capa}  className="mx-2"><h2><img className='img-card' width="205px" src={ob.armbasic} alt="En fabricación"/> <img className='img-card' width="205px" src={ob.armbasic1} alt="En fabricación"/></h2>
                             </div>))}
                     </div>
               </div>
           </div>
         <div >
           <h5 className='title-shop'>Capas Hechizadas</h5>
-          <div align="center" >
+          <div align="center">
             <div>
                 <div style={{borderColor:"maroon"}} className='scrolling-space m-1'>
                       <div className="scrolling-wrapper">
                           {obs.map((ob) =>( 
-                              <div key={ob.capa}  className="mx-2 card"><h2><img className='img-card' width="205px" src={ob.capa} alt="En fabricación" /></h2>
+                              <div key={ob.capa}  className="mx-2"><h2><img className='img-card' width="205px" src={ob.capa} alt="En fabricación" /></h2>
                               </div>))}
                       </div>
                 </div>
@@ -41,7 +41,7 @@ function ArmeriaScreen() {
               <div style={{borderColor:"olive"}} className='scrolling-space m-1'>
                     <div className="scrolling-wrapper">
                         {obs.map((ob) =>( 
-                            <div key={ob.capa}  className="double-image-cards card"><h2><img className='img-card' width="405px" src={ob.botas} alt="En fabricación" /></h2>
+                            <div key={ob.capa}  className="double-image-cards"><h2><img className='img-card' width="405px" src={ob.botas} alt="En fabricación" /></h2>
                             </div>))}
                     </div>
               </div>
@@ -51,7 +51,7 @@ function ArmeriaScreen() {
               <div style={{borderColor:"teal", height:"700px"}} className='scrolling-space m-1'>
                     <div className="scrolling-wrapper" style={{height:"700px"}}>
                         {obs.map((ob) =>( 
-                            <div key={ob.capa}  className="mx-2 card"><h2><img className='img-card' width="205px" src={ob.random} alt="En fabricación"/> <img className='img-card' width="205px" src={ob.random1} alt="En fabricación"/></h2>
+                            <div key={ob.capa}  className="mx-2"><h2><img className='img-card' width="205px" src={ob.random} alt="En fabricación"/> <img className='img-card' width="205px" src={ob.random1} alt="En fabricación"/></h2>
                             </div>))}
                     </div>
               </div>
@@ -61,7 +61,7 @@ function ArmeriaScreen() {
             <div style={{borderColor:"cadetblue"}} className='scrolling-space m-1'>
                   <div className="scrolling-wrapper">
                       {obs.map((ob) =>( 
-                        <div key={ob.capa}  className="mx-2 card"><h2>  <img className='img-card' width="205px" src={ob.casco} alt="En fabricación"/> </h2>
+                        <div key={ob.capa}  className="mx-2"><h2>  <img className='img-card' width="205px" src={ob.casco} alt="En fabricación"/> </h2>
                         </div>))}
                   </div>
             </div>

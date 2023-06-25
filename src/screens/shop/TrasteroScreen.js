@@ -17,7 +17,7 @@ function TrasteroScreen() {
               <div style={{borderColor:"olive"}} className='scrolling-space m-1'>
                     <div className="scrolling-wrapper">
                         {obs.map((ob) =>( 
-                            <div key={ob.capa}  className="double-image-cards card"><h2><img className='img-card' width="405px" src={ob.trastero1} alt="En fabricación" /></h2>
+                            <div key={ob.capa}  className="double-image-cards"><h2><img className='img-card' src={ob.trastero1} alt="En fabricación" /></h2>
                             </div>))}
                     </div>
               </div>
@@ -27,7 +27,7 @@ function TrasteroScreen() {
               <div style={{borderColor:"olive"}} className='scrolling-space m-1'>
                     <div className="scrolling-wrapper">
                         {obs.map((ob) =>( 
-                            <div key={ob.capa}  className="double-image-cards card"><h2><img className='img-card' width="405px" src={ob.trastero2} alt="En fabricación" /></h2>
+                            <div key={ob.capa}  className="double-image-cards"><h2><img className='img-card' width="405px" src={ob.trastero2} alt="En fabricación" /></h2>
                             </div>))}
                     </div>
               </div>
