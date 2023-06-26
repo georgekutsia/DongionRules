@@ -1,9 +1,11 @@
 import React from 'react'
+import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import {PlansImgs, PlansBast, PlansRing, PlansBrazal, PlansRama} from "../../../../component"
 
 
 function Intro() {
+  const [navLateral, setNavLateral] = useState(false)
   return (
     <div  className='dongionsdetail-box'>
       <div align="center">
@@ -11,18 +13,30 @@ function Intro() {
       </div>
       <div className='dongionsdetail-box-parts'>
         <div id='link-a-partes-intro'>
+          <Link style={{color:"lightblue", fontSize:"calc(16px + 0.5vw)"}} onClick={()=>setNavLateral(!navLateral)} >{navLateral? <i className="fa-solid fa-folder-open"></i> : <i className="fa-solid fa-folder"></i>}</Link>
+          {navLateral && 
+          <>
           <a href="#p-explico">Lo básico</a>
           <a href="#p-personajes">Personajes Jugables</a>
           <a href="#p-comunicarse">Comunicarse con los Guías</a>
           <a href="#p-canalizar">Canalizar la Magia</a>
           <a href="#p-misiones">Misiones únicas</a>
+          </>
+          }
         </div>
-        <h3 className='dongionsdetail-title'>Te explico...</h3>
+        <h3 id='p-explico' className='dongionsdetail-title'>Te explico...</h3>
           <article>Estás entrando en un mundo retorcido, complejo y lleno de posibilidades fruto de años de esfuerzo, reflexión y trabajo personal. El primer mundo o plano sobre el que he trabajado se llama Beleron
           y el juego se desarolla en sus vastos reinos, variopintos pueblos, sin fin de clanes, personajes imponentes e historias enrevesadas, en las que las cosas no son lo que parecen, menos cuando son tanto lo que parecen
           que no podrían ser otra cosa. Básicamente me gusta sorprender a los jugadores.</article>
           <article>Beleron es un cruce entre muchos planos, donde realidades han llegado a estrellarse hace siglos, así que contiene partes de otros planos y criaturas de otros mundos.</article>
-          <article>Le he dado mucha vuelta al combate, intentando hacerlo diferente y a la vez intuitivo para los que ya saben jugar. He creado mecánicas y objetos que no he visto en otros juegos y mejorado lo que no me gustaba
+          <article>Me gusta empezar todas las partidas con los jugadores sin recordar cómo han llegado allí o qué estan haciendo, sea cual sea la situación y que una parte del juego sea averiguar
+          qué ha pasado e intentar recuperar los recuerdos o reconstruir su pasado.</article>
+      </div>
+      <div className='dongionsdetail-box-parts'>
+        <h3 id='p-personajes' className='dongionsdetail-title'>¿Por qué DonGions y no otros...?</h3>
+        <article>Me gusta tomar algo que funciona y hacerlo mejor, encontrando mejores formas de hacerlo. En este juego cualquier decisión, tirada de dados, apertura de cofres, resolver acertijos etc quería que fuera una 
+        experiencia especial para mis jugadores.</article>
+        <article>Le he dado mucha vuelta al combate, intentando hacerlo diferente y a la vez intuitivo para los que ya saben jugar. He creado mecánicas y objetos que no he visto en otros juegos y mejorado lo que no me gustaba
           de mi experiencia con los juegos de rol en general. El sistema de lanzamiento de dados, las frases inspiradoras, páginas malditas, los sellos, descubrimiento de cofres, pruebas y acertijos y alguna que otra cosa más, 
           hacen de este juego algo diferente. No digo que bueno, pero diferente...</article>
       </div>

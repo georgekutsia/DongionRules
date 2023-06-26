@@ -51,10 +51,13 @@
   background-color: black;
   width: fit-content;
   text-indent: 0px;
-
+  padding: 1px 5px;
 }
 #link-a-partes-intro{
   position: fixed;
   float: right;
   right: 20px;
+}
+#avanzar{
+  color: red;
 }
