@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, Talents, SorinMarkov } from '../../component'
+import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, Talents, SorinMarkov, Intro } from '../../component'
 import { EquipmentScreen, ArmorScreen } from '../index';
 import Rules from '../../component/guide/EstadisticasPj'
 import FadeInOut from "../../component/FadeInOut";
@@ -30,18 +30,10 @@ function RuleScreen() {
   const [dude, setDude] = useState(false)
   const [rDice, setRDice] =useState(false)
 
+  const [intro, setIntro] = useState(true)
   const [basic, setBasic] = useState(false)
-  const [char, setChar] = useState(true)
-  const [inspi1, setInpsi1] = useState(false)
-  const [inspi2, setInpsi2] = useState(false)
-  const [inspi3, setInpsi3] = useState(false)
-
-  const [expl1, setExpl1] = useState(false)
-  const [expl2, setExpl2] = useState(false)
-  const [expl3, setExpl3] = useState(false)
-  const [expl4, setExpl4] = useState(false)
-  const [expl5, setExpl5] = useState(false)
-  const [expl6, setExpl6] = useState(false)
+  const [char, setChar] = useState(false)
+  
 
   const [rPre, setrPre] = useState(false)
   const [rCha, setrCha] = useState(false)
@@ -79,46 +71,15 @@ function RuleScreen() {
   const [onRal, setOnRal] = useState(false)
   const [onLiliana, setOnLiliana] = useState(false)
 
-  const handelInspiOff = () => {
- setTimeout(() => {
-    setInpsi1(!inspi1)
-  }, 200)
-  setTimeout(() => {
-    setInpsi2(!inspi2)
-  }, 400)
-  setTimeout(() => {
-    setInpsi3(!inspi3)
-  }, 600)
-}
 
-const handleExploOff= () => {
-  setTimeout(() => {
-    setExpl1(!expl1)
-  }, 300)
-  setTimeout(() => {
-    setExpl2(!expl2)
-  }, 400)
-  setTimeout(() => {
-    setExpl3(!expl3)
-  }, 500)
-  setTimeout(() => {
-    setExpl4(!expl4)
-  }, 600)
-  setTimeout(() => {
-    setExpl5(!expl5)
-  }, 700)
-  setTimeout(() => {
-    setExpl6(!expl6)
-  }, 800)
-}
 const handlePlansOn = ()=>{
   setOnAjani(false); setOnJace(false);setOnMark(false); setOnTeferi(false); setOnChandra(false); setOnElspeth(false); setOnGideon(false); setOnLiliana(false); setOnNissa(false);setOnRal(false); setOnSarkhan(false)}
 
 const handleingOn = () =>{
-  handelInspiOff(); handleExploOff(); setBasic(true); setChar(true);setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setREffort(true); setRCombat(true);setRNonSpecific(true);setRNpc(true); setREquipment(true); setRArmor(true); setRDice(true); setRDungeon(true); setRTalent(true)
+  setBasic(true);setIntro(true); setChar(true);setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setREffort(true); setRCombat(true);setRNonSpecific(true);setRNpc(true); setREquipment(true); setRArmor(true); setRDice(true); setRDungeon(true); setRTalent(true)
 }
 const handleingOff = () =>{
-  handelInspiOff(); handleExploOff(); setBasic(false); setChar(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false); setRDice(false); setRDungeon(false); setRTalent(false)
+  setBasic(false); setIntro(false); setChar(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false); setRDice(false); setRDungeon(false); setRTalent(false)
 }
   return (
     <div className='margin-rules-borrom'>
@@ -172,6 +133,9 @@ const handleingOff = () =>{
               </button>
             </div>
             <div>
+                    <button className={intro ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setIntro(!intro)}}>
+                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-signs-post"></i>Intro
+                    </button>
                     <button className={basic ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setBasic(!basic)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-list"></i>Básico
                     </button>
@@ -190,12 +154,7 @@ const handleingOff = () =>{
                     <button className={rNpc ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRNpc(!rNpc)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-people-group"></i>NPC
                     </button>
-                    <button className={inspi1 ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); handelInspiOff();}}>
-                        <span></span><span></span><span></span><span></span><i className="fa-regular fa-lightbulb"></i><i className="fa-sharp fa-solid fa-raygun"></i>Inspírate
-                    </button>
-                    <button className={expl1 ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); handleExploOff();}}>
-                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-bag-shopping"></i>Objetos
-                    </button>
+
                     <button className={rEffort ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setREffort(!rEffort)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-child-reaching"></i>Esfuerzo
                     </button>
@@ -211,9 +170,18 @@ const handleingOff = () =>{
                     <button className={rTalent ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRTalent(!rTalent)}}>
                         <span></span><span></span><span></span><span></span><i className="iconoir-3d-arc-center-pt"></i>Ramas
                     </button>
+                    <button className={ 'btn-rules-toggle'} style={{color:"grey"}} >
+                        <span></span><span></span><span></span><span></span><i className="fa-regular fa-lightbulb"></i><i className="fa-sharp fa-solid fa-raygun"></i>Inspírate
+                    </button>
+                    <button className={'btn-rules-toggle'} style={{color:"grey"}}>
+                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-bag-shopping"></i>Objetos
+                    </button>
               </div>
             </div>
         <div className='below-rules-space'>
+      <FadeInOut show={intro} duration={400}>
+              {intro && <Intro/>}
+        </FadeInOut>
       <FadeInOut show={basic} duration={400}>
               {basic && <Rules/>}
         </FadeInOut>
@@ -309,61 +277,6 @@ const handleingOff = () =>{
         </FadeInOut>
       </div>
         </FadeInOut>
-      <div className='img-rules-inspi-container'>
-        <FadeInOut show={expl1} duration={400}>
-      <h1 id="s-tiempo" align="center" className='texto-resaltado-npc'> Cada arma funciona de una forma particular y cada objeto tiene una característica especial</h1>
-            {expl1 &&
-            <img className='img-rules-inspi' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666704197/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_15.20.30_eqplj7.png" alt="inspire 3" />
-            }
-        </FadeInOut>
-        <FadeInOut show={expl2} duration={400}>
-            {expl2 &&
-            <img className='img-rules-inspi' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666704197/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_15.20.19_sanazn.png" alt="inspire 3" />
-            }
-        </FadeInOut>
-        <FadeInOut show={expl3} duration={400}>
-            {expl3 &&
-            <img className='img-rules-inspi' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666704197/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_15.20.56_cugkwd.png" alt="inspire 3" />
-            }
-        </FadeInOut>
-        <FadeInOut show={expl4} duration={400}>
-            {expl4 &&
-            <img className='img-rules-inspi' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666704197/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_15.22.31_tklyfy.png" alt="inspire 3" />
-            }
-        </FadeInOut>
-        <FadeInOut show={expl5} duration={400}>
-            {expl5 &&
-            <img className='img-rules-inspi' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666704197/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_15.20.40_ohxgoh.png" alt="inspire 3" />
-            }
-        </FadeInOut>
-        <FadeInOut show={expl6} duration={400}>
-            {expl6 &&
-            <img className='img-rules-inspi' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666704200/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_15.21.06_tomssv.png" alt="inspire 3" />
-            }
-        </FadeInOut>
-
-        </div>
-        {/* explor end */}
-
-        {/* inspiracion start */}
-        <FadeInOut show={inspi1} duration={200}>
-            <h1 id="s-tiempo" align="center" className='texto-resaltado-npc'> ¡Inspírate! Estos son algunos combos y posibilidades dentro del juego</h1>
-            {inspi1 &&
-            <img className='m-2' width="90%" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666698260/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_13.42.46_dl8bcg.png" alt="inspire 1" />
-            }
-        </FadeInOut>
-      <FadeInOut show={inspi2} duration={200}>
-            {inspi2 &&
-            <img className='m-2' width="90%" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666698261/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_13.43.02_gpniud.png" alt="inspire 2" />
-              }
-            </FadeInOut>
-      <FadeInOut show={inspi3} duration={200}>
-            {inspi3 &&
-
-            <img className='m-2' width="90%" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666698260/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_13.43.10_qvo0xf.png" alt="inspire 3" />
-            }
-        </FadeInOut>
-        {/* inspiracion end */}
       </div>
         </FadeInOut>
       </div>
@@ -371,8 +284,6 @@ const handleingOff = () =>{
               <Creator/>
         </FadeInOut>
     </div>
-
-    
   )
 }
 

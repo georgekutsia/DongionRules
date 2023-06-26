@@ -1,6 +1,8 @@
 .dongionsdetail-box{
   margin-top: 5%;
   text-align: center;
+  text-indent: 40px;
+  font-size: calc(14px + 0.4vw);
 }
 
 .dongionsdetail-box span {
@@ -26,5 +28,33 @@
 
 .dongionsdetail-title{
   color: rgb(1, 251, 218);
-  font-size: calc(14px + 2vw);
+  font-size: calc(14px + 1.3vw);
+}
+.img-plans-intro{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.img-plans-intro img{
+  margin: 10px 15px;
+  width: calc(150px + 1vw);
+  transition: 0.2s ease-in-out ;
+}
+.img-plans-intro img:hover{
+  scale:1.8
+}
+#link-a-partes-intro a{
+  text-decoration: none;
+  color: rgb(0, 157, 255);
+  font-size: calc(12px + 0.5vw);
+  display: block;
+  background-color: black;
+  width: fit-content;
+  text-indent: 0px;
+
+}
+#link-a-partes-intro{
+  position: fixed;
+  float: right;
+  right: 20px;
 }
