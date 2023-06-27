@@ -155,8 +155,8 @@
           animation-name: move-frames-1;
   -webkit-animation-duration: 17834ms;
           animation-duration: 17834ms;
-  -webkit-animation-delay: 6342ms;
-          animation-delay: 6342ms;
+  -webkit-animation-delay: 642ms;
+          animation-delay: 642ms;
 }
 @-webkit-keyframes move-frames-1 {
   from {
@@ -185,8 +185,8 @@
           animation-name: move-frames-2;
   -webkit-animation-duration: 110018ms;
           animation-duration: 110018ms;
-  -webkit-animation-delay: 5749ms;
-          animation-delay: 5749ms;
+  -webkit-animation-delay: 549ms;
+          animation-delay: 549ms;
 }
 @-webkit-keyframes move-frames-2 {
   from {
@@ -205,8 +205,8 @@
   }
 }
 .circle-container:nth-child(2) .flow {
-  -webkit-animation-delay: 997ms;
-          animation-delay: 997ms;
+  -webkit-animation-delay: 97ms;
+          animation-delay: 97ms;
 }
 .circle-container:nth-child(3) {
   width: 1px;
@@ -215,8 +215,8 @@
           animation-name: move-frames-3;
   -webkit-animation-duration: 17876ms;
           animation-duration: 17876ms;
-  -webkit-animation-delay: 5138ms;
-          animation-delay: 5138ms;
+  -webkit-animation-delay: 138ms;
+          animation-delay: 138ms;
 }
 @-webkit-keyframes move-frames-3 {
   from {
