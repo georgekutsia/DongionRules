@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, Talents, SorinMarkov, Intro } from '../../component'
+import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, Talents, SorinMarkov, Intro, Inspi } from '../../component'
 import { EquipmentScreen, ArmorScreen } from '../index';
 import Rules from '../../component/guide/EstadisticasPj'
 import FadeInOut from "../../component/FadeInOut";
@@ -30,11 +30,12 @@ function RuleScreen() {
   const [dude, setDude] = useState(false)
   const [rDice, setRDice] =useState(false)
 
-  const [intro, setIntro] = useState(true)
+  const [intro, setIntro] = useState(false)
   const [basic, setBasic] = useState(false)
-  const [char, setChar] = useState(false)
-  
 
+  const [inspi, setInspi] = useState(true)
+
+  const [char, setChar] = useState(false)
   const [rPre, setrPre] = useState(false)
   const [rCha, setrCha] = useState(false)
   const [rLu, setrLu] = useState(false)
@@ -76,10 +77,10 @@ const handlePlansOn = ()=>{
   setOnAjani(false); setOnJace(false);setOnMark(false); setOnTeferi(false); setOnChandra(false); setOnElspeth(false); setOnGideon(false); setOnLiliana(false); setOnNissa(false);setOnRal(false); setOnSarkhan(false)}
 
 const handleingOn = () =>{
-  setBasic(true);setIntro(true); setChar(true);setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setREffort(true); setRCombat(true);setRNonSpecific(true);setRNpc(true); setREquipment(true); setRArmor(true); setRDice(true); setRDungeon(true); setRTalent(true)
+  setBasic(true);setIntro(true); setInspi(true); setChar(true);setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setREffort(true); setRCombat(true);setRNonSpecific(true);setRNpc(true); setREquipment(true); setRArmor(true); setRDice(true); setRDungeon(true); setRTalent(true)
 }
 const handleingOff = () =>{
-  setBasic(false); setIntro(false); setChar(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false); setRDice(false); setRDungeon(false); setRTalent(false)
+  setBasic(false); setIntro(false); setInspi(false); setChar(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false); setRDice(false); setRDungeon(false); setRTalent(false)
 }
   return (
     <div className='margin-rules-borrom'>
@@ -154,7 +155,6 @@ const handleingOff = () =>{
                     <button className={rNpc ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRNpc(!rNpc)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-people-group"></i>NPC
                     </button>
-
                     <button className={rEffort ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setREffort(!rEffort)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-child-reaching"></i>Esfuerzo
                     </button>
@@ -170,7 +170,7 @@ const handleingOff = () =>{
                     <button className={rTalent ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRTalent(!rTalent)}}>
                         <span></span><span></span><span></span><span></span><i className="iconoir-3d-arc-center-pt"></i>Ramas
                     </button>
-                    <button className={ 'btn-rules-toggle'} style={{color:"grey"}} >
+                    <button className={ 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=> {handleingOff(); setInspi(!inspi)}} >
                         <span></span><span></span><span></span><span></span><i className="fa-regular fa-lightbulb"></i><i className="fa-sharp fa-solid fa-raygun"></i>Inspírate
                     </button>
                     <button className={'btn-rules-toggle'} style={{color:"grey"}}>
@@ -209,23 +209,26 @@ const handleingOff = () =>{
       <FadeInOut show={rCha} duration={400}>
               {rCha && <Charisma/>}
         </FadeInOut>
-      <FadeInOut show={rKi} duration={400}>
+        <FadeInOut show={rKi} duration={400}>
               {rKi && <Kinesthesia/>}
         </FadeInOut>
-      <FadeInOut show={rPer} duration={400}>
+        <FadeInOut show={rPer} duration={400}>
               {rPer && <Perception/>}
         </FadeInOut>
-      <FadeInOut show={rPre} duration={400}>
+        <FadeInOut show={rPre} duration={400}>
               {rPre && <Presence/>}
         </FadeInOut>
-      <FadeInOut show={rDungeon} duration={400}>
+        <FadeInOut show={rDungeon} duration={400}>
               {rDungeon && <Dungeon/>}
         </FadeInOut>
-      <FadeInOut show={rNonSpecific} duration={400}>
+        <FadeInOut show={rNonSpecific} duration={400}>
               {rNonSpecific && <NonSpecific/>}
         </FadeInOut>
-      <FadeInOut show={rDice} duration={400}>
+        <FadeInOut show={rDice} duration={400}>
               {rDice && <Dice/>}
+        </FadeInOut>
+        <FadeInOut show={inspi} duration={400}>
+              {inspi && <Inspi/>}
         </FadeInOut>
       <FadeInOut show={rTalent} duration={400}>
       <div >
