@@ -46,7 +46,7 @@ function Intro() {
       <div className='dongionsdetail-box-parts'>
         <h3 id='p-porque' className='dongionsdetail-title'>¿Por qué DonGions y no otros...?</h3>
         <article>Me gusta tomar algo que funciona y hacerlo mejor, encontrando las maneras de hacerlo más divertido, entretenido o desafiante. Más justo y equilibrado. Que sea diferente cada partida, pero
-        que consistentemente puedas disfrutar de las partes que te gustan del juego. <span>En este juego <a >cualquier decisión</a>, <a onClick={()=>setLanzar(!lanzar)} className='button-intro-porque' >tirada de dados, </a> <a className='button-intro-porque'>apertura de cofres,</a> <a className='button-intro-porque'>resolver acertijos </a> etc quería que fuera una 
+        que consistentemente puedas disfrutar de las partes que te gustan del juego. <span>En este juego <button className='button-intro-porque'> cualquier decisión </button>, <button onClick={()=>setLanzar(!lanzar)} className='button-intro-porque' >tirada de dados </button>, <button className='button-intro-porque'>apertura de cofres</button>, <button className='button-intro-porque'>resolver acertijos </button> etc quería que fuera una 
         experiencia especial para mis jugadores.</span></article>
         <div>
         {lanzar &&  
