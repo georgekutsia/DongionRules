@@ -66,3 +66,57 @@
 .folder-link{
 float: right;
 }
+.intro-img-paisaje img{
+  width: calc(40px + 4vw);
+  margin: 2px 1px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out ;
+}
+.intro-img-paisaje img:hover{
+scale: 2;
+}
+.intro-img-paisaje{
+  justify-content: space-evenly;
+  display: flex;
+}
+.important-intro{
+  text-shadow: 2px 2px blue;
+}
+.button-intro-porque{
+  text-decoration: none;
+}
+.lanzamiento-intro-expl{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: rgba(24, 2, 114, 0.29);
+}
+.lanzamiento-intro-expl-mobile {
+  display: block;
+  justify-content:space-evenly;
+  width: 90%;
+}
+
+.lanzamiento-intro-expl img{
+  transform: rotate(90deg);
+  width: 100px;
+  height: 100%;
+  margin: 10px 20px;
+  transition: 1s ease-in-out;
+}
+.lanzamiento-intro-expl img:hover{
+transform:rotate(0deg);
+width: 300px;
+height: 100%;
+max-width: 300px;
+}
+@media (max-width: 767px) {
+  .lanzamiento-intro-expl {
+    display: block;
+    margin: 0px;
+  }
+.lanzamiento-intro-expl img:hover{
+margin: -20px;
+}
+
+}

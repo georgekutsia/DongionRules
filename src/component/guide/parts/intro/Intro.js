@@ -6,6 +6,8 @@ import {PlansImgs, PlansBast, PlansRing, PlansBrazal, PlansRama} from "../../../
 
 function Intro() {
   const [navLateral, setNavLateral] = useState(false)
+  const [lanzar, setLanzar] = useState(true)
+
   return (
     <div  className='dongionsdetail-box'>
       <div align="center">
@@ -26,18 +28,36 @@ function Intro() {
       </div>
       <div className='dongionsdetail-box-parts'>
         <h3 id='p-explico' className='dongionsdetail-title'>Te explico...</h3>
-          <article>Estás entrando en un mundo retorcido, complejo y lleno de posibilidades fruto de años de esfuerzo, reflexión y trabajo personal. El primer mundo o plano sobre el que he trabajado se llama Beleron
+          <article>Estás entrando en un mundo retorcido, complejo y lleno de posibilidades fruto de años de esfuerzo, reflexión y trabajo personal. El primer mundo o plano sobre el que he trabajado se llama <span className='important-intro'>Beleron </span> 
           y el juego se desarolla en sus vastos reinos, variopintos pueblos, sin fin de clanes, personajes imponentes e historias enrevesadas, en las que las cosas no son lo que parecen, menos cuando son tanto lo que parecen
           que no podrían ser otra cosa. Básicamente me gusta sorprender a los jugadores.</article>
-          <article> <span>    Beleron es un cruce entre muchos planos, donde realidades han llegado a estrellarse hace siglos, así que contiene partes de otros planos y criaturas de otros mundos.</span></article>
+          <div className='intro-img-paisaje'>
+            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.54.05_-_Paisaje_de_fantasi%CC%81a._castillos_y_pueblos._realista._vista_desde_lejos_yupxuo.png" alt="Paisaje Beleron" />
+            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.52.24_-_Paisaje_de_fantasi%CC%81a._realista_ndysyt.png" alt="Paisaje Beleron" />
+            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.55.34_-_Paisaje_de_fantasi%CC%81a._castillos_y_pueblos._realista._vista_desde_lejos_rjwhts.png" alt="Paisaje Beleron" />
+            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.53.27_-_Paisaje_de_fantasi%CC%81a._castillos_y_pueblos._realista_xwbnmb.png" alt="Paisaje Beleron" />
+            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.51.07_-_Mundo_de_fantasia_con_lagos_y_rios_visto_desde_muy_lejos_con_pa%CC%81jaros_volando_castillos_y_montan%CC%83as._realista_avdkpr.png" alt="Paisaje Beleron" />
+            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816893/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.52.49_-_Paisaje_de_fantasi%CC%81a._realista_nhz7w5.png" alt="Paisaje Beleron" />
+          </div>
+          <article> <span> Beleron es un cruce entre muchos planos, donde realidades han llegado a estrellarse hace siglos, así que contiene partes de otros planos y criaturas de otros mundos.</span></article>
           <article>Me gusta empezar todas las partidas con los jugadores sin recordar cómo han llegado allí o qué estan haciendo, sea cual sea la situación y que una <span> parte del juego sea averiguar
           qué ha pasado e intentar recuperar los recuerdos y reconstruir su pasado.</span></article>
       </div>
       <div className='dongionsdetail-box-parts'>
         <h3 id='p-porque' className='dongionsdetail-title'>¿Por qué DonGions y no otros...?</h3>
         <article>Me gusta tomar algo que funciona y hacerlo mejor, encontrando las maneras de hacerlo más divertido, entretenido o desafiante. Más justo y equilibrado. Que sea diferente cada partida, pero
-        que consistentemente puedas disfrutar de las partes que te gustan del juego. <span>En este juego cualquier decisión, tirada de dados, apertura de cofres, resolver acertijos etc quería que fuera una 
+        que consistentemente puedas disfrutar de las partes que te gustan del juego. <span>En este juego <a >cualquier decisión</a>, <a onClick={()=>setLanzar(!lanzar)} className='button-intro-porque' >tirada de dados, </a> <a className='button-intro-porque'>apertura de cofres,</a> <a className='button-intro-porque'>resolver acertijos </a> etc quería que fuera una 
         experiencia especial para mis jugadores.</span></article>
+        <div>
+        {lanzar &&  
+          <div className='lanzamiento-intro-expl'>
+            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687823075/donGions%20imgs/Tablero_dongions_izg2k2.png" alt="Tablero" />
+            <article>Quería hacer que lanzar dados implicara algo de habilidad, por lo pequeña que fuera y también hubiera algún riesgo por no tener cuidado. Este tablero está diseñado
+            para que el dado se coloce en la base, sobre una plataforma y sobre ella se coloque el dado a lanzar. Se puede usar el dedo o un golpe seco para hacer rodar el dado sobre el tablero y se obtienen
+            beneficios adicionales o penalización por hacerlo. <span>Este tablero sólo pueden usarlo jugadores con Percepción, Cinestesia o Suerte</span> </article>
+            
+          </div>}
+        </div>
         <article>Le he dado mucha vuelta al combate, intentando hacerlo diferente y a la vez intuitivo para los que ya saben jugar. He creado mecánicas y objetos que no he visto en otros juegos y mejorado lo que no me gustaba
           de mi experiencia con los juegos de rol en general. El sistema de lanzamiento de dados, las frases inspiradoras, páginas malditas, los sellos, descubrimiento de cofres, pruebas y acertijos y alguna que otra cosa más, 
           hacen de este juego algo diferente. No presumo de que sea bueno, pero es diferente...</article>
@@ -63,7 +83,7 @@ function Intro() {
           <h3 id='p-canalizar' className='dongionsdetail-title'>¿Cómo se canaliza la magia?</h3>
             <article> En Beleron existen gemas y piedras preciosas que ayudan a canalizar la magia. Generalmente utilizados en anillos, los niños empiezan a practicar con su hechizo básico desde muy temprano.
             Los jugadores podrán adquirir el anillo si lo desean, comprándolo o consiguiéndolo en una misión, pero por su naturaleza, cada jugador podrá lanzar un tipo de hechizo básico que tiene efecto único.</article>
-            <h5>Los anillos ayudan a conseguir esencias y acumularlos mejor y no cuenta para la cantidad de anillos mágicos que puedes tener por nivel</h5>
+            <article>Los anillos ayudan a conseguir esencias y acumularlos mejor y no cuenta para la cantidad de anillos mágicos que puedes tener por nivel</article>
             <div className='img-plans-intro'>
         <PlansRing/>
             </div>
