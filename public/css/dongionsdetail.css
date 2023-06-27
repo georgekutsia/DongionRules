@@ -129,3 +129,100 @@ max-width: 300px;
 }
 
 }
+.im1{
+  animation: wave1 7s ease-in-out infinite;
+}
+.im2{
+  animation: wave2 7s ease-in-out infinite;
+}
+.im3{
+  animation: wave3 7s ease-in-out infinite;
+}
+.im4{
+  animation: wave4 7s ease-in-out infinite;
+}
+.im5{
+  animation: wave5 7s ease-in-out infinite;
+}
+.im6{
+  animation: wave6 7s ease-in-out infinite;
+}
+
+@keyframes wave1 {
+  1% {
+    scale:1;
+    transform: rotate(360deg);
+  }
+  2% {
+    scale: 1.3;
+        transform: rotate(0deg);
+  }
+  3% {
+    scale: 1;
+  }
+}
+@keyframes wave2 {
+  2% {
+    scale:1;
+    transform: rotate(360deg);
+  }
+  3% {
+    scale: 1.3;
+        transform: rotate(0deg);
+  }
+  4% {
+    scale: 1;
+  }
+}
+@keyframes wave3 {
+  3% {
+    scale:1;
+    transform: rotate(360deg);
+  }
+  4% {
+    scale: 1.3;
+        transform: rotate(0deg);
+  }
+  5% {
+    scale: 1;
+  }
+}
+@keyframes wave4 {
+  4% {
+    scale:1;
+    transform: rotate(360deg);
+  }
+  5% {
+    scale: 1.3;
+        transform: rotate(0deg);
+  }
+  6% {
+    scale: 1;
+  }
+}
+@keyframes wave5 {
+  5% {
+    scale:1;
+    transform: rotate(360deg);
+  }
+  6% {
+    scale: 1.3;
+        transform: rotate(0deg);
+  }
+  7% {
+    scale: 1;
+  }
+}
+@keyframes wave6 {
+  6% {
+    scale:1;
+    transform: rotate(360deg);
+  }
+  7% {
+    scale: 1.3;
+        transform: rotate(0deg);
+  }
+  8% {
+    scale: 1;
+  }
+}

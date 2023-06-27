@@ -32,12 +32,12 @@ function Intro() {
           y el juego se desarolla en sus vastos reinos, variopintos pueblos, sin fin de clanes, personajes imponentes e historias enrevesadas, en las que las cosas no son lo que parecen, menos cuando son tanto lo que parecen
           que no podrían ser otra cosa. Básicamente me gusta sorprender a los jugadores.</article>
           <div className='intro-img-paisaje'>
-            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.54.05_-_Paisaje_de_fantasi%CC%81a._castillos_y_pueblos._realista._vista_desde_lejos_yupxuo.png" alt="Paisaje Beleron" />
-            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.52.24_-_Paisaje_de_fantasi%CC%81a._realista_ndysyt.png" alt="Paisaje Beleron" />
-            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.55.34_-_Paisaje_de_fantasi%CC%81a._castillos_y_pueblos._realista._vista_desde_lejos_rjwhts.png" alt="Paisaje Beleron" />
-            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.53.27_-_Paisaje_de_fantasi%CC%81a._castillos_y_pueblos._realista_xwbnmb.png" alt="Paisaje Beleron" />
-            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.51.07_-_Mundo_de_fantasia_con_lagos_y_rios_visto_desde_muy_lejos_con_pa%CC%81jaros_volando_castillos_y_montan%CC%83as._realista_avdkpr.png" alt="Paisaje Beleron" />
-            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816893/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.52.49_-_Paisaje_de_fantasi%CC%81a._realista_nhz7w5.png" alt="Paisaje Beleron" />
+            <img className='im1' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.54.05_-_Paisaje_de_fantasi%CC%81a._castillos_y_pueblos._realista._vista_desde_lejos_yupxuo.png" alt="Paisaje Beleron" />
+            <img className='im2' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.52.24_-_Paisaje_de_fantasi%CC%81a._realista_ndysyt.png" alt="Paisaje Beleron" />
+            <img className='im3' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.55.34_-_Paisaje_de_fantasi%CC%81a._castillos_y_pueblos._realista._vista_desde_lejos_rjwhts.png" alt="Paisaje Beleron" />
+            <img className='im4' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.53.27_-_Paisaje_de_fantasi%CC%81a._castillos_y_pueblos._realista_xwbnmb.png" alt="Paisaje Beleron" />
+            <img className='im5' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816894/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.51.07_-_Mundo_de_fantasia_con_lagos_y_rios_visto_desde_muy_lejos_con_pa%CC%81jaros_volando_castillos_y_montan%CC%83as._realista_avdkpr.png" alt="Paisaje Beleron" />
+            <img className='im6' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687816893/donGions%20imgs/paisajes/DALL_E_2023-06-26_22.52.49_-_Paisaje_de_fantasi%CC%81a._realista_nhz7w5.png" alt="Paisaje Beleron" />
           </div>
           <article> <span> Beleron es un cruce entre muchos planos, donde realidades han llegado a estrellarse hace siglos, así que contiene partes de otros planos y criaturas de otros mundos.</span></article>
           <article>Me gusta empezar todas las partidas con los jugadores sin recordar cómo han llegado allí o qué estan haciendo, sea cual sea la situación y que una <span> parte del juego sea averiguar
@@ -46,8 +46,11 @@ function Intro() {
       <div className='dongionsdetail-box-parts'>
         <h3 id='p-porque' className='dongionsdetail-title'>¿Por qué DonGions y no otros...?</h3>
         <article>Me gusta tomar algo que funciona y hacerlo mejor, encontrando las maneras de hacerlo más divertido, entretenido o desafiante. Más justo y equilibrado. Que sea diferente cada partida, pero
-        que consistentemente puedas disfrutar de las partes que te gustan del juego. <span>En este juego <button className='button-intro-porque'> cualquier decisión </button>, <button onClick={()=>setLanzar(!lanzar)} className='button-intro-porque' >tirada de dados </button>, <button className='button-intro-porque'>apertura de cofres</button>, <button className='button-intro-porque'>resolver acertijos </button> etc quería que fuera una 
-        experiencia especial para mis jugadores.</span></article>
+        que consistentemente puedas disfrutar de las partes que te gustan del juego. <span>En este juego 
+        <button className='button-intro-porque'> cualquier decisión </button>,
+        <button onClick={()=>setLanzar(!lanzar)} className='button-intro-porque' >tirada de dados </button>, 
+        <button className='button-intro-porque'>apertura de cofres</button>, 
+        <button className='button-intro-porque'>resolver acertijos </button> etc quería que fuera una experiencia especial para mis jugadores.</span></article>
         <div>
         {lanzar &&  
           <div className='lanzamiento-intro-expl'>
