@@ -52,10 +52,9 @@ function Intro() {
         {lanzar &&  
           <div className='lanzamiento-intro-expl'>
             <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687823075/donGions%20imgs/Tablero_dongions_izg2k2.png" alt="Tablero" />
-            <article>Quería hacer que lanzar dados implicara algo de habilidad, por lo pequeña que fuera y también hubiera algún riesgo por no tener cuidado. Este tablero está diseñado
+            <article> Quería hacer que lanzar dados implicara algo de habilidad, por lo pequeña que fuera y también hubiera algún riesgo por no tener cuidado. Este tablero está diseñado
             para que el dado se coloce en la base, sobre una plataforma y sobre ella se coloque el dado a lanzar. Se puede usar el dedo o un golpe seco para hacer rodar el dado sobre el tablero y se obtienen
             beneficios adicionales o penalización por hacerlo. <span>Este tablero sólo pueden usarlo jugadores con Percepción, Cinestesia o Suerte</span> </article>
-            
           </div>}
         </div>
         <article>Le he dado mucha vuelta al combate, intentando hacerlo diferente y a la vez intuitivo para los que ya saben jugar. He creado mecánicas y objetos que no he visto en otros juegos y mejorado lo que no me gustaba

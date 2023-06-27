@@ -43,7 +43,7 @@
   transition: 0.2s ease-in-out ;
 }
 .img-plans-intro img:hover{
-  scale:1.8
+  scale:2
 }
 #link-a-partes-intro a{
   text-decoration: none;
@@ -91,15 +91,16 @@ scale: 2;
 }
 .lanzamiento-intro-expl{
   display: flex;
-  justify-content:center;
+  justify-content:space-evenly;
   align-items: center;
+  text-align: center;
   background-color: rgba(37, 6, 161, 0.452);
   padding: 10px;
   border-radius: 10px;
 }
 .lanzamiento-intro-expl-mobile {
   display: block;
-  justify-content:space-evenly;
+  justify-content:space-between;
   width: 90%;
 }
 
@@ -107,8 +108,9 @@ scale: 2;
   transform: rotate(90deg);
   width: 100px;
   height: 100%;
-  margin: 10px 20px;
   transition: 1s ease-in-out;
+  margin: 0px 25px;
+
 }
 .lanzamiento-intro-expl img:hover{
 transform:rotate(0deg);
@@ -119,10 +121,11 @@ max-width: 300px;
 @media (max-width: 767px) {
   .lanzamiento-intro-expl {
     display: block;
-    margin: 0px;
+    margin-bottom: 30px;
   }
 .lanzamiento-intro-expl img:hover{
-margin: -20px;
+  margin-left: -30px;
+
 }
 
 }
