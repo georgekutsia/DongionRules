@@ -19,7 +19,7 @@ function Inspi() {
         <img onClick={()=>setins1(!ins1)} className={ins1 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874175/donGions%20imgs/rules%2B/espadachin_rqw3jg.png" alt="Inspi" />
         {ins1 && 
           <>
-            <article className='artins1'> ¿Te gusta coleccionar armas poderosas? ¿Te flipan los poderes y habilidades únicas de los objetos?¿Quieres hacer ataques espectaculares específicos para cada situación
+            <article className='artins1'> ¿Te gusta coleccionar armas poderosas? ¿Te flipa usar poderes y habilidades únicas de los objetos? ¿Quieres hacer ataque específicos y espectaculares, perfectos para cada situación
             que básicamente arreglan vuestros problemas a base de violencia habilidosa? Entonces lo tienes fácil... Hazte un luchador y ármate hasta los dientes.</article>
             <article className='artins1'> Mejora tu Umbral Crítico y ponte algo de enfoque, para empezar. Cada hostia bien dada será una herida. Si subes Precisión y Velocidad, no necesitarás más que un ataque para destrozar hasta al enemigo más poderoso.</article>
           </>
