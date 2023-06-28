@@ -51,7 +51,8 @@ function Inspi() {
         <h4 onClick={()=>setins4(!ins4)} style={{color:"#ff8000"}} className={ins4 ? "inspi-titulo-click":"inspi-titulo"}> Defensor ofensivo</h4>
       <img onClick={()=>setins4(!ins4)} className={ins4 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874174/donGions%20imgs/rules%2B/meledoble_fc7j6p.png" alt="Inspi" />
               {ins4 && 
-        <article className='artins4'> Bulala </article>
+        <article className='artins4'> Un secreto que el gremio de los Defensores supo descubrir, es que un luchador que mitiga todo el bloqueo, puede devolver incluso el daño al atacante y con dos escudos encantados para beneficiarse entre sí, usar armas de filo es un capricho.
+        Un equipo pesado, dos escudos grandes y aspirar a la inmortalidad,  </article>
         }
       </div>
       <div>
