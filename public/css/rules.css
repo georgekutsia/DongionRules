@@ -689,19 +689,60 @@ margin-top: 20px;
 }
 
 .inspi-img{
-width: 100%;
-aspect-ratio: 2/2;
+width: 30%;
+aspect-ratio: 3/2;
 object-fit: contain;
 transition: 0.3s ease-in-out;
 cursor:zoom-in;
 }
 .inspi-img-click{
 width: 100%;
-aspect-ratio: 2/2;
+aspect-ratio: 3/2;
 object-fit: contain;
 transition: 0.3s ease-in-out;
 cursor:zoom-in;
 }
 .inspirate{
-display: flex;
+display:flex;
+flex-wrap: wrap;
+}
+.inspirate div{
+  width: 30%;
+}
+@media (max-width: 767px) {
+  .inspirate div {
+width: 95%;
+ }
+}
+.inspirate article{
+text-align: justify ;
+text-indent: 3%;
+padding: 5px;
+}
+.artins1{
+  background-color: #0037ff23;
+}
+.artins2{
+  background-color: #ff00001d;
+}
+.artins3{
+  background-color: #b700ff21;
+}
+.artins4{
+  background-color: #ff800022;
+}
+.artins5{
+  background-color: #58565638;
+}
+.artins6{
+  background-color: #51ff001f;
+}
+.artins7{
+  background-color: #00ccff6f;
+}
+.artins8{
+  background-color: #ddff001f;
+}
+.artins9{
+  background-color: #0095ff25;
 }

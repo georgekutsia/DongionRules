@@ -125,9 +125,7 @@ max-width: 300px;
   }
 .lanzamiento-intro-expl img:hover{
   margin-left: -30px;
-
-}
-
+  }
 }
 .im1{
   animation: wave1 7s ease-in-out infinite;
