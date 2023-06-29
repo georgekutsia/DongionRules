@@ -18,7 +18,7 @@ function Inspi() {
   return (
     <div className='inspirate'>
       <div className='ins1'>
-        <h4 onClick={()=>setins1(!ins1)} style={{color:"#0037ff"}} className={ins1 ? "inspi-titulo-click":"inspi-titulo"}> Ducho con armas </h4>
+        <h4 onClick={()=>setins1(!ins1)} style={{color:"blue"}} className={ins1 ? "inspi-titulo-click":"inspi-titulo"}> Ducho con armas </h4>
         <img onClick={()=>setins1(!ins1)} className={ins1 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874175/donGions%20imgs/rules%2B/espadachin_rqw3jg.png" alt="Inspi" />
         {ins1 && 
           <>
@@ -29,7 +29,7 @@ function Inspi() {
         }
       </div>
       <div>
-        <h4 onClick={()=>setins2(!ins2)} style={{color:"#ff0000"}} className={ins2 ? "inspi-titulo-click":"inspi-titulo"}> Hechicero supremo </h4>
+        <h4 onClick={()=>setins2(!ins2)} style={{color:"red"}} className={ins2 ? "inspi-titulo-click":"inspi-titulo"}> Hechicero supremo </h4>
         <img onClick={()=>setins2(!ins2)} className={ins2 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874175/donGions%20imgs/rules%2B/hechicero_zfk6ts.png" alt="Inspi" />
           {ins2 && 
           <>
@@ -40,7 +40,7 @@ function Inspi() {
         }
       </div>
       <div>
-        <h4 onClick={()=>setins3(!ins3)} style={{color:"#b700ff"}} className={ins3 ? "inspi-titulo-click":"inspi-titulo"}> Cazador Implacable</h4>
+        <h4 onClick={()=>setins3(!ins3)} style={{color:"purple"}} className={ins3 ? "inspi-titulo-click":"inspi-titulo"}> Cazador Implacable</h4>
       <img onClick={()=>setins3(!ins3)} className={ins3 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874175/donGions%20imgs/rules%2B/distancia_uc1qyu.png" alt="Inspi" />
               {ins3 && 
               <>
@@ -51,7 +51,7 @@ function Inspi() {
         }
       </div>
       <div>
-        <h4 onClick={()=>setins4(!ins4)} style={{color:"#ff8000"}} className={ins4 ? "inspi-titulo-click":"inspi-titulo"}> Defensor ofensivo</h4>
+        <h4 onClick={()=>setins4(!ins4)} style={{color:"sandybrown"}} className={ins4 ? "inspi-titulo-click":"inspi-titulo"}> Defensor ofensivo</h4>
         <img onClick={()=>setins4(!ins4)} className={ins4 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874174/donGions%20imgs/rules%2B/meledoble_fc7j6p.png" alt="Inspi" />
               {ins4 && 
                 <>
@@ -62,7 +62,7 @@ function Inspi() {
               }
       </div>
       <div>
-        <h4 onClick={()=>setins5(!ins5)} style={{color:"#585656"}} className={ins5 ? "inspi-titulo-click":"inspi-titulo"}> Brutalidad Desbordante</h4>
+        <h4 onClick={()=>setins5(!ins5)} style={{color:"grey"}} className={ins5 ? "inspi-titulo-click":"inspi-titulo"}> Brutalidad Desbordante</h4>
       <img onClick={()=>setins5(!ins5)} className={ins5 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874174/donGions%20imgs/rules%2B/bruto_q7jffm.png" alt="Inspi" />
               {ins5 && 
                 <>
@@ -72,7 +72,7 @@ function Inspi() {
               }
       </div>
       <div>
-        <h4 onClick={()=>setins6(!ins6)} style={{color:"#51ff00"}} className={ins6 ? "inspi-titulo-click":"inspi-titulo"}> Aparatero Cachivaches</h4>
+        <h4 onClick={()=>setins6(!ins6)} style={{color:"chartreuse"}} className={ins6 ? "inspi-titulo-click":"inspi-titulo"}> Aparatero Cachivaches</h4>
       <img onClick={()=>setins6(!ins6)} className={ins6 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874174/donGions%20imgs/rules%2B/cachivaches_omz3wx.png" alt="Inspi" />
               {ins6 && 
               <>
@@ -82,7 +82,7 @@ function Inspi() {
             }
       </div>
       <div>
-        <h4 onClick={()=>setins7(!ins7)} style={{color:"#29caf3"}} className={ins7 ? "inspi-titulo-click":"inspi-titulo"}> Consumidor Empedernido</h4>
+        <h4 onClick={()=>setins7(!ins7)} style={{color:"aqua"}} className={ins7 ? "inspi-titulo-click":"inspi-titulo"}> Consumidor Empedernido</h4>
       <img onClick={()=>setins7(!ins7)} className={ins7 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874174/donGions%20imgs/rules%2B/medico_xtvl7d.png" alt="Inspi" />
               {ins7 && 
               <>
@@ -92,34 +92,37 @@ function Inspi() {
         }
       </div>
       <div>
-        <h4 onClick={()=>setins8(!ins8)} style={{color:"#ddff00"}} className={ins8 ? "inspi-titulo-click":"inspi-titulo"}> Físico Imbatible</h4>
+        <h4 onClick={()=>setins8(!ins8)} style={{color:"bisque"}} className={ins8 ? "inspi-titulo-click":"inspi-titulo"}> Físico Imbatible</h4>
       <img onClick={()=>setins8(!ins8)} className={ins8 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874174/donGions%20imgs/rules%2B/desarmado_u3xrgr.png" alt="Inspi" />
               {ins8 && 
               <>
                 <article className='artins8'> Si te parece demasiado fácil zanjar problemas con armas y prefieres usar las manos para dejar algunas cosas claras, Cinestesia es lo tuyo. Marcialidad te da un dado extra para esquivar y con esquivas críticas, puedes contraatacar. </article>
-                <article className='artins8'> Imagina cebarte con alguien que no entiende cómo está siendo derrotado a pase de puñetazos y patadas. ¿Te esquiva un puñetazo? Sigue rápidamente con una patada. ¿La bloquea? Derríbalo y quítale las armas. Con botas y guantes específicos para combate desarmado, serás temido y admirado al mismo tiempo</article>
+                <article className='artins8'> Imagina cebarte con alguien que no entiende cómo está siendo derrotado a pase de puñetazos y patadas. ¿Te esquiva un puñetazo? Sigue rápidamente con una patada. ¿La bloquea? Derríbalo y quítale las armas. Con botas y guantes específicos para combate desarmado, serás temido y admirado al mismo tiempo.</article>
               </>
         }
       </div>
       <div>
-        <h4 onClick={()=>setins9(!ins9)} style={{color:"#0095ff"}} className={ins9 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
+        <h4 onClick={()=>setins9(!ins9)} style={{color:"cornflowerblue"}} className={ins9 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
       <img onClick={()=>setins9(!ins9)} className={ins9 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874174/donGions%20imgs/rules%2B/ninja_vzbzkj.png" alt="Inspi" />
               {ins9 && 
-                <article className='artins9'>Si quieres además, optar por ser apoyo de tu grupo usando Frases inspiradoras que tienen efectos devastadores, tanto de ayuda como detrimento, el mundo está lleno de páginas que invocarán todo tipo de hechizos.</article>
+              <>
+                <article className='artins9'>Si tus tácticas de pelea favoritas son ocultarte en las sombras, putear sin que se percaten, meter puñaladas brutales antes de que se den cuenta, robar, infiltrarte, espiar… quizás tu camino sea unirte al gremio de Ninjas, Asesinos, Sicarios del clan Nembu etc y obtener Presencia Negativa para pasar desapercibido o Crípsis para ser casi invisible.</article>
+                <article  className='artins9'>Las dagas son el arma preferida, ya que pasan desapercibidas y el daño desde oculto o espalda es devastador, pero también puedes especializarte en lanzar armas arrojadizas o reventar cabezas como francotirador desde las sombras.</article>
+              </>
         }
       </div>
       <div>
-        <h4 onClick={()=>setins10(!ins10)} style={{color:"#0095ff"}} className={ins10 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
+        <h4 onClick={()=>setins10(!ins10)} style={{color:"darkgreen"}} className={ins10 ? "inspi-titulo-click":"inspi-titulo"}>Mutante de Injertos</h4>
       <img onClick={()=>setins10(!ins10)} className={ins10 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687998914/donGions%20imgs/rules%2B/mutar_m8kt1q.png" alt="Inspi" />
               {ins10 && 
                 <>
-                  <article className='artins10'></article>
-                  <article className='artins10'></article>
+                  <article className='artins10'> ¿Quieres forzar la evolución? La ciencia desarrollada en algunos reinos de Beleron permite mutar materia orgánica viva y en otros lugares se pueden fabricar injertos, tanto orgánicos como metálicos, que te ayudarán a superar los límites de lo que es posible</article>
+                  <article className='artins10'> Puedes tener injertos oculares, musculares, un exoesqueleto de metal y alguna que otra extremidad adicional. Por cada mutación, tu Instinto dobla su aura de Intimidación. </article>
                 </>
         }
       </div>
       <div>
-        <h4 onClick={()=>setins11(!ins11)} style={{color:"#0095ff"}} className={ins11 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
+        <h4 onClick={()=>setins11(!ins11)} style={{color:"yellow"}} className={ins11 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
       <img onClick={()=>setins11(!ins11)} className={ins11 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687999082/donGions%20imgs/rules%2B/libros1_lec8o4.png" alt="Inspi" />
               {ins11 && 
                 <>
@@ -129,7 +132,7 @@ function Inspi() {
         }
       </div>
       <div>
-        <h4 onClick={()=>setins12(!ins12)} style={{color:"#0095ff"}} className={ins12 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
+        <h4 onClick={()=>setins12(!ins12)} style={{color:"indianred"}} className={ins12 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
       <img onClick={()=>setins12(!ins12)} className={ins12 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687998914/donGions%20imgs/rules%2B/barddo_xzjg6s.png" alt="Inspi" />
               {ins12 && 
                 <>
