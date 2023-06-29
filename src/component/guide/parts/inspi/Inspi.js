@@ -116,28 +116,28 @@ function Inspi() {
       <img onClick={()=>setins10(!ins10)} className={ins10 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687998914/donGions%20imgs/rules%2B/mutar_m8kt1q.png" alt="Inspi" />
               {ins10 && 
                 <>
-                  <article className='artins10'> ¿Quieres forzar la evolución? La ciencia desarrollada en algunos reinos de Beleron permite mutar materia orgánica viva y en otros lugares se pueden fabricar injertos, tanto orgánicos como metálicos, que te ayudarán a superar los límites de lo que es posible</article>
-                  <article className='artins10'> Puedes tener injertos oculares, musculares, un exoesqueleto de metal y alguna que otra extremidad adicional. Por cada mutación, tu Instinto dobla su aura de Intimidación. </article>
+                  <article className='artins10'> ¿Quieres forzar la evolución? La ciencia desarrollada en algunos reinos de Beleron permite mutar materia orgánica viva y en otros lugares se pueden fabricar injertos, tanto orgánicos como metálicos, que te ayudarán a superar los límites de lo que es posible.</article>
+                  <article className='artins10'> Puedes tener injertos oculares, musculares, un exoesqueleto de metal, alguna que otra extremidad adicional y mucho más. Por cada mutación, tu Instinto dobla su aura de Intimidación. ¿Te imaginas todas las posibilidades de tener brazos adicionales? Eso más Cinestesia es diversión sin parangón.</article>
                 </>
         }
       </div>
       <div>
-        <h4 onClick={()=>setins11(!ins11)} style={{color:"yellow"}} className={ins11 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
+        <h4 onClick={()=>setins11(!ins11)} style={{color:"yellow"}} className={ins11 ? "inspi-titulo-click":"inspi-titulo"}> Escriba Elocuente</h4>
       <img onClick={()=>setins11(!ins11)} className={ins11 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687999082/donGions%20imgs/rules%2B/libros1_lec8o4.png" alt="Inspi" />
               {ins11 && 
                 <>
-                  <article className='artins11'></article>
-                  <article className='artins11'></article>
+                  <article className='artins11'>La adicción a los libros, el aprendizaje y el viaje a los confines de los reinos para encontrar Páginas Malditas, Palabras Inspiradoras o Grimorios únicos, ha llevado a algunos a la locura. En este mundo leer o pronunciar palabras tiene el mismo efecto sobre la realidad como disparar balas o lanzar hachas.</article>
+                  <article className='artins11'>Ya sea para detrimento de los enemigos o beneficio de tus aliados, tener un repertorio de libros no es sólo lectura interesante, si no ventaja inigualable. No son hechizos, así que no se pueden contrarrestar ni anular. Se pueden volver a usar reescribiendo y vender o cambiar por otros libros.</article>
                 </>
         }
       </div>
       <div>
-        <h4 onClick={()=>setins12(!ins12)} style={{color:"indianred"}} className={ins12 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
+        <h4 onClick={()=>setins12(!ins12)} style={{color:"indianred"}} className={ins12 ? "inspi-titulo-click":"inspi-titulo"}> Charlatán Juglar</h4>
       <img onClick={()=>setins12(!ins12)} className={ins12 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687998914/donGions%20imgs/rules%2B/barddo_xzjg6s.png" alt="Inspi" />
               {ins12 && 
                 <>
-                  <article className='artins12'></article>
-                  <article className='artins12'></article>
+                  <article className='artins12'>Muchos instrumentos musicales de Beleron guardan los poderes de los intérpretes que los han usado. Los juglares y trovadores de renombre tienen inmunidad política para moverse de un reino a otro y coleccionar historias y anécdotas, que luego pueden convertir en canción o melodía.</article>
+                  <article className='artins12'>Si te gusta dar el cante sin ensuciarte las manos, puedes optar por ser el apoyo del grupo, empoderandolos en combate o debilitando a los enemigos. Algunos instrumentos musicales también son arma y a nivel avanzado, podrás invocar ilusiones y meterte en la cabeza de los demás.</article>
                 </>
         }
       </div>

@@ -25,9 +25,9 @@ function Instinct() {
           <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;	 A mayor instinto, eres más capaz de detectar si la criatura a la que enfrentas es más fuerte o débil, peligrosa o inofensiva etc. </li>
           <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;	 Los jugadores con instinto que juegan agresivo, Intimidan a las criaturas, hasta el punto de hacerlos huír, temblar o evitarlos. Con Instinto avanzado podrás hacer que criaturas más débiles que tu se desmayen en tu presencia.</li>
           <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;	 Los jugadores con instinto están alerta incluso mientras duermen, están desmayados o controlados.</li>
-          <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;		Los jugadores con <span style={{color:"rgb(250, 250, 0)"}}>Instinto</span>  que también tienen puntos en <span style={{color:"green"}}>Cinestesia</span>, pueden volver 
+          <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;	 Los jugadores con <span style={{color:"rgb(250, 250, 0)"}}>Instinto</span>  que también tienen puntos en <span style={{color:"green"}}>Cinestesia</span>, pueden volver 
           hacer un ataque al esquivar un ataque por sorpresa o emboscada. También ayuda para iniciar el combate.</li>
-          <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;		Los jugadores con <span style={{color:"rgb(250, 250, 0)"}}>Instinto</span>  que también tienen puntos en <span style={{color:"orange"}}>Percepción</span>, son capaces 
+          <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;	 Los jugadores con <span style={{color:"rgb(250, 250, 0)"}}>Instinto</span>  que también tienen puntos en <span style={{color:"orange"}}>Percepción</span>, son capaces 
           de evitar ataques críticos sobre ellos o sus aliados anticipándose a los eventos.</li>
         </ul>
     </div>
