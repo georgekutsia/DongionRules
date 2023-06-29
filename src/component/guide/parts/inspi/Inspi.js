@@ -12,6 +12,9 @@ function Inspi() {
   const [ins7, setins7] = useState(false)
   const [ins8, setins8] = useState(false)
   const [ins9, setins9] = useState(false)
+  const [ins10, setins10] = useState(false)
+  const [ins11, setins11] = useState(false)
+  const [ins12, setins12] = useState(false)
   return (
     <div className='inspirate'>
       <div className='ins1'>
@@ -106,24 +109,33 @@ function Inspi() {
         }
       </div>
       <div>
-        <h4 onClick={()=>setins9(!ins9)} style={{color:"#0095ff"}} className={ins9 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
-      <img onClick={()=>setins9(!ins9)} className={ins9 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687998914/donGions%20imgs/rules%2B/mutar_m8kt1q.png" alt="Inspi" />
-              {ins9 && 
-                <article className='artins9'>Si quieres además, optar por ser apoyo de tu grupo usando Frases inspiradoras que tienen efectos devastadores, tanto de ayuda como detrimento, el mundo está lleno de páginas que invocarán todo tipo de hechizos.</article>
+        <h4 onClick={()=>setins10(!ins10)} style={{color:"#0095ff"}} className={ins10 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
+      <img onClick={()=>setins10(!ins10)} className={ins10 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687998914/donGions%20imgs/rules%2B/mutar_m8kt1q.png" alt="Inspi" />
+              {ins10 && 
+                <>
+                  <article className='artins10'></article>
+                  <article className='artins10'></article>
+                </>
         }
       </div>
       <div>
-        <h4 onClick={()=>setins9(!ins9)} style={{color:"#0095ff"}} className={ins9 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
-      <img onClick={()=>setins9(!ins9)} className={ins9 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687999082/donGions%20imgs/rules%2B/libros1_lec8o4.png" alt="Inspi" />
-              {ins9 && 
-                <article className='artins9'>Si quieres además, optar por ser apoyo de tu grupo usando Frases inspiradoras que tienen efectos devastadores, tanto de ayuda como detrimento, el mundo está lleno de páginas que invocarán todo tipo de hechizos.</article>
+        <h4 onClick={()=>setins11(!ins11)} style={{color:"#0095ff"}} className={ins11 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
+      <img onClick={()=>setins11(!ins11)} className={ins11 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687999082/donGions%20imgs/rules%2B/libros1_lec8o4.png" alt="Inspi" />
+              {ins11 && 
+                <>
+                  <article className='artins11'></article>
+                  <article className='artins11'></article>
+                </>
         }
       </div>
       <div>
-        <h4 onClick={()=>setins9(!ins9)} style={{color:"#0095ff"}} className={ins9 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
-      <img onClick={()=>setins9(!ins9)} className={ins9 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687998914/donGions%20imgs/rules%2B/barddo_xzjg6s.png" alt="Inspi" />
-              {ins9 && 
-                <article className='artins9'>Si quieres además, optar por ser apoyo de tu grupo usando Frases inspiradoras que tienen efectos devastadores, tanto de ayuda como detrimento, el mundo está lleno de páginas que invocarán todo tipo de hechizos.</article>
+        <h4 onClick={()=>setins12(!ins12)} style={{color:"#0095ff"}} className={ins12 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
+      <img onClick={()=>setins12(!ins12)} className={ins12 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687998914/donGions%20imgs/rules%2B/barddo_xzjg6s.png" alt="Inspi" />
+              {ins12 && 
+                <>
+                  <article className='artins12'></article>
+                  <article className='artins12'></article>
+                </>
         }
       </div>
     </div>
