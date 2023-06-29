@@ -15,12 +15,12 @@ function HabilityScreen() {
               <div style={{borderColor:"teal", height:"750px"}} className='scrolling-space m-1'>
                   <div className="scrolling-wrapper" style={{height:"700px"}}>
                       {obs.map((ob) =>( 
-                        <div key={ob.capa}  className="mx-2 card">
+                        <div key={ob.capa} >
                             <h2>
-                                <img className='img-card' width="205px" src={ob.hab1} alt="En fabricación"/>
-                                <img className='img-card' width="205px" src={ob.hab2} alt="En fabricación"/>
-                                <img className='img-card' width="205px" src={ob.hab3} alt="En fabricación"/>
-                                <img className='img-card' width="205px" src={ob.hab4} alt="En fabricación"/>
+                                <img className='img-card-single' src={ob.hab1} alt="En fabricación"/>
+                                <img className='img-card-single' src={ob.hab2} alt="En fabricación"/>
+                                <img className='img-card-single' src={ob.hab3} alt="En fabricación"/>
+                                <img className='img-card-single' src={ob.hab4} alt="En fabricación"/>
                             </h2>
                         </div>))}
                   </div>
