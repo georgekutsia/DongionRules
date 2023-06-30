@@ -433,6 +433,24 @@ background-color: rgb(9, 0, 37);
 border: inset 6px rgb(180, 174, 174);
 padding: 0px 13px;
 }
+.button-map{
+  position: absolute;
+  display: block;
+  z-index: 40;
+  position: fixed;
+  border: outset 3px grey;
+  background-color: rgba(0, 0, 0, 0.773);
+  color: white;
+  transition: 0.2s ease-in-out;
+  font-size: calc(20px + 0.5vw);
+  padding: 2px 15px;
+  top: 100px
+}
+.button-map:hover{
+background-color: rgb(9, 0, 37);
+border: inset 6px rgb(180, 174, 174);
+padding: 0px 13px;
+}
 
 
 .text-on-hover-box{
