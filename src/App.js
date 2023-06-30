@@ -53,19 +53,23 @@ function App() {
       <div className='app-container-pj' align="center" style={{display: pjScreenVisible ? "flex" : "none"}}>
         <PjScreen />
       </div>
-      <div className='app-container-pj' align="center" style={{display: mapScreenVisible ? "flex" : "none"}}>
-      <button className="button-change-map1" onClick={handleMap1}>
-        Mapa 3x3
-      </button>
-      <button className="button-change-map2" onClick={handleMap2}>
-        Mapa 4x3
-      </button>
-      <button className="button-change-map3" onClick={handleMap3}>
-        Mapa 4x4
-      </button>
-      {showMap1 && <MapScreen tamaño={9}/>}
-      {showMap2 && <MapScreen tamaño={12}/>}
-      {showMap3 && <MapScreen tamaño={16}/>}
+      <div className='app-container-map' style={{display: mapScreenVisible ? "flex" : "none"}}>
+        <div>
+            <button className="button-change-map1" onClick={handleMap1}>
+              Mapa 3x3
+            </button>
+            <button className="button-change-map2" onClick={handleMap2}>
+              Mapa 4x3
+            </button>
+            <button className="button-change-map3" onClick={handleMap3}>
+              Mapa 4x4
+            </button>
+            <div>
+                {showMap1 && <MapScreen tamaño={9}/>}
+                {showMap2 && <MapScreen tamaño={12}/>}
+                {showMap3 && <MapScreen tamaño={16}/>}
+            </div>
+        </div>
       </div>
       <div className="cur1">
         <Routes>
