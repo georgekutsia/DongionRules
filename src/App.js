@@ -6,7 +6,7 @@ import FadeInOut from './component/FadeInOut';
 
 function App() {
   const [pjScreenVisible, setPjScreenVisible] = useState(false);
-  const [mapScreenVisible, setMapScreenVisible] = useState(true);
+  const [mapScreenVisible, setMapScreenVisible] = useState(false);
   const [showMap1, setShowMap1] = useState(false);
   const [showMap2, setShowMap2] = useState(false);
   const [showMap3, setShowMap3] = useState(false);
@@ -44,10 +44,10 @@ function App() {
   return (
     <div>
       <NavBar />
-      <button className='button-map' onClick={toggleMapScreen}>
-        {mapScreenVisible ? <i className="fa-solid fa-earth-europe fa-fade"></i>: <i className="fa-solid fa-earth-europe fa-spin"></i>}
+      <button style={{color: mapScreenVisible? "yellow":""}} className='button-map' onClick={toggleMapScreen}>
+        {mapScreenVisible ? <i className="fa-solid fa-earth-europe fa-fade"></i> : <i className="fa-solid fa-earth-europe fa-spin"></i>}
       </button>
-      <button className='button-pj' onClick={togglePjScreen}>
+      <button style={{color: pjScreenVisible? "cyan":""}} className='button-pj' onClick={togglePjScreen}>
         {pjScreenVisible ? <i className="fa-solid fa-person-military-pointing fa-fade"></i>: <i className="fa-solid fa-person-military-rifle fa-bounce"></i>}
       </button>
       <div className='app-container-pj' align="center" style={{display: pjScreenVisible ? "flex" : "none"}}>
@@ -55,13 +55,13 @@ function App() {
       </div>
       <div className='app-container-map' style={{display: mapScreenVisible ? "flex" : "none"}}>
         <div>
-            <button className="button-change-map1" onClick={handleMap1}>
+            <button onClick={handleMap1}>
               Mapa 3x3
             </button>
-            <button className="button-change-map2" onClick={handleMap2}>
+            <button onClick={handleMap2}>
               Mapa 4x3
             </button>
-            <button className="button-change-map3" onClick={handleMap3}>
+            <button onClick={handleMap3}>
               Mapa 4x4
             </button>
             <div>

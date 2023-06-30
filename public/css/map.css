@@ -8,13 +8,6 @@
  width: 200px;
 }
 
-.button-change-map1{
-}
-.button-change-map2{
-}
-.button-change-map3{
-}
-
 .app-container-map{
   margin-left: 60px;
   position:absolute;
@@ -23,4 +16,13 @@
   justify-content: center;
   text-align: center;
   background-color: black;
+}
+.app-container-map>div button{
+background-color: black;
+color: white;
+transition: 0.4s ease-in-out;
+}
+.app-container-map>div button:hover{
+letter-spacing: 1px;
+font-weight: 800;
 }
