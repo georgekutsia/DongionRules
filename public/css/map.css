@@ -1,0 +1,24 @@
+.big-box-map{
+  align-items: center;
+  text-align: center;
+  display: flex;
+  width: 50px;
+  padding-left: 300px
+}
+.big-box-map img{
+ width: 150px;
+}
+
+.button-change-map1{
+  position: absolute;
+  margin-left: 120px;
+}
+.button-change-map2{
+  position: absolute;
+  margin-left: 250px;
+}
+.button-change-map3{
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 50px;
+}

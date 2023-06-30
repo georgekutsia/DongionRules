@@ -2,10 +2,14 @@ import { Route, Routes } from 'react-router-dom';
 import React, { useState } from 'react';
 import { NavBar } from './component';
 import { ShopScreen, RuleScreen, EventsScreen, DongionsDetail, FrontFrontpage, CounterScreen, PjScreen, MapScreen } from "./screens"
+import FadeInOut from './component/FadeInOut';
 
 function App() {
   const [pjScreenVisible, setPjScreenVisible] = useState(false);
-  const [mapScreenVisible, setMapScreenVisible] = useState(false);
+  const [mapScreenVisible, setMapScreenVisible] = useState(true);
+  const [showMap1, setShowMap1] = useState(false);
+  const [showMap2, setShowMap2] = useState(false);
+  const [showMap3, setShowMap3] = useState(false);
 
   const togglePjScreen = () => {
     setPjScreenVisible(!pjScreenVisible);
@@ -13,12 +17,35 @@ function App() {
   const toggleMapScreen = () => {
     setMapScreenVisible(!mapScreenVisible);
   };
-
+  const handleMap1 = () => {
+    setShowMap1(false);
+    setShowMap2(false)
+    setShowMap3(false);
+    setTimeout(() => {
+      setShowMap1(true);
+    }, 0);
+  };
+  const handleMap2 = () => {
+    setShowMap1(false);
+    setShowMap2(false);
+    setShowMap3(false);
+    setTimeout(() => {
+      setShowMap2(true);
+    }, 0);
+  };
+  const handleMap3 = () => {
+    setShowMap1(false);
+    setShowMap2(false);
+    setShowMap3(false);
+    setTimeout(() => {
+      setShowMap3(true);
+    }, 0);
+  };
   return (
     <div>
       <NavBar />
       <button className='button-map' onClick={toggleMapScreen}>
-        {mapScreenVisible ? <i className="fa-solid fa-map fa-fade"></i>: <i className="fa-solid fa-map fa-bounce"></i>}
+        {mapScreenVisible ? <i className="fa-solid fa-earth-europe fa-fade"></i>: <i className="fa-solid fa-earth-europe fa-spin"></i>}
       </button>
       <button className='button-pj' onClick={togglePjScreen}>
         {pjScreenVisible ? <i className="fa-solid fa-person-military-pointing fa-fade"></i>: <i className="fa-solid fa-person-military-rifle fa-bounce"></i>}
@@ -27,7 +54,18 @@ function App() {
         <PjScreen />
       </div>
       <div className='app-container-pj' align="center" style={{display: mapScreenVisible ? "flex" : "none"}}>
-        <MapScreen/>
+      <button className="button-change-map1" onClick={handleMap1}>
+        Mapa 3x3
+      </button>
+      <button className="button-change-map2" onClick={handleMap2}>
+        Mapa 4x3
+      </button>
+      <button className="button-change-map3" onClick={handleMap3}>
+        Mapa 4x4
+      </button>
+      {showMap1 && <MapScreen tamaño={9}/>}
+      {showMap2 && <MapScreen tamaño={12}/>}
+      {showMap3 && <MapScreen tamaño={16}/>}
       </div>
       <div className="cur1">
         <Routes>
