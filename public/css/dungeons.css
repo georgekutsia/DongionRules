@@ -9,16 +9,9 @@
 .dungeon-big-box div{
 display: flex;
 justify-content: center;
-
 }
 .dungeon-big-box img{
-width: 200px;
+width: calc(100px + 8vw);
 transition: 0.5s ease-in-out;
-transition-delay: 1s;
-}
-
-.dungeon-big-box img:hover{
-scale: 2;
-border: 1px black solid;
-cursor: zoom-in
+cursor: zoom-in;
 }
