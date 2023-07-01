@@ -1,8 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import React, { useState } from 'react';
 import { NavBar } from './component';
+import ReactDOM from "react-dom"
 import { ShopScreen, RuleScreen, EventsScreen, DongionsDetail, FrontFrontpage, CounterScreen, PjScreen, MapScreen } from "./screens"
 import FadeInOut from './component/FadeInOut';
+
+// ...
 
 function App() {
   const [pjScreenVisible, setPjScreenVisible] = useState(false);
