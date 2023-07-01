@@ -5,7 +5,8 @@
   width: 0px;
 }
 .big-box-map img{
- width: 200px;
+ width: calc(100px + 2vw);
+ transition: 0.6s ease-in-out;
 }
 
 .app-container-map{

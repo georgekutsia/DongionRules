@@ -13,6 +13,8 @@ function App() {
   const [showMap1, setShowMap1] = useState(false);
   const [showMap2, setShowMap2] = useState(false);
   const [showMap3, setShowMap3] = useState(false);
+  const [showMap4, setShowMap4] = useState(false);
+  const [showMap5, setShowMap5] = useState(false);
 
   const togglePjScreen = () => {
     setPjScreenVisible(!pjScreenVisible);
@@ -20,30 +22,36 @@ function App() {
   const toggleMapScreen = () => {
     setMapScreenVisible(!mapScreenVisible);
   };
-  const handleMap1 = () => {
-    setShowMap1(false);
-    setShowMap2(false)
-    setShowMap3(false);
-    setTimeout(() => {
-      setShowMap1(true);
-    }, 0);
-  };
-  const handleMap2 = () => {
+  const handleMap = (mapNumber) => {
     setShowMap1(false);
     setShowMap2(false);
     setShowMap3(false);
+    setShowMap4(false);
+    setShowMap5(false);
     setTimeout(() => {
-      setShowMap2(true);
+      switch (mapNumber) {
+        case 1: setShowMap1(true);
+          break;
+        case 2: setShowMap2(true);
+          break;
+        case 3: setShowMap3(true);
+          break;
+        case 4: setShowMap4(true);
+          break;
+        case 5: setShowMap5(true);
+          break;
+        default:
+          break;
+      }
     }, 0);
   };
-  const handleMap3 = () => {
-    setShowMap1(false);
-    setShowMap2(false);
-    setShowMap3(false);
-    setTimeout(() => {
-      setShowMap3(true);
-    }, 0);
-  };
+  const handleMap1 = () => { handleMap(1);};
+  const handleMap2 = () => { handleMap(2);};
+  const handleMap3 = () => { handleMap(3);};
+  const handleMap4 = () => { handleMap(4);};
+  const handleMap5 = () => { handleMap(5);};
+  
+    
   return (
     <div>
       <NavBar />
@@ -57,20 +65,29 @@ function App() {
         <PjScreen />
       </div>
       <div className='app-container-map' style={{display: mapScreenVisible ? "flex" : "none"}}>
+      
         <div>
             <button onClick={handleMap1}>
-              Mapa 3x3
+              3x3
             </button>
             <button onClick={handleMap2}>
-              Mapa 4x3
+              4x3
             </button>
             <button onClick={handleMap3}>
-              Mapa 4x4
+              4x4
+            </button>
+            <button onClick={handleMap4}>
+              5x4
+            </button>
+            <button onClick={handleMap5}>
+              5x5
             </button>
             <div>
                 {showMap1 && <MapScreen tamaño={9}/>}
                 {showMap2 && <MapScreen tamaño={12}/>}
                 {showMap3 && <MapScreen tamaño={16}/>}
+                {showMap4 && <MapScreen tamaño={20}/>}
+                {showMap5 && <MapScreen tamaño={25}/>}
             </div>
         </div>
       </div>
