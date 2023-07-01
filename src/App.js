@@ -15,6 +15,14 @@ function App() {
   const [showMap3, setShowMap3] = useState(false);
   const [showMap4, setShowMap4] = useState(false);
   const [showMap5, setShowMap5] = useState(false);
+  const [sizing, setSizing] = useState(50)
+  const incrementarCantidad = () => {
+    setSizing(sizing + 20);
+  };
+
+  const restarCantidad = () => {
+    setSizing(sizing - 20);
+  };
 
   const togglePjScreen = () => {
     setPjScreenVisible(!pjScreenVisible);
@@ -65,29 +73,30 @@ function App() {
         <PjScreen />
       </div>
       <div className='app-container-map' style={{display: mapScreenVisible ? "flex" : "none"}}>
-      
         <div>
-            <button onClick={handleMap1}>
+            <button style={{color: showMap1? "yellow":""}} onClick={handleMap1}>
               3x3
             </button>
-            <button onClick={handleMap2}>
+            <button style={{color: showMap2? "yellow":""}} onClick={handleMap2}>
               4x3
             </button>
-            <button onClick={handleMap3}>
+            <button style={{color: showMap3? "yellow":""}} onClick={handleMap3}>
               4x4
             </button>
-            <button onClick={handleMap4}>
+            <button style={{color: showMap4? "yellow":""}} onClick={handleMap4}>
               5x4
             </button>
-            <button onClick={handleMap5}>
+            <button style={{color: showMap5? "yellow":""}} onClick={handleMap5}>
               5x5
             </button>
+            <button onClick={incrementarCantidad}>+</button>
+            <button onClick={restarCantidad}>-</button>
             <div>
-                {showMap1 && <MapScreen tamaño={9}/>}
-                {showMap2 && <MapScreen tamaño={12}/>}
-                {showMap3 && <MapScreen tamaño={16}/>}
-                {showMap4 && <MapScreen tamaño={20}/>}
-                {showMap5 && <MapScreen tamaño={25}/>}
+                {showMap1 && <MapScreen tamaño={9} size={sizing}/>}
+                {showMap2 && <MapScreen tamaño={12} size={sizing}/>}
+                {showMap3 && <MapScreen tamaño={16} size={sizing}/>}
+                {showMap4 && <MapScreen tamaño={20} size={sizing}/>}
+                {showMap5 && <MapScreen tamaño={25} size={sizing}/>}
             </div>
         </div>
       </div>
