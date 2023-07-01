@@ -1,0 +1,24 @@
+.dungeons-big-box{
+  background-color: rgb(45, 45, 45);
+  border: 2px white solid;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.dungeon-big-box div{
+display: flex;
+justify-content: center;
+
+}
+.dungeon-big-box img{
+width: 200px;
+transition: 0.5s ease-in-out;
+transition-delay: 1s;
+}
+
+.dungeon-big-box img:hover{
+scale: 2;
+border: 1px black solid;
+cursor: zoom-in
+}

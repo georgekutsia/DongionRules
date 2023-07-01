@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { BackgroundFloatingBuble, ImportantCreaturesBeleron, Guilds, Riddles } from "../../component";
+import { BackgroundFloatingBuble, ImportantCreaturesBeleron, Guilds, Riddles, Dungeons } from "../../component";
 import FadeInOut from "../../component/FadeInOut";
 
 function EventsScreen() {
@@ -11,6 +11,7 @@ function EventsScreen() {
   const[showGuilds, setShowGuilds] = useState(false);
   const[showNPC, setShowNPC] = useState(false);
   const[ridles, setRidles] = useState(false);
+  const [dungeons, setDungeons] = useState(true)
   const [robot1, setRobot1] = useState(false)
 
   return (
@@ -26,21 +27,29 @@ function EventsScreen() {
       
       <div className="d-flex justify-content-evenly">
         <div  className="d-flex justify-content-evenly">
-            <h1><button onClick={() => {setShowNPC(!showNPC); setShowGuilds(false); setRidles(false)}} 
+            <h1><button onClick={() => {setShowNPC(!showNPC); setShowGuilds(false); setRidles(false);setDungeons(false)}} 
             className="btn btn-round b-level-2 b-type-show-creatures">Criaturas de Beleron</button>
             </h1>
         </div>
         <div  className="d-flex justify-content-evenly">
-          <h1><button onClick={() => {setShowGuilds(!showGuilds); setShowNPC(false); setRidles(false)}} 
+          <h1><button onClick={() => {setShowGuilds(!showGuilds); setShowNPC(false); setRidles(false); setDungeons(false)}} 
           className="btn btn-round b-level-2 b-type-show-creatures">Guilds</button>
           </h1>
         </div>
         <div  className="d-flex justify-content-evenly">
-          <h1><button onClick={() => {setRidles(!ridles); setShowGuilds(false); setShowNPC(false)}} 
+          <h1><button onClick={() => {setRidles(!ridles); setShowGuilds(false); setShowNPC(false); setDungeons(false);}} 
           className="btn btn-round b-level-2 b-type-show-creatures">Pruebas</button>
           </h1>
         </div>
+        <div  className="d-flex justify-content-evenly">
+          <h1><button onClick={() => {setDungeons(!dungeons); setRidles(false); setShowGuilds(false); setShowNPC(false)}} 
+          className="btn btn-round b-level-2 b-type-show-creatures">Mazmorras</button>
+          </h1>
+        </div>
       </div>
+          <FadeInOut show={dungeons} duration={500}>
+            <Dungeons/>
+          </FadeInOut>
           <FadeInOut show={showNPC} duration={500}>
               <ImportantCreaturesBeleron />
           </FadeInOut>
