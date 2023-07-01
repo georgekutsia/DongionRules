@@ -69,6 +69,14 @@ function Dungeon1() {
         <img className='dungeon-img24' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688174842/donGions%20imgs/dungeons/dung1/bc31da64699e07bd32c987a4c7d48895_koyf9s.jpg" alt="dungeon part" style={{ opacity: opacity['dungeon-img24'] }} onClick={() => handleClick('dungeon-img24')}/>
         <img className='dungeon-img25' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688174842/donGions%20imgs/dungeons/dung1/bc31da64699e07bd32c987a4c7d48895_koyf9s.jpg" alt="dungeon part" style={{ opacity: opacity['dungeon-img25'] }} onClick={() => handleClick('dungeon-img25')}/>
       </div>
+      <div className='dungeons-box5'>
+        <img className='dungeon-img26' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688174842/donGions%20imgs/dungeons/dung1/bc31da64699e07bd32c987a4c7d48895_koyf9s.jpg" alt="dungeon part" style={{ opacity: opacity['dungeon-img26'] }} onClick={() => handleClick('dungeon-img26')}/>
+        <img className='dungeon-img27' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688174842/donGions%20imgs/dungeons/dung1/bc31da64699e07bd32c987a4c7d48895_koyf9s.jpg" alt="dungeon part" style={{ opacity: opacity['dungeon-img27'] }} onClick={() => handleClick('dungeon-img27')}/>
+        <img className='dungeon-img28' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688174842/donGions%20imgs/dungeons/dung1/bc31da64699e07bd32c987a4c7d48895_koyf9s.jpg" alt="dungeon part" style={{ opacity: opacity['dungeon-img28'] }} onClick={() => handleClick('dungeon-img28')}/>
+        <img className='dungeon-img29' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688174842/donGions%20imgs/dungeons/dung1/bc31da64699e07bd32c987a4c7d48895_koyf9s.jpg" alt="dungeon part" style={{ opacity: opacity['dungeon-img29'] }} onClick={() => handleClick('dungeon-img29')}/>
+        <img className='dungeon-img30' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688174842/donGions%20imgs/dungeons/dung1/bc31da64699e07bd32c987a4c7d48895_koyf9s.jpg" alt="dungeon part" style={{ opacity: opacity['dungeon-img30'] }} onClick={() => handleClick('dungeon-img30')}/>
+        <img className='dungeon-img31' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688174842/donGions%20imgs/dungeons/dung1/bc31da64699e07bd32c987a4c7d48895_koyf9s.jpg" alt="dungeon part" style={{ opacity: opacity['dungeon-img31'] }} onClick={() => handleClick('dungeon-img31')}/>
+      </div>
     </div>
   );
 }

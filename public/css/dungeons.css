@@ -1,6 +1,6 @@
 .dungeons-big-box{
-  background-color: rgb(45, 45, 45);
   border: 2px white solid;
+  width: fit-content;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -9,6 +9,7 @@
 .dungeon-big-box div{
 display: flex;
 justify-content: center;
+margin-left: 0PX;
 }
 .dungeon-big-box img{
 width: calc(100px + 8vw);
