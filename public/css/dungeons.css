@@ -20,3 +20,6 @@ cursor: zoom-in;
 .rotate-right {
   transform: rotate(90deg); /* Puedes ajustar el ángulo de rotación según tus necesidades */
 }
+.contraseña-dungeon{
+  width: 100px;
+}

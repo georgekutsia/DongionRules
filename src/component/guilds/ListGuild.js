@@ -25,17 +25,10 @@ function ListGuild({search, place, food, character, damage, where, potions, expl
     }
 
 
-  const handleShowGuilds = () => {
-    if (password === 'bulala') {
-      setShowGuilds(true);
-    } else {
-      alert('Contraseña incorrecta');
-    }
-  };
+
   const handleInputChange = (event) => {
     const enteredPassword = event.target.value;
     setPassword(enteredPassword);
-
     if (enteredPassword === 'bulala') {
       setShowGuilds(true);
     } else {

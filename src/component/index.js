@@ -93,3 +93,4 @@ export {default as PlansRama} from "./guide/PlansRing"
 
 export {default as Dungeons} from "./dungeons/Dungeons"
 export {default as Dungeon1} from "./dungeons/Dungeon1"
+export {default as Dungeon2} from "./dungeons/Dungeon2"
