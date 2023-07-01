@@ -9,7 +9,7 @@ function Dungeons() {
   const handleInputChange = (event) => {
     const enteredPassword = event.target.value;
     setPassword(enteredPassword);
-    if (enteredPassword === 'bulala') {
+    if (enteredPassword === 'vorovoro') {
       setSetDun1(true);
     } else {
       setSetDun1(false);
@@ -17,15 +17,17 @@ function Dungeons() {
   };
 
   return (
-    <div className='dungeons-big-box'>
-        
-        {/* {!dun1 &&
-          <div className='d-flex'>
-              <img width={"100px"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1668768772/donGions%20imgs/kisspng-bible-psalms-book-of-nehemiah-magic-books-5a8e7c5aab8528.7528172415192873867026_ns0hm4.png" alt="" />
-              <input className="contraseña-dungeon" text="password" value={password} onChange={handleInputChange}  placeholder="Voro..." />
-          </div>
-        } */}
-        <Dungeon1/>
+    <div className='m-5 dungeons-big-box'>
+    <div>
+        {!dun1 &&
+          <div >
+              <div className=''>
+                  <img width={"100px"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688249262/donGions%20imgs/dungeons/Voro/voro_vacohg.jpg" alt="bla" />
+              </div>
+                <input className="contraseña-dungeon" text="password" value={password} onChange={handleInputChange}  placeholder="Voro..." />
+            </div>
+        }
+    </div>
         {dun1 && <Dungeon1/>}
     </div>
   );
