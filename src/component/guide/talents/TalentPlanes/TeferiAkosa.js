@@ -8,6 +8,10 @@ function TeferiAkosa() {
   return (
     <div>
     <h3 className="mt-5">En desarrollo</h3>
+    <div className="talents-rama-imgs">
+      <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688333106/donGions%20imgs/rama/Teferi_PDF-1_rngsnh.jpg" alt="Ajani Img" />
+      <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688333106/donGions%20imgs/rama/Teferi_PDF-2_u14gyr.jpg" alt="Ajani Img" />
+    </div>
       <Talent
         talentfirst1={"Luchador"}
         talentfirst2={"Hechicero"}
@@ -124,7 +128,6 @@ function TeferiAkosa() {
         // talFifth34={"5 Arquero 3 caliente caliente"}
         // talFifth35={"5 Arquero 3 caliente caliente"}
         // talFifth36={"5 Arquero 3 caliente caliente"}
-
       />
     </div>
   );

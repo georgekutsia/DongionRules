@@ -691,14 +691,15 @@ margin-top: 20px;
 }
 
 .inspi-img{
-width: 30%;
-aspect-ratio: 3/2;
+width: calc(50px);
+height: calc(50px);
 object-fit: contain;
 transition: 0.3s ease-in-out;
 cursor:zoom-in;
 }
 .inspi-img-click{
-width: 100%;
+width: calc(150px + 3vw);
+height: calc(180px + 3vw);
 aspect-ratio: 3/2;
 object-fit: contain;
 transition: 0.3s ease-in-out;

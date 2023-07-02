@@ -1,14 +1,13 @@
-import React from "react";
-import Talent from "../Talent";
+import React from 'react'
+import Talent from '../Talent'
 
-
-function SorinMarkov() {
+function LilianaVess() {
   return (
     <div>
-    <h3 className="mt-5">En desarrollo</h3>
+        <h3 className="mt-5">En desarrollo</h3>
     <div className="talents-rama-imgs">
-      <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688333115/donGions%20imgs/rama/Sorin_PDF-1_t6wl8n.jpg" alt="Ajani Img" />
-      <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688333115/donGions%20imgs/rama/Sorin_PDF-2_hsniwr.jpg" alt="Ajani Img" />
+      <img src="" alt="Ajani Img" />
+      <img src="" alt="Ajani Img" />
     </div>
       <Talent
         talentfirst1={"Luchador"}
@@ -22,19 +21,19 @@ function SorinMarkov() {
         // }
         // text3={"Obtienes +D4 para daño a distancia y un dado de Aptitud"}
 
-        // talSecond1={"+20% sanaciones de Sangromancia"}
-        // talSecond2={"Aumenta la vida básica +2"}
+        // talSecond1={"Sangromancia sana 20% más"}
+        // talSecond2={"Sangre calientes"}
         // talSecond3={"lucha incesante"}
         // talSecond4={"lucha caliente"}
         // talSecond5={"arque incesante"}
         // talSecond6={"arque caliente"}
 
-        // talThird1={"+20% sanaciones de Sangromancia"}
-        // talThird2={"Daño básico con hechizos +2"}
-        // talThird3={"Acierto con hechizos +3"}
-        // talThird4={"Aumenta la vida básica +2"}
+        // talThird1={"sangre incesante incesante"}
+        // talThird2={"sangre incesante incesante"}
+        // talThird3={"sangre incesante incesante"}
+        // talThird4={"sangre sangre calientes"}
         // talThird5={"sangre sangre calientes"}
-        // talThird6={"Aumenta la vida básica +2"}
+        // talThird6={"sangre sangre caliente"}
 
         // talThird7={"lucha incesante incesante"}
         // talThird8={"lucha incesante incesante"}
@@ -51,8 +50,8 @@ function SorinMarkov() {
         // talThird18={"Arquero caliente caliente"}
 
 
-        // talFourth1={"+20% sanaciones de Sangromancia"}
-        // talFourth2={"Cuestan 1 esencia menos tus Sangromancias"}
+        // talFourth1={"sangre 31"}
+        // talFourth2={"sangre 32"}
         // talFourth3={"sangre 33"}
         // talFourth4={"sangre 34"}
         // talFourth5={"sangre 35"}
@@ -126,13 +125,8 @@ function SorinMarkov() {
         // talFifth34={"5 Arquero 3 caliente caliente"}
         // talFifth35={"5 Arquero 3 caliente caliente"}
         // talFifth36={"5 Arquero 3 caliente caliente"}
-
-
-
-
-      />
-    </div>
-  );
+      /></div>
+  )
 }
 
-export default SorinMarkov;
+export default LilianaVess

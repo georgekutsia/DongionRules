@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, Talents, SorinMarkov, Intro, Inspi } from '../../component'
+import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, 
+  SorinMarkov,JaceBeleren, AjaniGoldmane, TeferiAkosa, Intro, Inspi, GideonJura, ElspethTIrel, NissaRevane, SarkhanVol, ChandraNalaar, RalZarek, LilianaVess } from '../../component'
 import { EquipmentScreen, ArmorScreen } from '../index';
 import Rules from '../../component/guide/EstadisticasPj'
 import FadeInOut from "../../component/FadeInOut";
 import { Link } from 'react-router-dom';
-import JaceBeleren from '../../component/guide/talents/TalentPlanes/JaceBeleren';
-import AjaniGoldmane from '../../component/guide/talents/TalentPlanes/AjaniGoldmane';
-import TeferiAkosa from '../../component/guide/talents/TalentPlanes/TeferiAkosa';
+
 
 function RuleScreen() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -30,7 +29,7 @@ function RuleScreen() {
   const [dude, setDude] = useState(false)
   const [rDice, setRDice] =useState(false)
 
-  const [intro, setIntro] = useState(true)
+  const [intro, setIntro] = useState(false)
   const [basic, setBasic] = useState(false)
 
   const [inspi, setInspi] = useState(false)
@@ -49,7 +48,7 @@ function RuleScreen() {
   const [rEquipment, setREquipment] = useState(false)
   const [rArmor, setRArmor] = useState(false)
   const [rDungeon, setRDungeon] = useState(false)
-  const [rTalent, setRTalent] = useState(false)
+  const [rTalent, setRTalent] = useState(true)
 
   const stats = () => setBasic(true)
   const presence = () => setrPre(true)
@@ -258,25 +257,25 @@ const handleingOff = () =>{
               {onAjani && <AjaniGoldmane/> }
         </FadeInOut>
         <FadeInOut show={onGideon} duration={400}>
-              {onGideon && <AjaniGoldmane/> }
+              {onGideon && <GideonJura/> }
         </FadeInOut>
         <FadeInOut show={onElspeth} duration={400}>
-              {onElspeth && <AjaniGoldmane/> }
+              {onElspeth && <ElspethTIrel/> }
         </FadeInOut>
         <FadeInOut show={onNissa} duration={400}>
-              {onNissa && <AjaniGoldmane/> }
+              {onNissa && <NissaRevane/> }
         </FadeInOut>
         <FadeInOut show={onSarkhan} duration={400}>
-              {onSarkhan && <AjaniGoldmane/> }
+              {onSarkhan && <SarkhanVol/> }
         </FadeInOut>
         <FadeInOut show={onChandra} duration={400}>
-              {onChandra && <AjaniGoldmane/> }
+              {onChandra && <ChandraNalaar/> }
         </FadeInOut>
         <FadeInOut show={onRal} duration={400}>
-              {onRal && <AjaniGoldmane/> }
+              {onRal && <RalZarek/> }
         </FadeInOut>
         <FadeInOut show={onLiliana} duration={400}>
-              {onLiliana && <AjaniGoldmane/> }
+              {onLiliana && <LilianaVess/> }
         </FadeInOut>
       </div>
         </FadeInOut>

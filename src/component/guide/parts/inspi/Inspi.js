@@ -19,7 +19,7 @@ function Inspi() {
     <div className='inspirate'>
       <div className='ins1'>
         <h4 onClick={()=>setins1(!ins1)} style={{color:"blue"}} className={ins1 ? "inspi-titulo-click":"inspi-titulo"}> Ducho con armas </h4>
-        <img onClick={()=>setins1(!ins1)} className={ins1 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874175/donGions%20imgs/rules%2B/espadachin_rqw3jg.png" alt="Inspi" />
+        <img onClick={()=>setins1(!ins1)} className={ins1 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688329371/donGions%20imgs/rules%2B/espadachin_ce5esv.png" alt="Inspi" />
         {ins1 && 
           <>
             <article className='artins1'> ¿Te gusta coleccionar armas poderosas? ¿Te flipa usar poderes y habilidades únicas de los objetos? ¿Quieres hacer ataque específicos y espectaculares, perfectos para cada situación
@@ -30,7 +30,7 @@ function Inspi() {
       </div>
       <div>
         <h4 onClick={()=>setins2(!ins2)} style={{color:"red"}} className={ins2 ? "inspi-titulo-click":"inspi-titulo"}> Hechicero supremo </h4>
-        <img onClick={()=>setins2(!ins2)} className={ins2 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874175/donGions%20imgs/rules%2B/hechicero_zfk6ts.png" alt="Inspi" />
+        <img onClick={()=>setins2(!ins2)} className={ins2 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688329377/donGions%20imgs/rules%2B/hechicero_ys8gd8.png" alt="Inspi" />
           {ins2 && 
           <>
             <article className='artins2'> No solo posees una enorme selección de hechizos de tu guía, si no que hay abundante cantidad de hechizos a encontrar en casi todos los lugares que puedan contener 
@@ -41,7 +41,7 @@ function Inspi() {
       </div>
       <div>
         <h4 onClick={()=>setins3(!ins3)} style={{color:"purple"}} className={ins3 ? "inspi-titulo-click":"inspi-titulo"}> Cazador Implacable</h4>
-      <img onClick={()=>setins3(!ins3)} className={ins3 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874175/donGions%20imgs/rules%2B/distancia_uc1qyu.png" alt="Inspi" />
+      <img onClick={()=>setins3(!ins3)} className={ins3 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688329371/donGions%20imgs/rules%2B/distancia_dvlnuf.png" alt="Inspi" />
               {ins3 && 
               <>
                 <article className='artins3'> Hay tal variedad de armas a distancia y tipos de munición que suplen con creces el uso de hechizos. Ya sea un arquero que lanza 3 flechas de una o un pistolero con Gatillo rápido que puede volver una roca en arena en un pestañeo, 
@@ -52,7 +52,7 @@ function Inspi() {
       </div>
       <div>
         <h4 onClick={()=>setins4(!ins4)} style={{color:"sandybrown"}} className={ins4 ? "inspi-titulo-click":"inspi-titulo"}> Defensor ofensivo</h4>
-        <img onClick={()=>setins4(!ins4)} className={ins4 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874174/donGions%20imgs/rules%2B/meledoble_fc7j6p.png" alt="Inspi" />
+        <img onClick={()=>setins4(!ins4)} className={ins4 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688329371/donGions%20imgs/rules%2B/meledoble_ouley1.png" alt="Inspi" />
               {ins4 && 
                 <>
                   <article className='artins4'> Un secreto que el gremio de los Defensores supo descubrir, es que un luchador que mitiga todo el bloqueo, puede devolver incluso el daño al atacante y con dos escudos encantados para beneficiarse entre sí, usar armas de filo es un capricho.
@@ -63,7 +63,7 @@ function Inspi() {
       </div>
       <div>
         <h4 onClick={()=>setins5(!ins5)} style={{color:"grey"}} className={ins5 ? "inspi-titulo-click":"inspi-titulo"}> Brutalidad Desbordante</h4>
-      <img onClick={()=>setins5(!ins5)} className={ins5 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874174/donGions%20imgs/rules%2B/bruto_q7jffm.png" alt="Inspi" />
+      <img onClick={()=>setins5(!ins5)} className={ins5 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688329376/donGions%20imgs/rules%2B/bruto_r2wopt.png" alt="Inspi" />
               {ins5 && 
                 <>
                 <article className='artins5'> En este mundo vasto y generoso se pueden conseguir armas sin dificultad, asi que lánzalos sin miramientos. Vuelve tus armas irrompibles con la rotura disminuída a 1. Al reequiparte, tienes ataque físico gratuito, así que lanza esas armas a cualquier cosa que se mueva que no debería moverse. </article>
@@ -73,7 +73,7 @@ function Inspi() {
       </div>
       <div>
         <h4 onClick={()=>setins6(!ins6)} style={{color:"chartreuse"}} className={ins6 ? "inspi-titulo-click":"inspi-titulo"}> Aparatero Cachivaches</h4>
-      <img onClick={()=>setins6(!ins6)} className={ins6 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874174/donGions%20imgs/rules%2B/cachivaches_omz3wx.png" alt="Inspi" />
+      <img onClick={()=>setins6(!ins6)} className={ins6 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688329376/donGions%20imgs/rules%2B/cachivaches_ptxtv9.png" alt="Inspi" />
               {ins6 && 
               <>
                 <article className='artins6'> Hay una cantidad de aparatos y cachivaches brutal que hacen todo tipo de cosas. <span style={{fontStyle:"italic", color:"green"}}> "Brazo radial", "Alas aerodinámicas", "Batería de Rayos", "Catapultador Magnetoeléctrico", "Brazalete Imantado", "Detonador Químico" o "Detonador Eléctrico", "Taza de cosas locas al azar dentro…" </span>¡¿Quién rayos necesita magia teniendo las ventajas de la tecnología!?  </article>
@@ -83,7 +83,7 @@ function Inspi() {
       </div>
       <div>
         <h4 onClick={()=>setins7(!ins7)} style={{color:"aqua"}} className={ins7 ? "inspi-titulo-click":"inspi-titulo"}> Consumidor Empedernido</h4>
-      <img onClick={()=>setins7(!ins7)} className={ins7 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874174/donGions%20imgs/rules%2B/medico_xtvl7d.png" alt="Inspi" />
+      <img onClick={()=>setins7(!ins7)} className={ins7 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688329376/donGions%20imgs/rules%2B/medico_b0xxxo.png" alt="Inspi" />
               {ins7 && 
               <>
                 <article className='artins7'> Hay tantas pociones de todo tipo en Beleron como Explosivos. ¿No quieres depender de un sanador? <span style={{color:"yellow"}}>Pociones...</span> ¿Quires pasarte el día reventando grupos de enemigos como entretenimiento? <span style={{color:"chocolate"}}>Explosivos...</span>  Suministros ilimitados y fáciles de usar. </article>
@@ -93,7 +93,7 @@ function Inspi() {
       </div>
       <div>
         <h4 onClick={()=>setins8(!ins8)} style={{color:"bisque"}} className={ins8 ? "inspi-titulo-click":"inspi-titulo"}> Físico Imbatible</h4>
-      <img onClick={()=>setins8(!ins8)} className={ins8 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874174/donGions%20imgs/rules%2B/desarmado_u3xrgr.png" alt="Inspi" />
+      <img onClick={()=>setins8(!ins8)} className={ins8 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688329371/donGions%20imgs/rules%2B/desarmado_d9f0j9.png" alt="Inspi" />
               {ins8 && 
               <>
                 <article className='artins8'> Si te parece demasiado fácil zanjar problemas con armas y prefieres usar las manos para dejar algunas cosas claras, Cinestesia es lo tuyo. Marcialidad te da un dado extra para esquivar y con esquivas críticas, puedes contraatacar. </article>
@@ -103,7 +103,7 @@ function Inspi() {
       </div>
       <div>
         <h4 onClick={()=>setins9(!ins9)} style={{color:"cornflowerblue"}} className={ins9 ? "inspi-titulo-click":"inspi-titulo"}> Picaro Pendenciero</h4>
-      <img onClick={()=>setins9(!ins9)} className={ins9 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687874174/donGions%20imgs/rules%2B/ninja_vzbzkj.png" alt="Inspi" />
+      <img onClick={()=>setins9(!ins9)} className={ins9 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688329376/donGions%20imgs/rules%2B/ninja_rbl9a4.png" alt="Inspi" />
               {ins9 && 
               <>
                 <article className='artins9'>Si tus tácticas de pelea favoritas son ocultarte en las sombras, putear sin que se percaten, meter puñaladas brutales antes de que se den cuenta, robar, infiltrarte, espiar… quizás tu camino sea unirte al gremio de Ninjas, Asesinos, Sicarios del clan Nembu etc y obtener Presencia Negativa para pasar desapercibido o Crípsis para ser casi invisible.</article>
@@ -113,7 +113,7 @@ function Inspi() {
       </div>
       <div>
         <h4 onClick={()=>setins10(!ins10)} style={{color:"darkgreen"}} className={ins10 ? "inspi-titulo-click":"inspi-titulo"}>Mutante de Injertos</h4>
-      <img onClick={()=>setins10(!ins10)} className={ins10 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687998914/donGions%20imgs/rules%2B/mutar_m8kt1q.png" alt="Inspi" />
+      <img onClick={()=>setins10(!ins10)} className={ins10 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688329402/donGions%20imgs/rules%2B/mutar_fy4yqs.png" alt="Inspi" />
               {ins10 && 
                 <>
                   <article className='artins10'> ¿Quieres forzar la evolución? La ciencia desarrollada en algunos reinos de Beleron permite mutar materia orgánica viva y en otros lugares se pueden fabricar injertos, tanto orgánicos como metálicos, que te ayudarán a superar los límites de lo que es posible.</article>
@@ -123,7 +123,7 @@ function Inspi() {
       </div>
       <div>
         <h4 onClick={()=>setins11(!ins11)} style={{color:"yellow"}} className={ins11 ? "inspi-titulo-click":"inspi-titulo"}> Escriba Elocuente</h4>
-      <img onClick={()=>setins11(!ins11)} className={ins11 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687999082/donGions%20imgs/rules%2B/libros1_lec8o4.png" alt="Inspi" />
+      <img onClick={()=>setins11(!ins11)} className={ins11 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688329402/donGions%20imgs/rules%2B/libros1_o5fowa.png" alt="Inspi" />
               {ins11 && 
                 <>
                   <article className='artins11'>La adicción a los libros, el aprendizaje y el viaje a los confines de los reinos para encontrar Páginas Malditas, Palabras Inspiradoras o Grimorios únicos, ha llevado a algunos a la locura. En este mundo leer o pronunciar palabras tiene el mismo efecto sobre la realidad como disparar balas o lanzar hachas.</article>
@@ -133,7 +133,7 @@ function Inspi() {
       </div>
       <div>
         <h4 onClick={()=>setins12(!ins12)} style={{color:"indianred"}} className={ins12 ? "inspi-titulo-click":"inspi-titulo"}> Charlatán Juglar</h4>
-      <img onClick={()=>setins12(!ins12)} className={ins12 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1687998914/donGions%20imgs/rules%2B/barddo_xzjg6s.png" alt="Inspi" />
+      <img onClick={()=>setins12(!ins12)} className={ins12 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688329402/donGions%20imgs/rules%2B/barddo_mtieq0.png" alt="Inspi" />
               {ins12 && 
                 <>
                   <article className='artins12'>Muchos instrumentos musicales de Beleron guardan los poderes de los intérpretes que los han usado. Los juglares y trovadores de renombre tienen inmunidad política para moverse de un reino a otro y coleccionar historias y anécdotas, que luego pueden convertir en canción o melodía.</article>

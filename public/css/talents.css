@@ -1,3 +1,10 @@
+.talents-rama-imgs img{
+  width: calc(300px + 5vw);
+  transition: 0.5s ease-in-out;
+}
+.talents-rama-imgs img:hover{
+  scale: 1.8
+}
 .talent-div{
   width: 95%;
   text-decoration: none;
@@ -158,7 +165,7 @@ font-size: calc(10px + 1vw);
   border: 1px white double;
 }
 .talent-first-1{
-  background: linear-gradient(to right, black, black, black, black, #9306f1, black, black, black, black);
+  background: linear-gradient(to right, black, black, black, black, #f1ba06, black, black, black, black);
   animation: moveGradient 3s ease-in-out infinite;
   background-size: 400px;
   color:white
@@ -170,7 +177,7 @@ font-size: calc(10px + 1vw);
 }
 
 .talent-first-2{
-  background: linear-gradient(to right, black, black, black, black, #f10a06, black, black, black, black);
+  background: linear-gradient(to right, black, black, black, black, #9b06f1, black, black, black, black);
   animation: moveGradient 3s ease-in-out infinite;
   background-size: 400px;
 }
@@ -179,7 +186,7 @@ font-size: calc(10px + 1vw);
   animation: shining2 5s infinite;
 }
 .talent-first-3{
-  background: linear-gradient(to right, black, black, black, black, #f19008, black, black, black, black);
+  background: linear-gradient(to right, black, black, black, black, #08f1ce, black, black, black, black);
   animation: moveGradient 3s ease-in-out infinite;
   background-size: 400px;
 }

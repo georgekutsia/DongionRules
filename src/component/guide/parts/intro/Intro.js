@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import {PlansImgs, PlansBast, PlansRing, PlansBrazal, PlansRama} from "../../../../component"
+import { Link } from 'react-router-dom'
+import {PlansImgs, PlansBast, PlansRing, PlansBrazal} from "../../../../component"
 
 
 function Intro() {
