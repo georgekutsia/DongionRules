@@ -30,10 +30,10 @@ function RuleScreen() {
   const [dude, setDude] = useState(false)
   const [rDice, setRDice] =useState(false)
 
-  const [intro, setIntro] = useState(false)
+  const [intro, setIntro] = useState(true)
   const [basic, setBasic] = useState(false)
 
-  const [inspi, setInspi] = useState(true)
+  const [inspi, setInspi] = useState(false)
 
   const [char, setChar] = useState(false)
   const [rPre, setrPre] = useState(false)
