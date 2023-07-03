@@ -72,6 +72,10 @@ button:disabled {
 .combat-top-img{
   width: 25%;
   max-width: 100px;
+  transition: all 0.3s ease-in-out;
+}
+.combat-top-img:hover{
+  scale: 1.8;
 }
 .combat-images-top{
   display: flex;
