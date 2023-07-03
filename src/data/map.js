@@ -23,6 +23,10 @@ const map = [
 "https://res.cloudinary.com/dfrda73uc/image/upload/v1688231869/donGions%20imgs/dungeons/dung1/Geodice_05_-_Temple_bpq8zl.png",
 "https://res.cloudinary.com/dfrda73uc/image/upload/v1688231869/donGions%20imgs/dungeons/dung1/Geodice_03_-_Corridors_x41bzg.png",
 "https://res.cloudinary.com/dfrda73uc/image/upload/v1688231869/donGions%20imgs/dungeons/dung1/Geodice_01_-_Crypt_hywced.png",
+"https://res.cloudinary.com/dfrda73uc/image/upload/v1688345102/donGions%20imgs/dungeons/dung1/Geomorph_104_iva3bk.png",
+"https://res.cloudinary.com/dfrda73uc/image/upload/v1688345102/donGions%20imgs/dungeons/dung1/Geomorph_102_prfpmt.png",
+"https://res.cloudinary.com/dfrda73uc/image/upload/v1688345102/donGions%20imgs/dungeons/dung1/Geomorph_103_fv9f7q.png",
+"https://res.cloudinary.com/dfrda73uc/image/upload/v1688345102/donGions%20imgs/dungeons/dung1/Geomorph_105_fsi9xq.png",
 ]
 
 export default map

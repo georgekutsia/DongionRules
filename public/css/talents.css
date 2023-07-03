@@ -1,9 +1,10 @@
 .talents-rama-imgs img{
   width: calc(300px + 5vw);
   transition: 0.5s ease-in-out;
+  display: block;
 }
 .talents-rama-imgs img:hover{
-  scale: 1.8
+  width: 95%;
 }
 .talent-div{
   width: 95%;
