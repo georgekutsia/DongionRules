@@ -29,7 +29,7 @@ function RuleScreen() {
   const [dude, setDude] = useState(false)
   const [rDice, setRDice] =useState(false)
 
-  const [intro, setIntro] = useState(false)
+  const [intro, setIntro] = useState(true)
   const [basic, setBasic] = useState(false)
 
   const [inspi, setInspi] = useState(false)
@@ -48,7 +48,7 @@ function RuleScreen() {
   const [rEquipment, setREquipment] = useState(false)
   const [rArmor, setRArmor] = useState(false)
   const [rDungeon, setRDungeon] = useState(false)
-  const [rTalent, setRTalent] = useState(true)
+  const [rTalent, setRTalent] = useState(false)
 
   const stats = () => setBasic(true)
   const presence = () => setrPre(true)
