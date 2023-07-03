@@ -8,6 +8,8 @@ function EventsScreen() {
   useEffect(() => {
       setShowPage(true)
   }, [])
+
+  
   const[showGuilds, setShowGuilds] = useState(false);
   const[showNPC, setShowNPC] = useState(false);
   const[ridles, setRidles] = useState(false);
@@ -48,6 +50,7 @@ function EventsScreen() {
         </div>
       </div>
           <FadeInOut show={dungeons} duration={500}>
+
             <Dungeons/>
           </FadeInOut>
           <FadeInOut show={showNPC} duration={500}>

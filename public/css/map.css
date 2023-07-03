@@ -27,3 +27,9 @@ transition: 0.4s ease-in-out;
 letter-spacing: 1px;
 font-weight: 800;
 }
+.button-click-map-increase{
+  width: 100px;
+  background: linear-gradient(to right, yellow, black, yellow, yellow, black, yellow, yellow, black, yellow);
+  animation: moveGradient 10s ease-in-out infinite;
+  background-size: 600px;
+}
