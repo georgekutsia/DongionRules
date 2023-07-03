@@ -15,13 +15,22 @@ function App() {
   const [showMap4, setShowMap4] = useState(false);
   const [showMap5, setShowMap5] = useState(false);
   const [sizing, setSizing] = useState(50)
+  const [verticalHeigth, setVerticalHeight] = useState(0)
+
+
   const incrementarCantidad = () => {
     setSizing(sizing + 20);
   };
-
   const restarCantidad = () => {
     setSizing(sizing - 20);
   };
+  const incrementarTamaño = () => {
+    setVerticalHeight(verticalHeigth + 10);
+  };
+  const restarTamaño = () => {
+    setVerticalHeight(verticalHeigth - 10);
+  };
+
 
   const togglePjScreen = () => {
     setPjScreenVisible(!pjScreenVisible);
@@ -88,14 +97,16 @@ function App() {
             <button style={{color: showMap5? "yellow":""}} onClick={handleMap5}>
               5x5
             </button>
-            <button onClick={incrementarCantidad}>+</button>
-            <button onClick={restarCantidad}>-</button>
+            <button onClick={incrementarCantidad}><i className="fa-solid fa-maximize"></i></button>
+            <button onClick={restarCantidad}><i className="fa-solid fa-minimize"></i></button>
+            <button onClick={incrementarTamaño}> <i class="fa-solid fa-arrows-up-to-line"></i></button>
+            <button onClick={restarTamaño}><i class="fa-solid fa-arrows-down-to-line"></i></button>
             <div>
-                {showMap1 && <MapScreen tamaño={9} size={sizing}/>}
-                {showMap2 && <MapScreen tamaño={12} size={sizing}/>}
-                {showMap3 && <MapScreen tamaño={16} size={sizing}/>}
-                {showMap4 && <MapScreen tamaño={20} size={sizing}/>}
-                {showMap5 && <MapScreen tamaño={25} size={sizing}/>}
+                {showMap1 && <MapScreen verticalHeight={verticalHeigth} tamaño={9} size={sizing}/>}
+                {showMap2 && <MapScreen verticalHeight={verticalHeigth} tamaño={12} size={sizing}/>}
+                {showMap3 && <MapScreen verticalHeight={verticalHeigth} tamaño={16} size={sizing}/>}
+                {showMap4 && <MapScreen verticalHeight={verticalHeigth} tamaño={20} size={sizing}/>}
+                {showMap5 && <MapScreen verticalHeight={verticalHeigth} tamaño={25} size={sizing}/>}
             </div>
         </div>
       </div>
