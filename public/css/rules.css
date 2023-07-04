@@ -37,7 +37,7 @@
   position: fixed;
   z-index: 10;
   backdrop-filter: blur(3px);
-  margin-top: 110px;
+  margin-top: 160px;
   margin-left: 10px;
   font-size: calc(20px + 0.8vw);
 }

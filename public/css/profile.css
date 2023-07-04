@@ -423,7 +423,6 @@ border-radius: 10px;
   z-index: 40;
   position: fixed;
   border: outset 3px grey;
-  margin-top: -40px;
   background-color: rgba(0, 0, 0, 0.773);
   color: white;
   transition: 0.2s ease-in-out;
@@ -438,6 +437,7 @@ border-radius: 10px;
   border: outset 3px grey;
   background-color: rgba(0, 0, 0, 0.773);
   color: white;
+  top: 90px;
   transition: 0.2s ease-in-out;
   font-size: calc(26px + 0.5vw);
   padding: 2px 15px;
@@ -458,7 +458,7 @@ padding: 0px 13px;
   transition: 0.2s ease-in-out;
   font-size: calc(20px + 0.5vw);
   padding: 2px 15px;
-  top: 100px
+  top: 150px
 }
 .button-map:hover{
 background-color: rgb(9, 0, 37);

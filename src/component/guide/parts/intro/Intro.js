@@ -6,7 +6,7 @@ import {PlansImgs, PlansBast, PlansRing, PlansBrazal} from "../../../../componen
 
 function Intro() {
   const [navLateral, setNavLateral] = useState(false)
-  const [lanzar, setLanzar] = useState(true)
+  const [lanzar, setLanzar] = useState(false)
 
   return (
     <div  className='dongionsdetail-box'>
@@ -15,12 +15,12 @@ function Intro() {
           <Link className='folder-link' style={{color:"lightblue", fontSize:"calc(16px + 0.5vw)"}} onClick={()=>setNavLateral(!navLateral)} >{navLateral? <i className="fa-solid fa-folder-open"></i> : <i className="fa-solid fa-folder"></i>}</Link>
           {navLateral && 
           <>
-          <a href="#p-explico">Lo básico</a>
-          <a href="#p-personajes">Personajes Jugables</a>
-          <a href="#p-porque">Qué tiene de especial</a>
-          <a href="#p-comunicarse">Comunicarse con los Guías</a>
-          <a href="#p-canalizar">Canalizar la Magia</a>
-          <a href="#p-misiones">Misiones únicas</a>
+            <a href="#p-explico">Lo básico</a>
+            <a href="#p-personajes">Personajes Jugables</a>
+            <a href="#p-porque">Qué tiene de especial</a>
+            <a href="#p-comunicarse">Comunicarse con los Guías</a>
+            <a href="#p-canalizar">Canalizar la Magia</a>
+            <a href="#p-misiones">Misiones únicas</a>
           </>
           }
         </div>
