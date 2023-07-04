@@ -68,7 +68,7 @@ float: right;
 }
 .intro-img-paisaje img{
   width: calc(40px + 4vw);
-  height: auto;
+  height: 100px;
   margin: 2px 1px;
   border-radius: 10px;
   transition: 0.3s ease-in-out ;

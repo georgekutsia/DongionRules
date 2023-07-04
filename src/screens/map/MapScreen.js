@@ -42,10 +42,8 @@ function MapScreen({tamaño, size, verticalHeight}) {
     }));
   };
   return (
-    <div className='big-box-map'>
-    <button onClick={handleButtonClick}>
-      Cambiar datos
-    </button>
+    <div className='big-box-map' style={{fontSize:"40px"}}>
+      <button onClick={handleButtonClick}> <i className="fa-solid fa-table"></i> </button>
       <div>
         <img className='map-img0' onDoubleClick={()=>handleDoubleClick('map-img0')} style={{ width:`calc(${size}px + 2vw)`,height:`calc(${size}px + 2vw + ${verticalHeight}px)`, transform: `rotate(${rotation['map-img0']}deg)`}} src={`${images[0]}`} alt={images[0]} />
         <img className='map-img1' onDoubleClick={()=>handleDoubleClick('map-img1')} style={{width:`calc(${size}px + 2vw)`,height:`calc(${size}px + 2vw + ${verticalHeight}px)`, transform: `rotate(${rotation['map-img1']}deg)`}} src={`${images[1]}`} alt={images[1]} />
