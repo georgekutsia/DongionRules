@@ -9,6 +9,7 @@ import FadeInOut from './component/FadeInOut';
 function App() {
   const [pjScreenVisible, setPjScreenVisible] = useState(false);
   const [mapScreenVisible, setMapScreenVisible] = useState(false);
+  const [showPjMap, setShoPjMap] = useState(true)
   const [showMap1, setShowMap1] = useState(false);
   const [showMap2, setShowMap2] = useState(false);
   const [showMap3, setShowMap3] = useState(false);
@@ -71,12 +72,19 @@ function App() {
   return (
     <div>
       <NavBar />
-      <button style={{color: mapScreenVisible? "yellow":""}} className='button-map' onClick={toggleMapScreen}>
-        {mapScreenVisible ? <i className="fa-solid fa-earth-europe fa-fade"></i> : <i className="fa-solid fa-earth-europe fa-spin"></i>}
-      </button>
-      <button style={{color: pjScreenVisible? "cyan":""}} className='button-pj' onClick={togglePjScreen}>
-        {pjScreenVisible ? <i className="fa-solid fa-person-military-pointing fa-fade"></i>: <i className="fa-solid fa-person-military-rifle fa-bounce"></i>}
-      </button>
+        <button style={{color: mapScreenVisible? "yellow":""}} className='button-pjmap' onClick={()=>setShoPjMap(!showPjMap)}>
+          {showPjMap ? <i class="fa-solid fa-arrow-up-short-wide"></i> : <i class="fa-solid fa-arrow-down-short-wide fa-fade"></i>}
+        </button>
+        {showPjMap && 
+              <>
+                <button style={{color: mapScreenVisible? "yellow":""}} className='button-map' onClick={toggleMapScreen}>
+                  {mapScreenVisible ? <i className="fa-solid fa-earth-europe fa-fade"></i> : <i className="fa-solid fa-earth-europe fa-spin"></i>}
+                </button>
+                <button style={{color: pjScreenVisible? "cyan":""}} className='button-pj' onClick={togglePjScreen}>
+                  {pjScreenVisible ? <i className="fa-solid fa-person-military-pointing fa-fade"></i>: <i className="fa-solid fa-person-military-rifle fa-bounce"></i>}
+                </button>
+              </>
+            }
       <div className='app-container-pj' align="center" style={{display: pjScreenVisible ? "flex" : "none"}}>
         <PjScreen />
       </div>

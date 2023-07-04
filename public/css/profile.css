@@ -417,6 +417,19 @@ border-radius: 10px;
   display: inline-block;
   width: 900px;
 }
+.button-pjmap{
+  position: absolute;
+  display: block;
+  z-index: 40;
+  position: fixed;
+  border: outset 3px grey;
+  margin-top: -40px;
+  background-color: rgba(0, 0, 0, 0.773);
+  color: white;
+  transition: 0.2s ease-in-out;
+  font-size: calc(20px + 0.3vw);
+  padding: 2px 15px;
+}
 .button-pj{
   position: absolute;
   display: block;
