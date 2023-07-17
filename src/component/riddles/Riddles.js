@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function Riddles({ respuesta1,respuesta2, respuesta3,mensajeBienHecho,mensajePruebaFallida, nombrePrueba, placeHolder }) {
+function Riddles({ respuesta1,respuesta2, respuesta3, respuesta4, respuesta5, respuesta6, mensajeBienHecho,mensajePruebaFallida, nombrePrueba, placeHolder }) {
   const [calculating, setCalculating] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [message, setMessage] = useState('Verificar');
@@ -36,7 +36,7 @@ function Riddles({ respuesta1,respuesta2, respuesta3,mensajeBienHecho,mensajePru
     setMessage("Verificando respuesta");
     setColorBack("white")
     setTimeout(() => {
-      if (inputValue.toLowerCase() === respuesta1.toLowerCase() || inputValue.toLowerCase() === respuesta2.toLowerCase()|| inputValue.toLowerCase() === respuesta3.toLowerCase()) {
+      if (inputValue.toLowerCase() === respuesta1.toLowerCase() || inputValue.toLowerCase() === respuesta2.toLowerCase()|| inputValue.toLowerCase() === respuesta3.toLowerCase()|| inputValue.toLowerCase() === respuesta4.toLowerCase()|| inputValue.toLowerCase() === respuesta5.toLowerCase()) {
         setMessage(`${mensajeBienHecho}`);
         setColorBack("rgb(0, 255, 85)");
       } else {
