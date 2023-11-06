@@ -9,7 +9,7 @@
 
 .creatures-beleron-list-img:hover {
   scale: 2;
-  border: 2px white solid;
+  border: 2px rgb(231, 47, 255) solid;
   border-radius: 14px;
 }
 

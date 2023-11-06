@@ -2,11 +2,11 @@ import { Route, Routes } from 'react-router-dom';
 import React, { useState } from 'react';
 import { NavBar } from './component';
 import { ShopScreen, RuleScreen, EventsScreen, DongionsDetail, FrontFrontpage, CounterScreen, PjScreen, MapScreen } from "./screens"
-import FadeInOut from './component/FadeInOut';
 
 // ...
 
 function App() {
+  
   const [pjScreenVisible, setPjScreenVisible] = useState(false);
   const [mapScreenVisible, setMapScreenVisible] = useState(false);
   const [showPjMap, setShoPjMap] = useState(true)
@@ -73,7 +73,7 @@ function App() {
     <div>
       <NavBar />
         <button style={{color: mapScreenVisible? "yellow":""}} className='button-pjmap' onClick={()=>setShoPjMap(!showPjMap)}>
-          {showPjMap ? <i class="fa-solid fa-arrow-up-short-wide"></i> : <i class="fa-solid fa-arrow-down-short-wide fa-fade"></i>}
+          {showPjMap ? <i className="fa-solid fa-arrow-up-short-wide"></i> : <i className="fa-solid fa-arrow-down-short-wide fa-fade"></i>}
         </button>
         {showPjMap && 
               <>
@@ -107,8 +107,8 @@ function App() {
             </button>
             <button onClick={incrementarCantidad}><i className="fa-solid fa-maximize"></i></button>
             <button onClick={restarCantidad}><i className="fa-solid fa-minimize"></i></button>
-            <button onClick={incrementarTamaño}> <i class="fa-solid fa-arrows-up-to-line"></i></button>
-            <button onClick={restarTamaño}><i class="fa-solid fa-arrows-down-to-line"></i></button>
+            <button onClick={incrementarTamaño}> <i className="fa-solid fa-arrows-up-to-line"></i></button>
+            <button onClick={restarTamaño}><i className="fa-solid fa-arrows-down-to-line"></i></button>
             <div>
                 {showMap1 && <MapScreen verticalHeight={verticalHeigth} tamaño={9} size={sizing}/>}
                 {showMap2 && <MapScreen verticalHeight={verticalHeigth} tamaño={12} size={sizing}/>}

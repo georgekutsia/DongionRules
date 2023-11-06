@@ -8,7 +8,6 @@ function TrasteroScreen() {
   useEffect(() => {
     setObs(data)
   },[])
-
   return (
     <>
           <SwordsBall  ballDiv={"sky-sword"} ballImgs={"basic-basic"}/>

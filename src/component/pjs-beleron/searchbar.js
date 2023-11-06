@@ -3,7 +3,7 @@ function Searchbar({enemies, alies, weird,  search, setSearch, filterEnemies, fi
   return(
     <div>
         <div>
-            <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por nombre" value={search} onChange={(event) => setSearch(event.target.value)}/>
+        <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por nombre" value={search} onChange={(event) => setSearch(event.target.value)}/>
         </div>
         <input type="checkbox" className="form-checkbox-input" checked={enemies} onChange={(event) =>filterEnemies(event.target.checked)} id="enemies"/>
         <label  htmlFor="enemies">Enemigos</label>

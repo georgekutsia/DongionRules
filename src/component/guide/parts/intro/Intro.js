@@ -24,7 +24,7 @@ function Intro() {
           </>
           }
         </div>
-        <h2  className='dongionsdetail-box-title'>¡Al fín estás por aqui!</h2>
+        <h2 data-aos="fade-in"  className='dongionsdetail-box-title'>¡Al fín estás por aqui!</h2>
       </div>
       <div className='dongionsdetail-box-parts'>
         <h3 id='p-explico' className='dongionsdetail-title'>Te explico...</h3>

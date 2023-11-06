@@ -3,6 +3,7 @@ import { SwordsBall } from '../../component'
 import data from "../../data/dataPresentación"
 function HabilityScreen() {
   const [obs, setObs] = useState([])
+  
   useEffect(() => {
     setObs(data)
   },[])

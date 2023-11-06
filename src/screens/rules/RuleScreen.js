@@ -1,3 +1,5 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import React, { useEffect, useState } from 'react'
 import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, 
   SorinMarkov,JaceBeleren, AjaniGoldmane, TeferiAkosa, Intro, Inspi, GideonJura, ElspethTIrel, NissaRevane, SarkhanVol, ChandraNalaar, RalZarek, LilianaVess } from '../../component'
@@ -29,7 +31,7 @@ function RuleScreen() {
   const [dude, setDude] = useState(false)
   const [rDice, setRDice] =useState(false)
 
-  const [intro, setIntro] = useState(true)
+  const [intro, setIntro] = useState(false)
   const [basic, setBasic] = useState(false)
 
   const [inspi, setInspi] = useState(false)
@@ -46,7 +48,7 @@ function RuleScreen() {
   const [rNonSpecific, setRNonSpecific] = useState(false)
   const [rNpc, setRNpc] = useState(false)
   const [rEquipment, setREquipment] = useState(false)
-  const [rArmor, setRArmor] = useState(false)
+  const [rArmor, setRArmor] = useState(true)
   const [rDungeon, setRDungeon] = useState(false)
   const [rTalent, setRTalent] = useState(false)
 
