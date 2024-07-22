@@ -108,42 +108,6 @@ function BackgroundFloatingBuble({floatingBalls, widthBall, heigthBall, radiusBa
         <div className={idFlow}>
           <div style={{content:`${floatingBalls}`, width:`${widthBall}`, height:`${heigthBall}`, borderRadius:`${radiusBall}`}} className="flow"></div>
         </div>
-        <div className={idFlow}>
-          <div style={{content:`${floatingBalls}`, width:`${widthBall}`, height:`${heigthBall}`, borderRadius:`${radiusBall}`}} className="flow"></div>
-        </div>
-        <div className={idFlow}>
-          <div style={{content:`${floatingBalls}`, width:`${widthBall}`, height:`${heigthBall}`, borderRadius:`${radiusBall}`}} className="flow"></div>
-        </div>
-        <div className={idFlow}>
-          <div style={{content:`${floatingBalls}`, width:`${widthBall}`, height:`${heigthBall}`, borderRadius:`${radiusBall}`}} className="flow"></div>
-        </div>
-        <div className={idFlow}>
-          <div style={{content:`${floatingBalls}`, width:`${widthBall}`, height:`${heigthBall}`, borderRadius:`${radiusBall}`}} className="flow"></div>
-        </div>
-        <div className={idFlow}>
-          <div style={{content:`${floatingBalls}`, width:`${widthBall}`, height:`${heigthBall}`, borderRadius:`${radiusBall}`}} className="flow"></div>
-        </div>
-        <div className={idFlow}>
-          <div style={{content:`${floatingBalls}`, width:`${widthBall}`, height:`${heigthBall}`, borderRadius:`${radiusBall}`}} className="flow"></div>
-        </div>
-        <div className={idFlow}>
-          <div style={{content:`${floatingBalls}`, width:`${widthBall}`, height:`${heigthBall}`, borderRadius:`${radiusBall}`}} className="flow"></div>
-        </div>
-        <div className={idFlow}>
-          <div style={{content:`${floatingBalls}`, width:`${widthBall}`, height:`${heigthBall}`, borderRadius:`${radiusBall}`}} className="flow"></div>
-        </div>
-        <div className={idFlow}>
-          <div style={{content:`${floatingBalls}`, width:`${widthBall}`, height:`${heigthBall}`, borderRadius:`${radiusBall}`}} className="flow"></div>
-        </div>
-        <div className={idFlow}>
-          <div style={{content:`${floatingBalls}`, width:`${widthBall}`, height:`${heigthBall}`, borderRadius:`${radiusBall}`}} className="flow"></div>
-        </div>
-        <div className={idFlow}>
-          <div style={{content:`${floatingBalls}`, width:`${widthBall}`, height:`${heigthBall}`, borderRadius:`${radiusBall}`}} className="flow"></div>
-        </div>
-        <div className={idFlow}>
-          <div style={{content:`${floatingBalls}`, width:`${widthBall}`, height:`${heigthBall}`, borderRadius:`${radiusBall}`}} className="flow"></div>
-        </div> 
 
       </div>
   );
