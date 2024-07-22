@@ -14,6 +14,9 @@ export {default as Focus} from "./guide/parts/toggle-info/Enfoque"
 export {default as Combat} from "./guide/parts/fight/Combat"
 export {default as Inspi} from "./guide/parts/inspi/Inspi"
 
+
+export {default as Nav2buttonComponent} from "./buttons/Nav2buttonComponent"
+
 export {default as NonSpecific} from "./guide/parts/non-specific/NonSpecific"
 export {default as EquipmentAbilities} from "./guide/parts/equipment-abilities/EquipmentAbilities"
 export {default as ArmorAbilities} from "./guide/parts/equipment-abilities/ArmorAbilities"
