@@ -2,7 +2,7 @@ import React from 'react'
 
 function Presence() {
   return (
-    <div style={{backgroundColor:"rgb(12, 1, 1)"}} className='background-rule-info'>
+    <div style={{backgroundColor:"rgb(12, 1, 1)"}} className='background-rule-info' data-aos="fade-in">
       <h1 id="s-presencia" align="center" className='texto-resaltado-presence'>Presencia</h1> 
       <img className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682202307/donGions%20imgs/characters/presence_bwrryk.png" alt="Charisma"/>
       <div className='d-flex justify-content-evenly'> </div>

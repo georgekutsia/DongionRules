@@ -2,7 +2,7 @@ import React from 'react'
 
 function Perception() {
   return (
-    <div style={{backgroundColor:"rgb(26, 16, 5)"}} className='background-rule-info '>
+    <div style={{backgroundColor:"rgb(26, 16, 5)"}} className='background-rule-info ' data-aos="fade-in">
         <h1 align="center" className='texto-resaltado-percepcion'>Percepción</h1> 
         <img className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682202307/donGions%20imgs/characters/perception_jxcqqd.png" alt="Charisma"/>
 

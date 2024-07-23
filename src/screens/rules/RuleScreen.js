@@ -93,14 +93,7 @@ function RuleScreen() {
 
   return (
     <div className='margin-rules-borrom'>
-        <NavbarVertical 
-            statistics={stats} 
-            stpresence={presence} 
-            stcharisma={charisma} 
-            stluck={luck}
-            stperception={perception} 
-            stkinesthesia={kinesthesia}
-        />
+        <NavbarVertical  statistics={stats}  stpresence={presence}  stcharisma={charisma}  stluck={luck} stperception={perception}  stkinesthesia={kinesthesia}/>
   
       <div align="center" className='container'>
         <div className='titulo-pagina'> Manual de instrucciones del juego</div>
@@ -122,30 +115,29 @@ function RuleScreen() {
         }
           <div className={isSmallScreen? '':'nav-show-stats-rules'}> 
             <div>
-              <button className='btn-rules-toggle' style={{color:"violet", fontSize:"calc(14px + 0.3vw)"}} 
-              onClick={()=>{handleingOn()}}>
+              <button className='btn-rules-toggle' style={{color:"violet", fontSize:"calc(14px + 0.3vw)"}}  onClick={()=>{handleingOn()}}>
                     <span></span><span></span><span></span><span></span><i className="fa-regular fa-folder-open"></i>  
               </button>
-              <button className='btn-rules-toggle' style={{color:"blue", fontSize:"calc(14px + 0.3vw)"}} 
-              onClick={()=>{handleingOff()}}>
+              <button className='btn-rules-toggle' style={{color:"blue", fontSize:"calc(14px + 0.3vw)"}}  onClick={()=>{handleingOff()}}>
                     <span></span><span></span><span></span><span></span><i className="fa-solid fa-folder-closed"></i>
               </button>
             </div>
             <div className='btn-rules'>
-                    <Nav2buttonComponent  info={intro}  setInfo={setIntro} handleingOff={handleingOff} tooltipMessage={"Introducción"} delay={50} icon={"fa-solid fa-signs-post"}/>
-                    <Nav2buttonComponent  info={basic}  setInfo={setBasic} handleingOff={handleingOff} tooltipMessage={"Conceptos básicos"} delay={100} icon={"fa-solid fa-list"}/>
-                    <Nav2buttonComponent  info={rCombat}  setInfo={setRCombat} handleingOff={handleingOff} tooltipMessage={"Combate"} delay={100} icon={"fa-solid fa-people-arrows"}/>
-                    <Nav2buttonComponent  info={rEquipment}  setInfo={setREquipment} handleingOff={handleingOff} tooltipMessage={"Armas"} delay={100} icon={"fa-solid fa-group-arrows-rotate"}/>
-                    <Nav2buttonComponent  info={rArmor}  setInfo={setRArmor} handleingOff={handleingOff} tooltipMessage={"Armaduras"} delay={100} icon={"fa-solid fa-shirt"}/>
-                    <Nav2buttonComponent  info={char}  setInfo={setChar} handleingOff={handleingOff} tooltipMessage={"Carácter"} delay={100} icon={"fa-solid fa-hurricane"}/>
-                    <Nav2buttonComponent  info={rNpc}  setInfo={setRNpc} handleingOff={handleingOff} tooltipMessage={"NPC"} delay={100} icon={"fa-solid fa-people-group"}/>
-                    <Nav2buttonComponent  info={rEffort}  setInfo={setREffort} handleingOff={handleingOff} tooltipMessage={"Esfuerzo"} delay={100} icon={"fa-solid fa-child-reaching"}/>
-                    <Nav2buttonComponent  info={rNonSpecific}  setInfo={setRNonSpecific} handleingOff={handleingOff} tooltipMessage={"Conceptos"} delay={100} icon={"fa-solid fa-hands-asl-interpreting"}/>
-                    <Nav2buttonComponent  info={rDungeon}  setInfo={setRDungeon} handleingOff={handleingOff} tooltipMessage={"Mazmorras"} delay={100} icon={"fa-solid fa-archway"}/>
-                    <Nav2buttonComponent  info={rDice}  setInfo={setRDice} handleingOff={handleingOff} tooltipMessage={"Dados"} delay={100} icon={"fa-solid fa-dice"}/>
-                    <Nav2buttonComponent  info={rTalent}  setInfo={setRTalent} handleingOff={handleingOff} tooltipMessage={"Ramas"} delay={100} icon={"fa-solid fa-tree"}/>
-                    <Nav2buttonComponent  info={inspi}  setInfo={setInspi} handleingOff={handleingOff} tooltipMessage={"Inspírate"} delay={100} icon={"fa-solid fa-solid fa-raygun"}/>
-                    <Nav2buttonComponent  info={inspi}  setInfo={setInspi} handleingOff={handleingOff} tooltipMessage={"Objetos"} delay={100} icon={"fa-solid fa-solid fa-raygun"}/>
+                    <Nav2buttonComponent  info={intro}  setInfo={setIntro} handleingOff={handleingOff} tooltipMessage={"Introducción"} delay={50} icon={"fa-solid fa-signs-post"}  />
+                    <Nav2buttonComponent  info={basic}  setInfo={setBasic} handleingOff={handleingOff} tooltipMessage={"Conceptos básicos"} delay={100} icon={"fa-solid fa-list"}  />
+                    <Nav2buttonComponent  info={rCombat}  setInfo={setRCombat} handleingOff={handleingOff} tooltipMessage={"Combate"} delay={150} icon={"fa-solid fa-people-arrows"}  />
+                    <Nav2buttonComponent  info={rEquipment}  setInfo={setREquipment} handleingOff={handleingOff} tooltipMessage={"Armas"} delay={200} icon={"fa-solid fa-group-arrows-rotate"}  />
+                    <Nav2buttonComponent  info={rArmor}  setInfo={setRArmor} handleingOff={handleingOff} tooltipMessage={"Armaduras"} delay={250} icon={"fa-solid fa-shirt"}  />
+                    <Nav2buttonComponent  info={char}  setInfo={setChar} handleingOff={handleingOff} tooltipMessage={"Carácter"} delay={300} icon={"fa-solid fa-hurricane"}  />
+                    <Nav2buttonComponent  info={rNpc}  setInfo={setRNpc} handleingOff={handleingOff} tooltipMessage={"NPC"} delay={350} icon={"fa-solid fa-people-group"}  />
+                    <Nav2buttonComponent  info={rEffort}  setInfo={setREffort} handleingOff={handleingOff} tooltipMessage={"Esfuerzo"} delay={400} icon={"fa-solid fa-child-reaching"}  />
+                    <Nav2buttonComponent  info={rNonSpecific}  setInfo={setRNonSpecific} handleingOff={handleingOff} tooltipMessage={"Conceptos"} delay={450} icon={"fa-solid fa-hands-asl-interpreting"}  />
+                    <Nav2buttonComponent  info={rDungeon}  setInfo={setRDungeon} handleingOff={handleingOff} tooltipMessage={"Mazmorras"} delay={500} icon={"fa-solid fa-archway"}  />
+                    <Nav2buttonComponent  info={rDice}  setInfo={setRDice} handleingOff={handleingOff} tooltipMessage={"Dados"} delay={550} icon={"fa-solid fa-dice"}  />
+                    <Nav2buttonComponent  info={rTalent}  setInfo={setRTalent} handleingOff={handleingOff} tooltipMessage={"Ramas"} delay={600} icon={"fa-solid fa-tree"}  />
+                    <Nav2buttonComponent  info={inspi}  setInfo={setInspi} handleingOff={handleingOff} tooltipMessage={"Inspírate"} delay={750} icon={"fa-regular fa-lightbulb"}  />
+                    <Nav2buttonComponent  info={inspi}  setInfo={setInspi} handleingOff={handleingOff} tooltipMessage={"Objetos"} delay={800} icon={"fa-solid fa-bag-shopping"}  />
+
               </div>
             </div>
         <div className='below-rules-space'>

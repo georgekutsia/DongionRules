@@ -2,7 +2,7 @@ import React from 'react'
 
 function Luck() {
   return (
-    <div style={{backgroundColor:"rgb(16, 4, 14)"}} className='background-rule-info'>
+    <div style={{backgroundColor:"rgb(16, 4, 14)"}} className='background-rule-info' data-aos="fade-in">
       <h1 id="s-suerte" align="center" className='texto-resaltado-suerte'>Suerte</h1> 
       <img className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682202306/donGions%20imgs/characters/luck_fvyffm.png" alt="Charisma"/>
     <div className='d-flex justify-content-evenly'>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function effort() {
   return (
-    <>
+    <div data-aos="fade-in">
       <div style={{backgroundColor:"rgb(2, 12, 5)"}} className='background-rule-info'>
         <h1 id="s-cinestesia" align="center" className='texto-resaltado-esfuerzo'> Esfuerzo</h1> 
         <img className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682214408/donGions%20imgs/characters/2ae9b3fd2ac21fc31bf24dd8c7a030fb_besi5u.png" alt="Charisma"/>
@@ -30,7 +30,7 @@ function effort() {
             <li>&nbsp;<span className='nombre-esfuerzo-negro' style={{color:"magenta", borderBottom:"none"}}> <i className="fa-solid fa-person-walking-dashed-line-arrow-right "></i><i className="fa-solid fa-khanda"></i> Ataque en movimiento: </span> Se pueden hacer ataques especiales también en movimiento (incluidos saltos o caída), con cripsis (desde oculto), inmovilizados (agarrados por un enemigo o atrapados etc)</li>
           </ul>
       </div>
-    </>
+    </div>
   )
 }
 

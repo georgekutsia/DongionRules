@@ -2,7 +2,7 @@ import React from 'react'
 
 function Dungeon() {
   return (
-    <div>Dungeon</div>
+    <div data-aos="fade-in">Dungeon</div>
   )
 }
 

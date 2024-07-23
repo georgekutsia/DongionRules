@@ -5,7 +5,7 @@ import { WeaponAbility, ShieldAbility, WeaponDistanceAbility, WeaponThrowAbility
 function EquipmentScreen() {
   
   return (
-    <div>
+    <div data-aos="fade-in">
       <WeaponAbility/>
       <ShieldAbility/>
       <WeaponDistanceAbility/>

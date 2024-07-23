@@ -2,7 +2,7 @@ import React from 'react'
 
 function Npc() {
   return (
-    <>
+    <div data-aos="fade-in">
       <h1 id="s-tiempo" align="center" className='texto-resaltado-npc'> Recompensas</h1>
       <div className='nombre-npc-negro-titulo'> Criaturas y combate </div>
         <article>Cuando se mata a una criatura no aliada, se obtiene recompensa en esencia y maná igual a su coste, pero algunas criaturas,
@@ -80,7 +80,7 @@ function Npc() {
             <li>&nbsp;<span className='nombre-npc-negro'>Descarga eléctrica: </span> paraliza a la 6 acciones. Poco a poco recupera el control, pero la cantidad de metal que lleve encima aumenta la cantidad de acciones paralizadas y el tiempo de recuperación.</li>
           </div>
       </ul>
-    </>
+    </div>
   )
 }
 

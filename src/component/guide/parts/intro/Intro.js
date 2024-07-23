@@ -9,7 +9,7 @@ function Intro() {
   const [lanzar, setLanzar] = useState(false)
 
   return (
-    <div  className='dongionsdetail-box'>
+    <div  className='dongionsdetail-box' data-aos="fade-in">
       <div align="center">
         <div id='link-a-partes-intro'>
           <Link className='folder-link' style={{color:"lightblue", fontSize:"calc(16px + 0.5vw)"}} onClick={()=>setNavLateral(!navLateral)} >{navLateral? <i className="fa-solid fa-folder-open"></i> : <i className="fa-solid fa-folder"></i>}</Link>

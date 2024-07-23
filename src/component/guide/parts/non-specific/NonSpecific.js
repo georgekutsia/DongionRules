@@ -2,7 +2,7 @@ import React from 'react'
 
 function NonSpecific() {
   return (
-    <>
+    <div data-aos="fade-in">
       <div style={{backgroundColor:"rgb(2, 12, 5)"}} className='background-rule-info'>
         <h1 id="s-otros-conceptos" align="center" className='texto-resaltado-modifican'> Otros conceptos</h1> 
           <ul className="definicion-concepto">
@@ -51,7 +51,7 @@ function NonSpecific() {
             <li>&nbsp; <span className='nombre-stat-negro' style={{color:"burlywood", borderBottom:"none"}}><i className="fa-solid fa-circle-check"></i> Cada 3 <span style={{fontStyle:"italic", color:"cornflowerblue"}}>tatuajes </span> </span> aumentan tu carisma +1</li>
           </ul>
       </div>
-    </>
+    </div>
   )
 }
 

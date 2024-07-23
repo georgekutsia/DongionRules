@@ -2,7 +2,7 @@ import React from 'react'
 
 function Dice() {
   return (
-    <div style={{backgroundColor:"rgb(2, 12, 5)"}} className='background-rule-info'>
+    <div style={{backgroundColor:"rgb(2, 12, 5)"}} className='background-rule-info' data-aos="fade-in">
       <h1 id="s-cinestesia" align="center" className='texto-resaltado-dados'> Dados</h1> 
       <img className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682727935/donGions%20imgs/dados/dadoViejo_xa7hh5.png" alt="Charisma"/>
       <div className='justify-content-evenly'>

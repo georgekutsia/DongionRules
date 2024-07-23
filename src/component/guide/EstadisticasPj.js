@@ -9,14 +9,14 @@ function EstadisticasPj() {
   const [focus, setFocus] = useState(false)
   const [combat, setCombat] = useState(false)
   return (
-    <>
+    <div data-aos="fade-in">
       <h1 className="texto-resaltado-npc"> Estadísticas del personaje y las acciones que puede realizar</h1>
       <div className="background-rule-info">
-          <div className="nombre-concepto-blanco" style={{color:"rgb(0, 245, 0)"}}><i className="fa-solid fa-heart-pulse"></i> Vida:<span className="definicion-concepto">los puntos máximos que puedes tener. Al llegar a 0 mueres. No te puedes sanar por encima de esa cantidad.</span></div> 
-          <div className="nombre-concepto-blanco" style={{color:"#00e5ff"}}><i className="fa-solid fa-droplet"></i> Maná:<span className="definicion-concepto">se gasta para usar hechizos y habilidades. Al comienzo del turno del personaje, recuperas un punto.</span></div> 
-          <div className="nombre-concepto-blanco" style={{color:"rgb(247, 0, 255)"}}><i className="fa-brands fa-cloudsmith"></i> Esencia:<span className="definicion-concepto">se consigue al rematar una criatura. Sirve para gastar en hechizos y habilidades que requieren esencia</span></div> 
-          <div className="nombre-concepto-blanco" id="s-salud"> <span className="texto-salud"><i className="fa-solid fa-heart-pulse"></i><i className="fa-solid fa-droplet"></i> <i className="fa-brands fa-cloudsmith"></i>  Salud:</span><span className="definicion-concepto">es el total de vida, maná y esencia. Recuperar 1 punto de salud es recuperar 1 de cada.</span></div> 
-          <div className="nombre-concepto-blanco" style={{color:"rgb(255, 255, 0)"}}><span>
+          <div data-aos="fade-right" className="nombre-concepto-blanco" style={{color:"rgb(0, 245, 0)"}}><i className="fa-solid fa-heart-pulse"></i> Vida:<span className="definicion-concepto">los puntos máximos que puedes tener. Al llegar a 0 mueres. No te puedes sanar por encima de esa cantidad.</span></div> 
+          <div data-aos="fade-right" className="nombre-concepto-blanco" style={{color:"#00e5ff"}}><i className="fa-solid fa-droplet"></i> Maná:<span className="definicion-concepto">se gasta para usar hechizos y habilidades. Al comienzo del turno del personaje, recuperas un punto.</span></div> 
+          <div data-aos="fade-right" className="nombre-concepto-blanco" style={{color:"rgb(247, 0, 255)"}}><i className="fa-brands fa-cloudsmith"></i> Esencia:<span className="definicion-concepto">se consigue al rematar una criatura. Sirve para gastar en hechizos y habilidades que requieren esencia</span></div> 
+          <div data-aos="fade-right" className="nombre-concepto-blanco" id="s-salud"> <span className="texto-salud"><i className="fa-solid fa-heart-pulse"></i><i className="fa-solid fa-droplet"></i> <i className="fa-brands fa-cloudsmith"></i>  Salud:</span><span className="definicion-concepto">es el total de vida, maná y esencia. Recuperar 1 punto de salud es recuperar 1 de cada.</span></div> 
+          <div data-aos="fade-right" className="nombre-concepto-blanco" style={{color:"rgb(255, 255, 0)"}}><span>
           <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>setActions(!actions)}>
               <span></span><span></span><span></span><span></span><i className="fa-solid fa-person-running "></i> Acciones: </button>
                   </span><span className="definicion-concepto">La cantidad de cosas que puedes hacer en la ronda. Se recarga al comienzo del turno y algunas acciones se pueden gastar 
@@ -62,7 +62,7 @@ function EstadisticasPj() {
                 +2 en sanación, cada turno sanaría 1 + 2 vidas.</span></div> 
       </div>
               {combat && <Combat/>}
-    </>
+    </div>
   );
 } 
 

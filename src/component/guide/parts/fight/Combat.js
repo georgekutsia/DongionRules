@@ -2,7 +2,7 @@ import React from 'react'
 
 function Combat() {
   return (
-    <>
+    <div data-aos="fade-in">
     <div className='combat-images-top'>
       <img className='combat-top-img' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1686322667/donGions%20imgs/ruleImages/combate-izquierda_jtjuow.png" alt="" />
         <h1 id="combat" align="center" className='texto-resaltado-combate'> Combate</h1>
@@ -140,7 +140,7 @@ function Combat() {
             </div>
             </article>
         </div>
-    </>
+    </div>
   )
 }
 

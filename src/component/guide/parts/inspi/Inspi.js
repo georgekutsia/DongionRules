@@ -16,7 +16,7 @@ function Inspi() {
   const [ins11, setins11] = useState(false)
   const [ins12, setins12] = useState(false)
   return (
-    <div className='inspirate'>
+    <div className='inspirate' data-aos="fade-in">
       <div className='ins1'>
         <h4 onClick={()=>setins1(!ins1)} style={{color:"blue"}} className={ins1 ? "inspi-titulo-click":"inspi-titulo"}> Ducho con armas </h4>
         <img onClick={()=>setins1(!ins1)} className={ins1 ? "inspi-img":"inspi-img-click"} src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688329371/donGions%20imgs/rules%2B/espadachin_ce5esv.png" alt="Inspi" />
