@@ -92,10 +92,9 @@ function RuleScreen() {
   }
 
   return (
-    <div className='margin-rules-borrom'>
+    <div className='margin-rules-bottom'>
         <NavbarVertical  statistics={stats}  stpresence={presence}  stcharisma={charisma}  stluck={luck} stperception={perception}  stkinesthesia={kinesthesia}/>
-  
-      <div align="center" className='container'>
+      <div align="center" className='rules-container'>
         <div className='titulo-pagina'> Manual de instrucciones del juego</div>
         <div style={{width:"10%"}}> 
             <Link onClick={()=> setDude(!dude)}>

@@ -162,51 +162,60 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 }
 .btn-rules-toggle {
   position: relative;
   display: inline-block;
-  padding: 0 15px;
-  color: #555151;
+  padding: 0 10px;
+  color: #f2efef;
   transition: 0.5s;
   letter-spacing: 4px;
   overflow: hidden;
   border: 30px;
   font-size: calc(8px + 0.6vw);
   background: linear-gradient(to right, black, black, black, black, #606060, black, black, black, black);
-  /* animation: moveGradientRules 10s ease-in-out infinite; */
   background-size: 3800px;
   border-radius: 20px ;
-  width: calc(40px + 1vw);
-  height: 50px;
+  min-width: calc(40px + 1vw);
+  max-height: 70px;
+  margin-top: 10px;
+  text-align: center;
 }
 .btn-rules-toggle:hover {
   background: white;
   color: #050801;
   box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px rgb(2, 187, 229), 0 0 20px white;
   -webkit-box-reflect: below -10px linear-gradient(transparent, #0005);
-
 }
 @keyframes moveGradientRules {
-  1% {
+  1%, 100% {
     background-position: 0% 50%;
-    border-bottom: solid rgba(255, 255, 255, 0) 0px;
+    border-left: 0px solid rgb(0, 0, 0);
+    border-right: 0px solid rgb(0, 0, 0);
+    border-top: 0px solid rgb(0, 0, 0);
+
   }
-  25%{
-    border-bottom: solid white 2px;
-    border-top: solid rgba(255, 255, 255, 0) 0px;
+
+  20%{
+    border-bottom: 4px solid white
   }
-  50% {
-    background-position: 100% 50%;
-    border-bottom: solid rgba(0, 0, 0, 0) 0px;
-    border-top: solid white 2px;
+  50%{
+    border-top: 1px solid black;
   }
-  85%{
-    border-top: solid rgba(0, 0, 0, 0) 0px;
-    border-bottom: solid rgba(0, 0, 0, 0) 0px;
-    border: none;
+  49%{
+    border-bottom: 1px solid black;
+    
   }
-  100% {
-    background-position: 0% 50%;
-  }
+  50%{
+  border-top: 4px solid white;
+  background-position: 100% 50%;
+  border-left: 0px solid rgb(0, 0, 0);
+  border-right: 0px solid rgb(0, 0, 0);
+ }
+ 70%, 95%{
+  border-top: 0px solid rgb(0, 0, 0);
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+ }
 }

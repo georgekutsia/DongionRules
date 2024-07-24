@@ -1,3 +1,6 @@
+.rules-container{
+  margin: 1vw 10vw;
+}
 
 .img-rules-inspi{
   margin: 5px;
@@ -29,7 +32,7 @@
   animation-iteration-count: 2;
   animation-duration: 3s;
 }
-.margin-rules-borrom{
+.margin-rules-bottom{
   margin-bottom: 100px;
 }
 
@@ -63,13 +66,19 @@
   color: rgb(125, 255, 227);
 }
 
-
+.salto-de-linea{
+  display: block;
+  padding-bottom: 10px;
+  font-size: 100px;
+}
 .nombre-concepto-blanco{
-font-size: calc(12px + 1.2vw);
+font-size: calc(12px + 0.7vw);
 font-weight: bolder;
 font-family: 'Times New Roman', Times, serif;
 -webkit-text-stroke: 1px white;
 border-bottom: white 1px solid;
+padding: 5px 5px;
+text-decoration: none;
 
 }
 .nombre-concepto-negro{
@@ -78,6 +87,8 @@ font-weight: bolder;
 font-family: 'Times New Roman', Times, serif;
 -webkit-text-stroke: 0.3px  rgb(0, 0, 0);
 border-bottom: white 1px solid;
+padding: 20px 0px;
+
 }
 .nombre-esfuerzo-negro{
 font-size: calc(12px + 0.9vw);
@@ -113,9 +124,9 @@ border-bottom: white 1px solid;
 color:white;
 padding: 5px;
 text-align: justify;
-margin-top: 10px;
 font-size: calc(12px + 0.6vw);
 -webkit-text-stroke: 0 white;
+text-indent: 40px;
 }
 
 
@@ -193,67 +204,65 @@ font-size: calc(12px + 0.6vw);
 
 
 .texto-resaltado-npc {
-  animation: fluido1 18s ease-in-out infinite;
+  animation: fluidoDetexto 18s ease-in-out infinite;
   background: linear-gradient(-45deg, rgb(89, 185, 253), rgb(123, 247, 224), rgb(1, 28, 206));
   background-size: 300%;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: calc(14px + 1.5vw);
 }
 .texto-resaltado-degradado {
-  animation: fluido1 4s ease-in-out infinite;
+  animation: fluidoDetexto 24s ease-in-out infinite;
   background: linear-gradient(-45deg, #f3eb08, rgb(255, 255, 255));
   background-size: 300%;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
   font-size: calc(12px + 0.5vw);
 }
+
 .texto-resaltado-degradado-subrayado {
-  animation: fluido1 4s ease-in-out infinite;
+  animation: fluidoDetexto 4s ease-in-out infinite;
   background: linear-gradient(-45deg, #f39108, rgb(154, 120, 75));
   background-size: 300%;
   text-decoration: underline;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: 10%;
   margin-right: 10%;
   font-size: calc(12px + 0.5vw);
 }
 .texto-resaltado-modifican {
-  animation: fluido1 19s ease-in-out infinite;
+  animation: fluidoDetexto 19s ease-in-out infinite;
   background: linear-gradient(-45deg, #bdbb8c, rgb(49, 79, 13));
   background-size: 300%;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: calc(18px + 1.5vw);
 }
 .texto-resaltado-no-especificados {
-  animation: fluido1 4s ease-in-out infinite;
+  animation: fluidoDetexto 4s ease-in-out infinite;
   background: linear-gradient(-45deg, #03d9ff, rgb(119, 168, 167));
   background-size: 300%;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: calc(12px + 1.5vw);
 }
-.texto-resaltado-ataques{
-  animation: fluido1 4s ease-in-out infinite;
-  background: linear-gradient(-45deg, #ff1e00, rgb(112, 18, 18));
-  background-size: 300%;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: calc(12px + 1.2vw);
-  margin-top: 20px;
+.titulo-combate{
+  font-size: calc(20px + 1.2vw);
+  margin: 40px;
+  text-shadow: 1px 1px 1px white;
 }
+
+
 .texto-resaltado-ataques-potenciados{
-  animation: fluido1 4s ease-in-out infinite;
+  animation: fluidoDetexto 4s ease-in-out infinite;
   background: linear-gradient(-45deg, #ff1e00, rgb(112, 18, 18));
   background-size: 300%;
   -webkit-background-clip: text;
@@ -264,7 +273,7 @@ font-size: calc(12px + 0.6vw);
 }
 
 .texto-resaltado-defensas-potenciados{
-  animation: fluido1 4s ease-in-out infinite;
+  animation: fluidoDetexto 4s ease-in-out infinite;
   background: linear-gradient(-45deg, #07e721, rgb(3, 77, 32));
   background-size: 300%;
   -webkit-background-clip: text;
@@ -274,7 +283,7 @@ font-size: calc(12px + 0.6vw);
   font-size: calc(12px + 0.9vw);
 }
 .texto-resaltado-defensas{
-  animation: fluido1 4s ease-in-out infinite;
+  animation: fluidoDetexto 4s ease-in-out infinite;
   background: linear-gradient(-45deg, #26ff00, rgb(18, 112, 26));
   background-size: 300%;
   -webkit-background-clip: text;
@@ -284,11 +293,14 @@ font-size: calc(12px + 0.6vw);
   margin-top: 20px;
 }
 
-@keyframes fluido1 {
+@keyframes fluidoDetexto {
     0% { background-position: 0 50% }
-    50% { background-position: 100% 50% }
+    10%, 90% { background-position: 100% 50% }
     100% { background-position: 0 50% }
 }
+
+
+
 .texto-resaltado-concentracion {
   animation: fluido4 10s ease-in-out infinite;
   background: linear-gradient(-45deg, #f3eb08, rgb(254, 0, 0), #f3eb08, rgb(254, 0, 0), #ff0000, rgb(254, 0, 0), #f3eb08, rgb(254, 0, 0));
@@ -366,21 +378,25 @@ font-size: calc(12px + 0.6vw);
     100% { background-position: 0 50% }
 }
 
-.texto-resaltado-suerte-stats {
-  animation: fluido3 15s ease-in-out infinite;
-  background: linear-gradient(-45deg, white, white, white, rgb(1, 0, 0));
-  background-size: 600%;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 25px;
-  font-family:"Anton";
-  padding-left: 10px
+.combat-disposition{
+  display: flex;
 }
-@keyframes fluido3 {
-    0% { background-position: 0 50% }
-    50% { background-position: 100% 50% }
-    100% { background-position: 0 50% }
+
+.texto-resaltado-brillante {
+  font-size: calc(10px + 1vw);
+  font-family: "Anton";
+  padding-left: 10px;
+  animation: textoBrillante 15s infinite;
+}
+
+@keyframes textoBrillante {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.297), 0 0 10px rgba(255, 0, 0, 0.297), 0 0 15px rgba(255, 0, 0, 0.297), 0 0 20px rgba(255, 0, 0, 0.297), 0 0 25px rgba(255, 0, 0, 0.297), 0 0 30px rgba(255, 0, 0, 0.297), 0 0 35px rgba(255, 0, 0, 0.297);
+  }
+  20%, 80% {
+    text-shadow: 0 0 4px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white;
+    color: black; /* El color del texto */
+  }
 }
 
 .texto-resaltado-sobreesfuerzo {
@@ -487,6 +503,7 @@ font-size: calc(12px + 0.6vw);
   list-style:none;
   padding: 10px;
   font-size: 18px;
+  margin: 0 5vw;
 }
 ul li span{
   text-shadow: 1px 1px rgb(116, 116, 116);
@@ -554,13 +571,15 @@ scale:1.5
 }
 .combat-images{
   margin-top:30px;
-  width: 20%;
-  height: 25%;
+  width: 50%;
+  height: auto;
   max-width: 150px;
   transition: all ease-in-out 0.2s;
 }
 .combat-images:hover{
-scale:2.5
+scale:2.5;
+transform: translateX(50px);
+
 }
 .combat-images-right{
   width: 100%;
@@ -569,7 +588,8 @@ scale:2.5
 
 }
 .combat-images-right:hover{
-scale:2.5
+scale:2.5;
+transform: translateX(30px);
 }
 .concentration-results div{
   background-color: black;
@@ -586,17 +606,14 @@ scale:2.5
   background-color: rgba(3, 68, 7, 0.336);
   border-radius: 20px;
 }
-.ataque-potenciado-titulo{
-  font-size: calc(12px + 1vw) ;
+
+.ataque-potenciado {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10%;
+  margin-left: 10%;
 }
-.ataque-potenciado-texto{
-  font-size: calc(12px + 0.5vw) ;
-  padding-top: 20px;
-}
-.ataque-potenciado{
-width: 80%;
-min-width: 340px;
-}
+
 .text-npc{
 text-align: left;
 margin: 0px 1vw;

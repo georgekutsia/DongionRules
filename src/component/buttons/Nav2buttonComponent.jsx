@@ -16,7 +16,7 @@ function Nav2buttonComponent({ info, handleingOff, setInfo, tooltipMessage, dela
     </Tooltip>
   );
 
-  const buttonStyle = info ?  { animation: `moveGradientRules 10s ease-in-out infinite` }:{} ;
+  const buttonStyle = info ?  { animation: `moveGradientRules 15s ease-in-out infinite` }:{} ;
 
   return (
     <OverlayTrigger placement="top" delay={{ show: 50, hide: 200 }} overlay={renderTooltip}>

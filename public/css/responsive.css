@@ -1,0 +1,13 @@
+@media screen and (max-width: 765px) {
+  .btn-rules-toggle {
+    position: relative;
+    max-height: 50px;
+    text-align: center;
+  }
+
+.combat-disposition{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+}

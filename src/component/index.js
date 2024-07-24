@@ -12,6 +12,8 @@ export {default as Enfoque} from "./guide/parts/toggle-info/Enfoque"
 export {default as ExtraEffort} from "./guide/parts/toggle-info/Effort"
 export {default as Focus} from "./guide/parts/toggle-info/Enfoque"
 export {default as Combat} from "./guide/parts/fight/Combat"
+export {default as CombatComponent} from "./guide/parts/fight/CombatComponent"
+export {default as CombatTitleComponent} from "./guide/parts/fight/CombatTitleComponent"
 export {default as Inspi} from "./guide/parts/inspi/Inspi"
 
 
@@ -98,6 +100,8 @@ export {default as StatsChar} from "./pjCounter/StatsChar"
 
 export {default as Infos} from "./Infos/Infos"
 export {default as Intro} from "./guide/parts/intro/Intro"
+export {default as IntroComponents} from "./guide/parts/intro/IntroComponents"
+export {default as IntroImgsComponent} from "./guide/parts/intro/IntroImgsComponent"
 export {default as PlansImgs} from "./guide/PlansImgs"
 export {default as PlansBast} from "./guide/PlansBast"
 export {default as PlansRing} from "./guide/PlansRing"

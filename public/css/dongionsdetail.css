@@ -21,7 +21,7 @@
 }
 
 .dongionsdetail-box-parts{
-  margin: 1%;
+  margin: calc(50px + 3vw) 0px 0px 0px ;
   text-align: justify;
   box-shadow: 0 30px 40px rgba(250, 250, 250, 0.278);
   border-radius: 15px;
