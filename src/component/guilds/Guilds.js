@@ -4,6 +4,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 function Guilds() {
   const [showPage, setShowPage] = useState(false);
+  
   useEffect(() => {
     setShowPage(true);
   }, []);

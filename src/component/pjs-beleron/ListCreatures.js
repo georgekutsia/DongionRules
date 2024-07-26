@@ -30,7 +30,6 @@ function ListCreatures({search, enemies, alies, weird}) {
                                 .filter((creat) => (weird ? creat.weird : true))
                                     .map((creaturesNpc) =>
                                         <Creature key={creaturesNpc.img} {...creaturesNpc}/>)}
-                    {console.log(NPC.length)}
                 </tbody>
         </table>
         </FadeInOut>

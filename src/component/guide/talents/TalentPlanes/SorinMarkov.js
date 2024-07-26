@@ -127,9 +127,6 @@ function SorinMarkov() {
         // talFifth35={"5 Arquero 3 caliente caliente"}
         // talFifth36={"5 Arquero 3 caliente caliente"}
 
-
-
-
       />
     </div>
   );

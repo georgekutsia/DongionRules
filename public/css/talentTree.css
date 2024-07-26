@@ -1,0 +1,48 @@
+.talent-tree-box{
+  margin-top: 40px;
+
+}
+.talent-tree-row{
+  /* display: grid;
+  grid-template-columns: repeat(6, auto); */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-luchador{
+  background-color: rgb(20, 74, 20);
+  color: white;
+  transition: 0.5s ease-in-out all;
+}
+.btn-luchador:hover{
+border: 3px solid red;
+}
+
+.btn-hechicero{
+
+}
+.btn-cazador{
+
+}
+
+.talent-tree-btn{
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  border-radius: 15%;
+}
+.talent-tree-btn-empty{
+  width: 1%;
+  height: 50px;
+  background-color: rgb(242, 242, 242);
+  cursor: default; /* Cambia el cursor a la flecha por defecto */
+  pointer-events: none;
+  border: none;
+  margin: -10px 0px;
+  z-index: -3;
+}
+.talent-tree-btn-space{
+  opacity: 0;
+  cursor: default; 
+  pointer-events: none; 
+}

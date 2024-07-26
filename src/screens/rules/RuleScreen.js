@@ -3,10 +3,8 @@ import 'aos/dist/aos.css';
 import React, { useEffect, useState } from 'react';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, 
-  SorinMarkov,JaceBeleren, AjaniGoldmane, TeferiAkosa, Intro, Inspi, GideonJura, ElspethTIrel, NissaRevane, SarkhanVol, ChandraNalaar, RalZarek, LilianaVess,
-  Nav2buttonComponent, } from '../../component'
+import {  Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, 
+  Nav2buttonComponent, TalentComponent, Inspi, Intro, } from '../../component'
 import { EquipmentScreen, ArmorScreen } from '../index';
 import Rules from '../../component/guide/EstadisticasPj'
 import { Link } from 'react-router-dom';
@@ -37,7 +35,7 @@ function RuleScreen() {
   const [dude, setDude] = useState(false)
   const [rDice, setRDice] =useState(false)
 
-  const [intro, setIntro] = useState(true)
+  const [intro, setIntro] = useState(false)
   const [basic, setBasic] = useState(false)
 
   const [inspi, setInspi] = useState(false)
@@ -56,7 +54,7 @@ function RuleScreen() {
   const [rEquipment, setREquipment] = useState(false)
   const [rArmor, setRArmor] = useState(false)
   const [rDungeon, setRDungeon] = useState(false)
-  const [rTalent, setRTalent] = useState(false)
+  const [rTalent, setRTalent] = useState(true)
 
   const stats = () => setBasic(true)
   const presence = () => setrPre(true)
@@ -67,21 +65,9 @@ function RuleScreen() {
   const effort = () =>setREffort(true)
   const combat = () =>setRCombat(true)
 
-  const [onMark, setOnMark] = useState(true)
-  const [onJace, setOnJace] = useState(false)
-  const [onTeferi, setOnTeferi] = useState(false)
-  const [onAjani, setOnAjani] = useState(false)
-  const [onGideon, setOnGideon] = useState(false)
-  const [onElspeth, setOnElspeth] = useState(false)
-  const [onNissa, setOnNissa] = useState(false)
-  const [onSarkhan, setOnSarkhan] = useState(false)
-  const [onChandra, setOnChandra] = useState(false)
-  const [onRal, setOnRal] = useState(false)
-  const [onLiliana, setOnLiliana] = useState(false)
 
-  const handlePlansOn = () => {
-    setOnAjani(false); setOnJace(false); setOnMark(false); setOnTeferi(false); setOnChandra(false); setOnElspeth(false); setOnGideon(false); setOnLiliana(false); setOnNissa(false); setOnRal(false); setOnSarkhan(false)
-  }
+
+
 
   const handleingOn = () => {
     setBasic(true); setIntro(true); setInspi(true); setChar(true); setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setREffort(true); setRCombat(true); setRNonSpecific(true); setRNpc(true); setREquipment(true); setRArmor(true); setRDice(true); setRDungeon(true); setRTalent(true)
@@ -136,7 +122,6 @@ function RuleScreen() {
                     <Nav2buttonComponent  info={rTalent}  setInfo={setRTalent} handleingOff={handleingOff} tooltipMessage={"Ramas"} delay={600} icon={"fa-solid fa-tree"}  />
                     <Nav2buttonComponent  info={inspi}  setInfo={setInspi} handleingOff={handleingOff} tooltipMessage={"Inspírate"} delay={750} icon={"fa-regular fa-lightbulb"}  />
                     <Nav2buttonComponent  info={inspi}  setInfo={setInspi} handleingOff={handleingOff} tooltipMessage={"Objetos"} delay={800} icon={"fa-solid fa-bag-shopping"}  />
-
               </div>
             </div>
         <div className='below-rules-space'>
@@ -157,33 +142,9 @@ function RuleScreen() {
           {rNonSpecific && <NonSpecific/>}
           {rDice && <Dice/>}
           {inspi && <Inspi/>}
-          {rTalent && (
-            <div>
-              <div>
-                <button onClick={()=>{handlePlansOn();setOnMark(!onMark)}} style={{color:"maroon"}} className={onMark? 'talent-name-selected':'talent-name'}>Sorin Markov</button>
-                <button onClick={()=>{handlePlansOn();setOnTeferi(!onTeferi)}} style={{color:"moccasin"}} className={onTeferi? 'talent-name-selected':'talent-name'}>Teferi Akosa</button>
-                <button onClick={()=>{handlePlansOn();setOnJace(!onJace)}} style={{color:"blue"}} className={onJace? 'talent-name-selected':'talent-name'}>Jace Beleren</button>
-                <button onClick={()=>{handlePlansOn();setOnAjani(!onAjani)}} style={{color:"yellow"}} className={onAjani? 'talent-name-selected':'talent-name'}>Ajani Goldmane</button>
-                <button onClick={()=>{handlePlansOn();setOnGideon(!onGideon)}} style={{color:"white"}} className={onGideon? 'talent-name-selected':'talent-name'}>Gideon Jura</button>
-                <button onClick={()=>{handlePlansOn();setOnElspeth(!onElspeth)}} style={{color:"dimgrey"}} className={onElspeth? 'talent-name-selected':'talent-name'}>Elspeth Tirel</button>
-                <button onClick={()=>{handlePlansOn();setOnNissa(!onNissa)}} style={{color:"green"}} className={onNissa? 'talent-name-selected':'talent-name'}>Nissa Revane</button>
-                <button onClick={()=>{handlePlansOn();setOnSarkhan(!onSarkhan)}} style={{color:"mediumOrchid"}} className={onSarkhan? 'talent-name-selected':'talent-name'}>Sarkhan Vol</button>
-                <button onClick={()=>{handlePlansOn();setOnChandra(!onChandra)}} style={{color:"red"}} className={onChandra? 'talent-name-selected':'talent-name'}>Chandra Nalaar</button>
-                <button onClick={()=>{handlePlansOn();setOnRal(!onRal)}} style={{color:"aqua"}} className={onRal? 'talent-name-selected':'talent-name'}>Ral Zarek</button>
-                <button onClick={()=>{handlePlansOn();setOnLiliana(!onLiliana)}} style={{color:"blueviolet"}} className={onLiliana? 'talent-name-selected':'talent-name'}>Liliana Vess</button>
-              </div>
-              {onMark && <SorinMarkov/> }
-              {onTeferi && <TeferiAkosa/> }
-              {onJace && <JaceBeleren/> }
-              {onAjani && <AjaniGoldmane/> }
-              {onGideon && <GideonJura/> }
-              {onElspeth && <ElspethTIrel/> }
-              {onNissa && <NissaRevane/> }
-              {onSarkhan && <SarkhanVol/> }
-              {onChandra && <ChandraNalaar/> }
-              {onRal && <RalZarek/> }
-              {onLiliana && <LilianaVess/> }
-            </div>
+          {rTalent && (<>
+            <TalentComponent/>
+          </>
           )}
         </div>
       </div>

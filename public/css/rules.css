@@ -391,10 +391,10 @@ text-indent: 40px;
 
 @keyframes textoBrillante {
   0%, 100% {
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.297), 0 0 10px rgba(255, 0, 0, 0.297), 0 0 15px rgba(255, 0, 0, 0.297), 0 0 20px rgba(255, 0, 0, 0.297), 0 0 25px rgba(255, 0, 0, 0.297), 0 0 30px rgba(255, 0, 0, 0.297), 0 0 35px rgba(255, 0, 0, 0.297);
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.297);
   }
   20%, 80% {
-    text-shadow: 0 0 4px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white;
+    text-shadow: 0 0 4px white, 0 0 20px white, 0 0 30px;
     color: black; /* El color del texto */
   }
 }
