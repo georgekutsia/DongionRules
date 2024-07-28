@@ -16,7 +16,7 @@ function TalentTreeAjaniLuchador({}) {
       
       <div className='talent-tree-row'>
 
-        <TalentTreeButtonComponent nombre={"+2 en Esquiva"} btnHeight={"60px"} btn={"btn-luchador"} talentToSelect={"talent-to-select "}/>
+        <TalentTreeButtonComponent nombre={"+2 en Esquiva de tu "} btnHeight={"60px"} btn={"btn-luchador"} talentToSelect={"talent-to-select "}/>
         <TalentTreeButtonComponent nombre={"lineHor"}  />
         <TalentTreeButtonComponent nombre={"+2 en Esquiva"} btnHeight={"60px"} btn={"btn-luchador"} talentToSelect={"talent-to-select "}/>
         <TalentTreeButtonComponent nombre={"empty"} btnWidth={"30%"}  />
