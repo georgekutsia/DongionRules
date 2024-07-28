@@ -7,7 +7,7 @@ function TalentTreeButtonComponent({nombre, btn, btnWidth, btnHeight, talentToSe
   return (
 <>
         {nombre  && nombre !== "lineHor" &&nombre !== "lineVer" && nombre !== "empty" && 
-          <button style={{width: `${btnWidth}`, height:`${btnHeight}`}} onClick={()=>setSelected(!selected)} className={selected ? "talent-selected" :` ${talentToSelect} talent-tree-btn ${btn}`}>{nombre}</button>
+          <button style={{width: `${btnWidth}`, height:`${btnHeight}`}} onClick={()=>setSelected(!selected)} className={selected ? "talent-tree-btn talent-selected" :` ${talentToSelect} talent-tree-btn ${btn}`}>{nombre}</button>
         }
         {nombre &&  nombre === "lineHor" &&
         <button  className='talent-tree-btn-line-hor'></button>
