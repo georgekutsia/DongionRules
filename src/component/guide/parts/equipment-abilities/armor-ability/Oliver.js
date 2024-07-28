@@ -20,6 +20,8 @@ export default function Oliver() {
 { comer: true, jugar: true, dormir: undefined, perrito: "guau guau", familia: [...feliz, ...miFamilia]}
     ]);
   }, [pensamientos]);
+
+  
     const carcajada = () => {
       const nuevaListaFeliz = [...feliz, { carcajada: true, respiración:false }];
       setFeliz(nuevaListaFeliz);
