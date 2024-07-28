@@ -1,34 +1,48 @@
 import React from 'react'
 import TalentTreeButtonComponent from '../TalentTreeButtonComponent'
 
+
+
+
+// nombre => texto del hechizo
+// nombre === empty  => crea cuadrícula vacía
+// nombre vacío creará una lína 
+// btn => color de los botones para saber de qué rama es
+// lineHor y lineVer para hacer lineaa verticales y horizontales entre botones
+
 function TalentTreeAjaniLuchador({}) {
   return (
       <div  className='talent-tree-box'>
-      <h3>luchador</h3>
       
       <div className='talent-tree-row'>
-      <TalentTreeButtonComponent nombre={"hay"} btnWidth={"70%"} btnHeight={"60px"} btn={"btn-luchador"}/>
+
+        <TalentTreeButtonComponent nombre={"+2 endadasds da Esquiva"} btnHeight={"60px"} btn={"btn-luchador"} talentToSelect={"talent-to-select "}/>
+        <TalentTreeButtonComponent nombre={"lineHor"}  />
+        <TalentTreeButtonComponent nombre={"+2 en Esquiva"} btnHeight={"60px"} btn={"btn-luchador"} talentToSelect={"talent-to-select "}/>
+        <TalentTreeButtonComponent nombre={"empty"} btnWidth={"30%"}  />
+
+        <TalentTreeButtonComponent nombre={"Si dañas dos veces seguidas a un jugador, te come el culo"} btnWidth={"200%"} btnHeight={"60px"} btn={"btn-luchador"} talentToSelect={"talent-to-select "}/>
       </div>
 
-
       <div className='talent-tree-row'>
-      <TalentTreeButtonComponent  />
-      <TalentTreeButtonComponent />
-      <TalentTreeButtonComponent  />
+        <TalentTreeButtonComponent nombre={"lineVer"}  />
+        <TalentTreeButtonComponent nombre={"empty"} />
+
+        <TalentTreeButtonComponent nombre={"lineVer"}  />
       </div>
   
       <div className='talent-tree-row'>
-      <TalentTreeButtonComponent nombre={"bulala"} />
-      <TalentTreeButtonComponent nombre={"hay"} />
-      <TalentTreeButtonComponent nombre={"bulala"} />
-      <TalentTreeButtonComponent nombre={"bulala"} />
-      <TalentTreeButtonComponent nombre={"bulala"} />
-      <TalentTreeButtonComponent nombre={"hay"} />
+          <TalentTreeButtonComponent nombre={"Ha"} />
+          <TalentTreeButtonComponent nombre={"lineVer"} />
+          <TalentTreeButtonComponent nombre={"hihi"} />
+          <TalentTreeButtonComponent nombre={"empty"} />
+          <TalentTreeButtonComponent nombre={"empty"} />
+          <TalentTreeButtonComponent nombre={"hay"} />
       </div>
       <div className='talent-tree-row'>
-      <TalentTreeButtonComponent nombre={"hay"} />
-      <TalentTreeButtonComponent nombre={"hay"} />
-      <TalentTreeButtonComponent nombre={"hay"} />
+        <TalentTreeButtonComponent nombre={"hay"} />
+        <TalentTreeButtonComponent nombre={"hay"} />
+        <TalentTreeButtonComponent nombre={"hay"} />
       </div>
       <div className='talent-tree-row'>
       <TalentTreeButtonComponent nombre={"hay"} />

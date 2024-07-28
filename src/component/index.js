@@ -64,6 +64,7 @@ export {default as MediumArmor} from "./guide/parts/equipment-abilities/armor-ab
 export {default as Dice} from "./guide/parts/dice/Dice"
 export {default as Dungeon} from "./guide/parts/dungeon/Dungeon"
 export {default as Riddles} from "./riddles/Riddles"
+// export {default as LoaderComponentImages} from "./loaders/LoaderComponentImages"
 
 
 
@@ -71,6 +72,7 @@ export {default as Guilds} from "./guilds/Guilds"
 export {default as ListGuilds} from "./guilds/ListGuild"
 export {default as Searchbar} from "./pjs-beleron/searchbar"
 export {default as SearchGuild} from "./guilds/SearchGuild"
+export {default as TalentNavComponent} from "./guide/talents/talentTree/TalentNavComponent"
 export {default as TalentComponent} from "./guide/talents/TalentComponent"
 export {default as ButtonTalentComponent} from "./guide/talents/buttons/ButtonTalentComponent"
 export {default as TalentTreeComponent} from "./guide/talents/talentTree/ajani/TalentTreeAjaniLuchador"

@@ -241,6 +241,9 @@ background-size: cover;
   --gradY: 50%;
   --c1: rgba(168, 239, 255, 1);
   --c2: rgba(168, 239, 255, 0.1);
+  --c3: rgba(245, 249, 4, 0.921);
+  --c4: rgba(246, 255, 0, 0.921);
+  --c5: rgba(246, 255, 0, 0.235);
 }
 .paso-description{
 	margin-top: 35px;
