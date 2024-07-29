@@ -34,7 +34,7 @@
 }
 
 .talent-tree-btn-line-hor {
-  min-width: 100px;
+  min-width: 50px;
   height: 10px;
   background-color: rgb(242, 242, 242);
   cursor: default; /* Cambia el cursor a la flecha por defecto */
@@ -47,7 +47,7 @@
 
 .talent-tree-btn-line-ver {
   width: 4px;
-  height: 90px;
+  height: 10px;
   background-color: rgb(242, 242, 242);
   cursor: default; /* Cambia el cursor a la flecha por defecto */
   pointer-events: none;
