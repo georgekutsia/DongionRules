@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function TalentTreeButtonComponent({ points, nombre, vertical, horizontal, empty, btn, btnWidth, btnHeight, talentToSelect, filled }) {
+function TalentTreeButtonComponent({ points, nombre, vertical, horizontal, empty, btn, btnWidth, btnHeight, btnMargin, talentToSelect, filled }) {
   const [selected, setSelected] = useState(points);
 
   useEffect(() => {
@@ -17,18 +17,16 @@ function TalentTreeButtonComponent({ points, nombre, vertical, horizontal, empty
   return (
     <>
       {nombre && !horizontal &&  !vertical && !empty &&
-        <button style={{ width: `${btnWidth}`, height: `${btnHeight}` }} onClick={handleClick} 
+        <button style={{ width: btnWidth, height: btnHeight, margin:  btnMargin }} onClick={handleClick} 
         className={selected ? "talent-tree-btn talent-selected" : `${talentToSelect} talent-tree-btn ${btn}`}>{nombre}</button>
       }
       {horizontal &&
-        <div style={{ width: `${btnWidth}`, height: `${btnHeight}` }}  className={ selected ? `talent-tree-btn-line-hor talent-tree-filled-hor` : `talent-tree-btn-line-hor`}></div>
+        <div style={{ width: btnWidth, height: btnHeight, margin:  btnMargin }}  className={ selected ? `talent-tree-btn-line-hor talent-tree-filled-hor` : `talent-tree-btn-line-hor`}></div>
       }
       {vertical &&
-        <div style={{ width: `${btnWidth}`, height: `${btnHeight}` }}  className={ selected ? `talent-tree-btn-line-ver talent-tree-filled-ver` : `talent-tree-btn-line-ver`}></div>
+        <div style={{ width: btnWidth, height: btnHeight, margin:  btnMargin}}  className={ selected ? `talent-tree-btn-line-ver talent-tree-filled-ver` : `talent-tree-btn-line-ver`}></div>
       }
-      {empty  && 
-        <button style={{ width: `${btnWidth}`, height: `${btnHeight}` }} className='talent-tree-btn-space'></button>
-      }
+
     </>
   );
 }

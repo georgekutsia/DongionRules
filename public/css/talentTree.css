@@ -65,14 +65,6 @@
   transition: 2s ease-in-out ;
 }
 
-
-
-.talent-tree-btn-space {
-  opacity: 0;
-  cursor: default;
-  pointer-events: none;
-}
-
 .talent-to-select {
   margin: auto;
   border: 3px solid;
