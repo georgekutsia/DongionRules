@@ -1,7 +1,8 @@
 .talent-tree-box{
-  margin-top: 40px;
   width: 95%;
   max-width: 850px;
+  margin-top: -20px;
+  z-index: 10;
 }
 .talent-tree-row{
   display: flex;
@@ -47,7 +48,7 @@ border: 2px solid rgb(255, 230, 0);
   border: none;
   align-items: center;
   margin: 0px -10px;
-  z-index: -3;
+  z-index: -10;
 }
 .talent-tree-btn-line-ver{
   width: 10px;
@@ -57,7 +58,7 @@ border: 2px solid rgb(255, 230, 0);
   pointer-events: none;
   border: none;
   margin: -10px 0px;
-  z-index: -3;
+  z-index: -10;
 }
 
 
@@ -95,19 +96,21 @@ border: 2px solid rgb(255, 230, 0);
 
 
 
-
-
-
-
-
-
-
-
 /* talent tree images */
 /* talent tree images */
 /* talent tree images */
+.luchador-color {
+  border: 4px double var(--luchador);
+  
+}
+.hechicero-color {
+  border: 4px double var(--hechicero);
+  
+}
+.cazador-color {
+  border: 4px double var(--cazador);
+}
 .talent-tree-img-luchador {
-  border: 4px double rgb(211, 169, 0);
   border-radius: 20px;
   position: relative;
   display: block;

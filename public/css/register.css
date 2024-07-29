@@ -244,9 +244,9 @@ background-size: cover;
   --c3: rgba(245, 249, 4, 0.921);
   --c4: rgba(246, 255, 0, 0.921);
   --c5: rgba(246, 255, 0, 0.235);
-  --luchador : rgb(211, 88, 0);
-  --hechicero : rgb(136, 0, 185);
-  --cazador : rgb(0, 211, 183);
+  --luchador: #f1ba06;
+  --hechicero: #9b06f1;
+  --cazador: #08f1ce;
 }
 .paso-description{
 	margin-top: 35px;

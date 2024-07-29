@@ -36,14 +36,14 @@ const handleCloseAll = ()=>{
       <Talent  handleLuchador={()=>handleLuchador()}  handleHechicero={()=>handleHechicero()}  handleCazador={()=>handleCazador()}   />
       {showLuchador && 
       <>
-      <TalentNavComponent img={`${dataTalentTree.talentsNavbar[0]}`} description1={`${dataTalentTree.talentsNavbarDecription[0]}`} description2={`${dataTalentTree.talentsNavbarDecription[1]}`}/>
+      <TalentNavComponent img={`${dataTalentTree.talentsNavbar[0]}`} color={"luchador-color"} description1={`${dataTalentTree.talentsNavbarDecription[0]}`} description2={`${dataTalentTree.talentsNavbarDecription[1]}`}/>
       <TalentTreeAjaniLuchador />
       </>
       }
 
       {showHechicero && 
         <>
-      <TalentNavComponent img={`${dataTalentTree.talentsNavbar[1]}`} description1={`${dataTalentTree.talentsNavbarDecription[2]}`} description2={`${dataTalentTree.talentsNavbarDecription[3]}`}/>
+      <TalentNavComponent img={`${dataTalentTree.talentsNavbar[1]}`} color={"hechicero-color"}  description1={`${dataTalentTree.talentsNavbarDecription[2]}`} description2={`${dataTalentTree.talentsNavbarDecription[3]}`}/>
       <TalentTreeAjaniHechicero  />
       </>
       
@@ -51,7 +51,7 @@ const handleCloseAll = ()=>{
 
       {showCazador && 
     <>
-      <TalentNavComponent img={`${dataTalentTree.talentsNavbar[2]}`}description1={`${dataTalentTree.talentsNavbarDecription[4]}`} description2={`${dataTalentTree.talentsNavbarDecription[5]}`}/>
+      <TalentNavComponent img={`${dataTalentTree.talentsNavbar[2]}`}  color={"cazador-color"} description1={`${dataTalentTree.talentsNavbarDecription[4]}`} description2={`${dataTalentTree.talentsNavbarDecription[5]}`}/>
       <TalentTreeAjaniCazador />
     </>
       

@@ -1,7 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
-import TalentItem from './TalentItem'
-
 function Talent({handleLuchador,handleHechicero, handleCazador, talFirstOne, talFirstTwo,talFirstThree}) {
  
   return (

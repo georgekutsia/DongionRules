@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import TalentTreeButtonComponent from './TalentTreeButtonComponent';
 
-const TalentNavComponent = ({ img, description1, description2 }) => {
+const TalentNavComponent = ({ img, color, description1, description2 }) => {
   const [loading, setLoading] = useState(true);
 
   const handleImageLoad = () => {
@@ -12,8 +13,13 @@ const TalentNavComponent = ({ img, description1, description2 }) => {
   return (
     <div className="image-container">
       {loading && <div className="loaderCubeRotate"></div>}
-      <img src={img} alt="Talent" onLoad={handleImageLoad} style={{ display: loading ? 'none' : 'block' }} className='talent-tree-img-luchador' />
-      {!loading && <div className="talent-tree-img-hover-text">{description1} <span >{description2}</span></div>}
+      <img src={img} alt="Talent" onLoad={handleImageLoad} style={{ display: loading ? 'none' : 'block' }} className={`talent-tree-img-luchador  ${color}`} />
+      {!loading && <div className="talent-tree-img-hover-text">{description1} <span>{description2}</span></div>}
+      <div className='talent-tree-row'>
+      <TalentTreeButtonComponent nombre={"lineVer"}  />
+      <TalentTreeButtonComponent nombre={"empty"}  btnWidth={"40%"}/>
+      <TalentTreeButtonComponent nombre={"lineVer"}  />
+      </div>
     </div>
   );
 };
