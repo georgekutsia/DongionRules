@@ -46,6 +46,7 @@
 }
 
 .talent-tree-btn-line-ver {
+  width: 10px;
   height: 90px;
   background-color: rgb(242, 242, 242);
   cursor: default; /* Cambia el cursor a la flecha por defecto */
