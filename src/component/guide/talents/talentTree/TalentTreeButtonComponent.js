@@ -1,25 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 
-function TalentTreeButtonComponent({nombre, btn, btnWidth, btnHeight, talentToSelect}) {
-  const [selected, setSelected] = useState(false)
-  
-  
+function TalentTreeButtonComponent({ points, nombre, vertical, horizontal, empty, btn, btnWidth, btnHeight, talentToSelect, filled }) {
+  const [selected, setSelected] = useState(points);
+
+  useEffect(() => {
+    const savedState = localStorage.getItem(nombre);
+    if (savedState !== null) {
+      setSelected(JSON.parse(savedState));
+    }
+  }, [nombre]);
+  const handleClick = () => {
+    const newState = !selected;
+    setSelected(newState);
+    localStorage.setItem(nombre, JSON.stringify(newState));
+  };
   return (
-<>
-        {nombre  && nombre !== "lineHor" &&nombre !== "lineVer" && nombre !== "empty" && 
-          <button style={{width: `${btnWidth}`, height:`${btnHeight}`}} onClick={()=>setSelected(!selected)} className={selected ? "talent-tree-btn talent-selected" :` ${talentToSelect} talent-tree-btn ${btn}`}>{nombre}</button>
-        }
-        {nombre &&  nombre === "lineHor" &&
-        <button  className='talent-tree-btn-line-hor'></button>
-        }
-        {nombre &&  nombre === "lineVer" &&
-        <button  className='talent-tree-btn-line-ver'></button>
-        }
-        {nombre && nombre === "empty" && 
-        <button style={{width: `${btnWidth}`, height:`${btnHeight}`}}   className='talent-tree-btn-space'></button>
-        }
-</>  
-  )
+    <>
+      {nombre && 
+        <button style={{ width: `${btnWidth}`, height: `${btnHeight}` }} onClick={handleClick} 
+        className={selected ? "talent-tree-btn talent-selected" : `${talentToSelect} talent-tree-btn ${btn}`}>{nombre}</button>
+      }
+      {horizontal &&
+        <button className='talent-tree-btn-line-hor'></button>
+      }
+      {vertical &&
+        <button className={ selected ? `talent-tree-btn-line-ver talent-tree-filled-ver` : `talent-tree-btn-line-ver`}></button>
+      }
+      {empty  && 
+        <button style={{ width: `${btnWidth}`, height: `${btnHeight}` }} className='talent-tree-btn-space'></button>
+      }
+    </>
+  );
 }
-
 export default TalentTreeButtonComponent

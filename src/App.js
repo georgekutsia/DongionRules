@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { NavBar } from './component';
 import { ShopScreen, RuleScreen, EventsScreen, DongionsDetail, FrontFrontpage, CounterScreen, PjScreen, MapScreen } from "./screens"
 
-// ...
+
 
 function App() {
   

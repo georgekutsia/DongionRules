@@ -60,6 +60,25 @@ border: 2px solid rgb(255, 230, 0);
   margin: -10px 0px;
   z-index: -10;
 }
+.talent-tree-filled-ver{
+  background: linear-gradient(to right, black,  black,   #08f1ce,  #08f1ce,  #08f1ce,  #08f1ce);
+  animation: moveLineVer 5s ease-in-out forwards ;
+  background-size: 100px;
+}
+
+
+@keyframes moveLineVer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
+}
+
 
 
 .talent-tree-btn-space{

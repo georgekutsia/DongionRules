@@ -1,9 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TalentTreeButtonComponent from '../TalentTreeButtonComponent'
-
-
-
-
+import {dataTalentsTreePoints} from '../../../../../data/dataTalentTreePoints'
 // nombre => texto del hechizo
 // nombre === empty  => crea cuadrícula vacía
 // nombre vacío creará una lína 
@@ -11,44 +8,37 @@ import TalentTreeButtonComponent from '../TalentTreeButtonComponent'
 // lineHor y lineVer para hacer lineaa verticales y horizontales entre botones
 
 function TalentTreeAjaniLuchador({}) {
+  const [pointsData, setPointsData] = useState(dataTalentsTreePoints)
+
+
   return (
       <div  className='talent-tree-box'>
       <div className='talent-tree-row'>
-        <TalentTreeButtonComponent nombre={"empty"}  btnWidth={"100%"}/>
-        <TalentTreeButtonComponent nombre={"+2 en Esquiva"} btnHeight={"60px"} btn={"btn-luchador"} talentToSelect={"talent-to-select "}/>
-        <TalentTreeButtonComponent nombre={"lineHor"}  />
-        <TalentTreeButtonComponent nombre={"+2 en Esquiva"} btnHeight={"60px"} btn={"btn-luchador"} talentToSelect={"talent-to-select "}/>
-        <TalentTreeButtonComponent nombre={"empty"}   btnWidth={"10%"}/>
-        <TalentTreeButtonComponent nombre={"Si dañas dos veces seguidas a un jugador, te come el culo"} 
+        <TalentTreeButtonComponent  empty  btnWidth={"100%"}/>
+        <TalentTreeButtonComponent  points={pointsData.ajani.luchador[1]} nombre={"+2 en Esquiva"} btnHeight={"60px"} btn={"btn-luchador"} talentToSelect={"talent-to-select "}/>
+        <TalentTreeButtonComponent  points={pointsData.ajani.luchador[1]}  horizontal />
+        <TalentTreeButtonComponent  points={pointsData.ajani.luchador[2]} nombre={"+3 en Esquiva"} btnHeight={"60px"} btn={"btn-luchador"} talentToSelect={"talent-to-select "}/>
+        <TalentTreeButtonComponent  empty   btnWidth={"10%"}/>
+        <TalentTreeButtonComponent  points={pointsData.ajani.luchador[3]} nombre={"Si dañas dos veces seguidas a un jugador, te come el culo"} 
         btnWidth={"450%"} btnHeight={"80px"} btn={"btn-luchador"} talentToSelect={"talent-to-select "}/>
-      <TalentTreeButtonComponent nombre={"empty"}  btnWidth={"40%"}/>
-
+      <TalentTreeButtonComponent  empty  btnWidth={"40%"}/>
       </div>
 
       <div className='talent-tree-row'>
-        <TalentTreeButtonComponent nombre={"lineVer"}  />
-        <TalentTreeButtonComponent nombre={"empty"} />
-        <TalentTreeButtonComponent nombre={"lineVer"}  />
+        <TalentTreeButtonComponent  points={pointsData.ajani.luchador[1]}  vertical />
+        <TalentTreeButtonComponent   empty />
+        <TalentTreeButtonComponent  points={pointsData.ajani.luchador[2]} vertical />
       </div>
   
       <div className='talent-tree-row'>
-        <TalentTreeButtonComponent nombre={"Ha"} />
-        <TalentTreeButtonComponent nombre={"lineVer"} />
-        <TalentTreeButtonComponent nombre={"hihi"} />
-        <TalentTreeButtonComponent nombre={"empty"} />
-        <TalentTreeButtonComponent nombre={"empty"} />
-        <TalentTreeButtonComponent nombre={"hay"} />
+        <TalentTreeButtonComponent  points={pointsData.ajani.luchador[0]} nombre={"Ha"} />
+        <TalentTreeButtonComponent  points={pointsData.ajani.luchador[0]} vertical />
+        <TalentTreeButtonComponent  points={pointsData.ajani.luchador[0]} nombre={"hihi"} />
+        <TalentTreeButtonComponent  points={pointsData.ajani.luchador[0]} empty />
+        <TalentTreeButtonComponent  points={pointsData.ajani.luchador[0]} empty />
+        <TalentTreeButtonComponent  points={pointsData.ajani.luchador[0]} nombre={"hay"} />
       </div>
-      <div className='talent-tree-row'>
-        <TalentTreeButtonComponent nombre={"hay"} />
-        <TalentTreeButtonComponent nombre={"hay"} />
-        <TalentTreeButtonComponent nombre={"hay"} />
-      </div>
-      <div className='talent-tree-row'>
-        <TalentTreeButtonComponent nombre={"hay"} />
-        <TalentTreeButtonComponent nombre={"hay"} />
-        <TalentTreeButtonComponent nombre={"hay"} />
-      </div>
+
       </div>
     )
   }

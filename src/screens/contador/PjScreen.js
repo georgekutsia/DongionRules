@@ -3,7 +3,7 @@ import { StatsSalud, StatsPlusFight, StatsDam, StatsDefence, StatsChar} from "..
 import FadeInOut from "../../component/FadeInOut";
 import { Link } from 'react-router-dom';
 
-function PjScreen({counterForMonster}) {
+function PjScreen() {
 
 
   const [showPage, setShowPage] = useState(true)
