@@ -77,7 +77,8 @@
 }
 
 .talent-selected {
-  background-color: red;
+  background-color: rgb(250, 194, 115);
+  color: black;
 }
 
 @keyframes selectTalent {
