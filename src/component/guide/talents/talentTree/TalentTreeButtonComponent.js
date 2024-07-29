@@ -21,10 +21,10 @@ function TalentTreeButtonComponent({ points, nombre, vertical, horizontal, empty
         className={selected ? "talent-tree-btn talent-selected" : `${talentToSelect} talent-tree-btn ${btn}`}>{nombre}</button>
       }
       {horizontal &&
-        <button className='talent-tree-btn-line-hor'></button>
+        <button style={{ width: `${btnWidth}`, height: `${btnHeight}` }}  className='talent-tree-btn-line-hor'></button>
       }
       {vertical &&
-        <button className={ selected ? `talent-tree-btn-line-ver talent-tree-filled-ver` : `talent-tree-btn-line-ver`}></button>
+        <button style={{ width: `${btnWidth}`, height: `${btnHeight}` }}  className={ selected ? `talent-tree-btn-line-ver talent-tree-filled-ver` : `talent-tree-btn-line-ver`}></button>
       }
       {empty  && 
         <button style={{ width: `${btnWidth}`, height: `${btnHeight}` }} className='talent-tree-btn-space'></button>
