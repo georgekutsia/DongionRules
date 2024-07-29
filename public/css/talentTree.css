@@ -25,7 +25,7 @@
   border-radius: 10px;
   padding: 3px 5px;
   font-size: calc(10px + 0.3vw);
-  width: 100%;
+  width: 400px;
 }
 
 .talent-tree-btn-active {
