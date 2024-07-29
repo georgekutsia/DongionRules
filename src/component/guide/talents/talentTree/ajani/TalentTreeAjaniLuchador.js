@@ -14,9 +14,9 @@ function TalentTreeAjaniLuchador() {
     <div className='talent-tree-box'>
       <div className='talent-tree-row'>
         <TalentTreeButtonComponent empty btnWidth={"5%"} />
-        <TalentTreeButtonComponent points={pointsData.ajani.luchador[1]} nombre={"+2 en Esquiva"} btnWidth={"350px"} btnHeight={"40px"} btn={"btn-luchador"} talentToSelect={"talent-to-select"} />
+        <TalentTreeButtonComponent points={pointsData.ajani.luchador[1]} nombre={"+2 en Esquiva"} btnWidth={"250px"} btnHeight={"40px"} btn={"btn-luchador"} talentToSelect={"talent-to-select"} />
         <TalentTreeButtonComponent points={pointsData.ajani.luchador[1]} horizontal nombre={"+3 en Esquiva"} />
-        <TalentTreeButtonComponent points={pointsData.ajani.luchador[2]} nombre={"+3 en Esquiva"} btnWidth={"350px"} btnHeight={"40px"} btn={"btn-luchador"} talentToSelect={"talent-to-select"} />
+        <TalentTreeButtonComponent points={pointsData.ajani.luchador[2]} nombre={"+3 en Esquiva"} btnWidth={"250px"} btnHeight={"40px"} btn={"btn-luchador"} talentToSelect={"talent-to-select"} />
         <TalentTreeButtonComponent empty btnWidth={"10%"} />
         <TalentTreeButtonComponent points={pointsData.ajani.luchador[3]} nombre={"AL dañas dos veces seguidas a un jugador, te come el culo"} btnWidth={"500px"} btnHeight={"60px"} btn={"btn-luchador"} talentToSelect={"talent-to-select"} />
         <TalentTreeButtonComponent empty btnWidth={"10%"} />

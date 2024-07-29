@@ -23,7 +23,7 @@
 .talent-tree-btn {
   margin: auto;
   border-radius: 10px;
-  padding: 3px 10px;
+  padding: 3px 5px;
   font-size: calc(10px + 0.3vw);
   width: 100%;
 }
@@ -56,29 +56,12 @@
   z-index: -10;
 }
 
-.talent-tree-filled-ver {
-  background: linear-gradient(to right, black, black, #08f1ce, #08f1ce, #08f1ce, #08f1ce);
-  animation: moveLineVer 5s ease-in-out forwards;
-  background-size: 20px;
+.talent-tree-filled{
+  background: linear-gradient(to right,  var(--luchador), black,  var(--luchador));
+  transition: 2s ease-in-out ;
 }
 
-@keyframes moveLineVer {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 50% 50%;
-  }
-}
 
-.talent-tree-filled-hor {
-  background: linear-gradient(to right, black, black, #08f1ce, #08f1ce, #08f1ce, #08f1ce);
-  animation: moveLineVer 5s ease-in-out forwards;
-  background-size: 1000px;
-}
 
 .talent-tree-btn-space {
   opacity: 0;
@@ -148,7 +131,7 @@
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.691);
   color: white;
-  padding: 5px 10px;
+  padding: 3px 5px;
   border-radius: 5px;
   opacity: 0;
   transition: 0.3s ease-in-out;
