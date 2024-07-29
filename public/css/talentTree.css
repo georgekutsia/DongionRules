@@ -46,8 +46,8 @@
 }
 
 .talent-tree-btn-line-ver {
-  width: 4px;
-  height: 10px;
+  width: 10px;
+  height: 90px;
   background-color: rgb(242, 242, 242);
   cursor: default; /* Cambia el cursor a la flecha por defecto */
   pointer-events: none;
@@ -59,7 +59,7 @@
 .talent-tree-filled-ver {
   background: linear-gradient(to right, black, black, #08f1ce, #08f1ce, #08f1ce, #08f1ce);
   animation: moveLineVer 5s ease-in-out forwards;
-  background-size: 100px;
+  background-size: 20px;
 }
 
 @keyframes moveLineVer {
