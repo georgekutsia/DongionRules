@@ -18,8 +18,8 @@ const TalentNavComponent = ({ img, color, description1, description2 }) => {
       <img src={img} alt="Talent" onLoad={handleImageLoad} style={{ display: loading ? 'none' : 'block' }} className={`talent-tree-img-luchador  ${color}`} />
       {!loading && <div className="talent-tree-img-hover-text">{description1} <span>{description2}</span></div>}
     </div>
-      <div className='talent-tree-row'>
-      <TalentTreeButtonComponent vertical  filled={"talent-tree-filled-ver"} btnMargin={"-10px -190px 0px 0px"} />
+      <div className='talent-tree-row' style={{gap:"250px", justifyContent:"center"}}>
+      <TalentTreeButtonComponent vertical  filled={"talent-tree-filled-ver"}  />
       <TalentTreeButtonComponent vertical  filled={"talent-tree-filled-ver"}  />
 
       </div>

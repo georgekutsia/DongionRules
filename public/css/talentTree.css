@@ -11,6 +11,7 @@
   align-items: center;
 }
 
+
 .btn-luchador {
   background-color: rgb(211, 88, 0);
   color: white;
@@ -37,7 +38,7 @@
 .talent-tree-btn-line-hor {
   min-width: 50px;
   height: 10px;
-  background-color: rgb(18, 182, 0);
+  background-color: rgb(0, 0, 0);
   cursor: default; /* Cambia el cursor a la flecha por defecto */
   pointer-events: none;
   border: none;
@@ -49,7 +50,7 @@
 .talent-tree-btn-line-ver {
   min-width: 10px;
   height: 90px;
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(0, 0, 0);
   cursor: default; /* Cambia el cursor a la flecha por defecto */
   pointer-events: none;
   border: none;
@@ -65,6 +66,7 @@
   background: linear-gradient(to bottom,  var(--luchador), black,  var(--luchador));
   transition: 2s ease-in-out ;
 }
+
 
 .talent-to-select {
   margin: auto;
