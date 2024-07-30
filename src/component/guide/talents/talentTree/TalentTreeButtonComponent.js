@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function TalentTreeButtonComponent({ hClick, activated, points, nombre, vertical, horizontal, empty, btn, btnWidth, btnHeight, btnMargin, talentToSelect }) {
+function TalentTreeButtonComponent({ hClick, activated, points, nombre, imgUrl, horLeft, horRight, btn, btnSize, btnMargin,verticalMargin,verticalHeight , verDown, verUp}) {
   const [selected, setSelected] = useState(points);
 
   useEffect(() => {
@@ -17,16 +17,34 @@ function TalentTreeButtonComponent({ hClick, activated, points, nombre, vertical
 
   return (
     <>
-      {nombre && !horizontal && !vertical && !empty &&
-        <button  style={{ width: btnWidth, height: btnHeight, margin: btnMargin }}  onClick={handleClick}  
-        className={selected || activated ?  `talent to select talent-tree-btn ${btn}` :" talent-tree-btn talent-selected" }>{nombre}</button>
+      {horLeft &&
+        <div    className={activated || selected  ? `talent-tree-btn-line-hor talent-tree-filled-hor` : `talent-tree-btn-line-hor`}></div>
       }
-      {horizontal &&
-        <div  style={{ width: btnWidth, height: btnHeight, margin: btnMargin }}   className={activated || selected  ? `talent-tree-btn-line-hor talent-tree-filled-hor` : `talent-tree-btn-line-hor`}></div>
+      {nombre  &&
+      <div>
+      {verUp &&
+        <div style={{width:"10px", margin:verticalMargin, height:verticalHeight}} className={activated || selected  ? `talent-tree-btn-line-ver talent-tree-filled-ver` : `talent-tree-btn-line-ver`}></div>
       }
-      {vertical &&
-        <div  style={{ width: btnWidth, height: btnHeight, margin: btnMargin }}   className={activated || selected  ? `talent-tree-btn-line-ver talent-tree-filled-ver` : `talent-tree-btn-line-ver`}></div>
+
+        <button style={{ width: btnSize, height: btnSize, margin: btnMargin, position: 'relative' }} onDoubleClick={handleClick}  
+        className={selected || activated ?  `talent-to-select talent-tree-btn ${btn}` :" talent-tree-btn talent-selected" }>
+        
+        <img src={imgUrl} alt={nombre} style={{ width: '100%', height: '100%', borderRadius: '10px' }} />
+        <div className="talent-tree-img-hover-text">
+          {nombre}
+        </div>
+
+        </button>
+
+      {verDown &&
+        <div style={{width:"10px", margin:verticalMargin, height:verticalHeight}} className={activated || selected  ? `talent-tree-btn-line-ver talent-tree-filled-ver` : `talent-tree-btn-line-ver`}></div>
       }
+      </div>
+      }
+      {horRight &&
+        <div    className={activated || selected  ? `talent-tree-btn-line-hor talent-tree-filled-hor` : `talent-tree-btn-line-hor`}></div>
+      }
+
     </>
   );
 }

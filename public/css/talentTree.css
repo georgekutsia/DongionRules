@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  height: 130px;
 }
 
 
@@ -23,21 +24,27 @@
 
 .talent-tree-btn {
   margin: auto;
-  border-radius: 10px;
   padding: 3px 5px;
   font-size: calc(10px + 0.3vw);
-  width: 200px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   overflow-y: scroll;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
-
+.talent-tree-btn:hover .talent-tree-img-hover-text {
+  opacity: 1;
+}
 .talent-tree-btn-active {
   margin: auto;
   border-radius: 10px;
 }
 
 .talent-tree-btn-line-hor {
-  min-width: 50px;
+  width: 100%;
   height: 10px;
   background-color: rgb(0, 0, 0);
   cursor: default; /* Cambia el cursor a la flecha por defecto */
@@ -50,12 +57,11 @@
 
 .talent-tree-btn-line-ver {
   min-width: 10px;
-  height: 90px;
-  background-color: rgb(0, 0, 0);
+  height: 60px;
   cursor: default; /* Cambia el cursor a la flecha por defecto */
   pointer-events: none;
   border: none;
-  margin: -15px 0px;
+  margin: -10px 0px -10px;
   z-index: -10;
 }
 
@@ -149,7 +155,7 @@
   width: 90%;
   max-height: 70%;
   overflow: scroll;
-  font-size: calc(12px + 0.5vw);
+  font-size: calc(12px + 0.2vw);
   border-radius: 15px;
 }
 

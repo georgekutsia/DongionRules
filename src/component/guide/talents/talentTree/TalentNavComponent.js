@@ -16,11 +16,11 @@ const TalentNavComponent = ({amountOfPoints, img, color, description1, descripti
       {loading && <div className="loaderCubeRotate"></div>}
       <h2 className="image-container-talent-tree-counter">{amountOfPoints}</h2>
       <img src={img} alt="Talent" onLoad={handleImageLoad} style={{ display: loading ? 'none' : 'block' }} className={`talent-tree-img-luchador  ${color}`} />
-      {!loading && <div className="talent-tree-img-hover-text">{description1} <span>{description2}</span></div>}
+      {!loading && <div style={{fontSize:"2rem"}} className="talent-tree-img-hover-text">{description1} <span>{description2}</span></div>}
     </div>
       <div className='talent-tree-row' style={{gap:"15vw", justifyContent:"center"}}>
       <TalentTreeButtonComponent vertical  filled={"talent-tree-filled-ver"}  />
-      <TalentTreeButtonComponent vertical  filled={"talent-tree-filled-ver"}  />
+      <TalentTreeButtonComponent vertical  points filled={"talent-tree-filled-ver"}  />
       </div>
     </>
   );
