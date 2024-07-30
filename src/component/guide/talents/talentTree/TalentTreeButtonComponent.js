@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function TalentTreeButtonComponent({ actionHand, activated, points, nombre, vertical, horizontal, empty, btn, btnWidth, btnHeight, btnMargin, talentToSelect }) {
+function TalentTreeButtonComponent({ hClick, activated, points, nombre, vertical, horizontal, empty, btn, btnWidth, btnHeight, btnMargin, talentToSelect }) {
   const [selected, setSelected] = useState(points);
 
   useEffect(() => {
@@ -11,15 +11,15 @@ function TalentTreeButtonComponent({ actionHand, activated, points, nombre, vert
   }, [nombre]);
 
   const handleClick = () => {
-    actionHand(selected, setSelected, nombre)
+      hClick(selected, setSelected, nombre)
+      setSelected(!selected)
   };
 
   return (
     <>
       {nombre && !horizontal && !vertical && !empty &&
-        <button  style={{ width: btnWidth, height: btnHeight, margin: btnMargin }}  onClick={handleClick}  className={selected || activated ?  `${talentToSelect} talent-tree-btn ${btn}` :" talent-tree-btn talent-selected" }>
-          {nombre}
-        </button>
+        <button  style={{ width: btnWidth, height: btnHeight, margin: btnMargin }}  onClick={handleClick}  
+        className={selected || activated ?  `talent to select talent-tree-btn ${btn}` :" talent-tree-btn talent-selected" }>{nombre}</button>
       }
       {horizontal &&
         <div  style={{ width: btnWidth, height: btnHeight, margin: btnMargin }}   className={activated || selected  ? `talent-tree-btn-line-hor talent-tree-filled-hor` : `talent-tree-btn-line-hor`}></div>

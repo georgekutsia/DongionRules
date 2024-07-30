@@ -1,5 +1,5 @@
 .talent-tree-box {
-  width: 95%;
+  width: 100%;
   max-width: 850px;
   margin-top: -20px;
   z-index: 10;
@@ -28,6 +28,7 @@
   font-size: calc(10px + 0.3vw);
   width: 200px;
   height: 60px;
+  overflow-y: scroll;
 }
 
 .talent-tree-btn-active {
@@ -115,13 +116,23 @@
   transition: 0.3s ease-in-out;
 }
 
-.image-container {
+.image-container-talent-tree {
   position: relative;
   display: inline-block;
   margin-top: 40px;
   width: 30%;
   min-width: 250px;
   transition: 0.3s ease-in-out;
+}
+.image-container-talent-tree-counter {
+  position: absolute;
+  z-index: 1 ;
+  left: 50%;
+  backdrop-filter: blur(0.5em);
+  padding: 5px 10px;
+  border-radius: 50%;
+  color: var(--luchador);
+  text-shadow: 1px 1px black;
 }
 
 .talent-tree-img-hover-text {
@@ -146,10 +157,10 @@
   color: rgb(211, 88, 0);
 }
 
-.image-container:hover .talent-tree-img-hover-text {
+.image-container-talent-tree:hover .talent-tree-img-hover-text {
   opacity: 1;
 }
 
-.image-container:hover .talent-tree-img-luchador {
+.image-container-talent-tree:hover .talent-tree-img-luchador {
   opacity: 0.4;
 }
