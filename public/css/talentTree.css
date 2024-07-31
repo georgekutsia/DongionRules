@@ -1,6 +1,6 @@
 .talent-tree-box {
   width: 100%;
-  max-width: 850px;
+  max-width: 700px;
   margin-top: -20px;
   z-index: 10;
 }
@@ -9,6 +9,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  /* background-color: blue; */
+  height: 200px;
 }
 
 
@@ -27,27 +29,92 @@
   margin: auto;
   padding: 3px 5px;
   font-size: calc(10px + 0.3vw);
-  width: 6vw;
-  height: 6vw;
-  min-width: 50px;
-  min-height: 50px;
+  width: calc(30px + 5vw);
+  height: calc(30px + 5vw);
+  min-width: 70px;
+  min-height: 70px;
   overflow-y: scroll;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 2px;
-  border:1px solid;
-  transition: 0.3s ease-in-out;
-
+  border-radius: 22px;
+  border:1px dashed var(--luchador);
+  transition: 0.3s ease-in-out all;
 }
+
+
+.talent-tree-btn-line-hor {
+  width: 50px;
+  height: 10px;
+  background: 
+    linear-gradient(to bottom, black, black, var(--luchador), black, black),
+    linear-gradient(to left, black, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), black);
+  background-blend-mode: overlay;
+  cursor: default; /* Cambia el cursor a la flecha por defecto */
+  pointer-events: none;
+  align-items: center;
+  z-index: -10;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.talent-tree-btn-line-ver {
+  height: 70px;
+  margin-top: 10px;
+  min-width: 10px;
+  cursor: default; /* Cambia el cursor a la flecha por defecto */
+  pointer-events: none;
+  border: none;
+  z-index: -10;
+  border-radius: 30px;
+  background: linear-gradient(to left, black,black, var(--luchador), black,black),
+  linear-gradient(to bottom, black, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), black);
+  background-blend-mode: overlay;
+}
+.verAnimation{
+  animation: opaVer 2s ease-in-out infinite;
+  overflow: hidden;
+}
+
+.horAnimation{
+  animation: opaHor 2s ease-in-out infinite;
+  overflow: hidden;
+}
+@keyframes opaHor {
+  1%,100%{
+    opacity: 0.2;
+}
+  50%{
+    opacity: 0.9;
+ }
+}
+@keyframes opaVer {
+  1%,100%{
+    opacity: 0.2;
+}
+  50%{
+    opacity: 0.9;
+ }
+}
+
+
 
 .talent-tree-btn:hover .talent-tree-img-hover-text {
   opacity: 1;
 }
 .talent-tree-btn:hover {
-  scale: 2;
+  scale: 3;
+  position: absolute;
+  z-index: 10;
 }
+.talent-tree-btn-left:hover{
+transform: translateX(30px);
+}
+.talent-tree-btn-right:hover{
+  transform: translateX(-30px);
+}
+
 .talent-tree-btn-hor-container{
 height: 15vw;
 min-height: 120px;
@@ -57,27 +124,6 @@ min-height: 120px;
   margin: auto;
 }
 
-.talent-tree-btn-line-hor {
-  width: 100%;
-  height: 10px;
-  background-color: rgb(0, 0, 0);
-  cursor: default; /* Cambia el cursor a la flecha por defecto */
-  pointer-events: none;
-  align-items: center;
-  margin: 0px -10px;
-  z-index: -10;
-}
-
-.talent-tree-btn-line-ver {
-  height: 13vw;
-  min-height: 120px;
-  min-width: 10px;
-  cursor: default; /* Cambia el cursor a la flecha por defecto */
-  pointer-events: none;
-  border: none;
-  margin: -10px 0px -10px;
-  z-index: -10;
-}
 
 .talent-tree-filled-ver{
   background: linear-gradient(to right,  var(--luchador), black,  var(--luchador));
@@ -97,11 +143,11 @@ min-height: 120px;
   border-radius: 10px;
   transition: all .4s ease-in-out;
   opacity: 1;
-  padding: 2px;
+  padding: 5px 10;
 }
 
 .talent-selected {
-  background-color: var(--luchador);
+  /* background-color: var(--luchador); */
   color: black;
   border-radius: 10%;
 }
@@ -156,6 +202,7 @@ min-height: 120px;
   text-shadow: 1px 1px black;
 }
 
+
 .talent-tree-img-hover-text {
   position: absolute;
   top: 50%;
@@ -163,7 +210,7 @@ min-height: 120px;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.691);
   color: white;
-  padding: 3px 5px;
+  padding: 1px 3px;
   border-radius: 5px;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -171,7 +218,7 @@ min-height: 120px;
   max-height: 70%;
   overflow: scroll;
   font-size: calc(5px + 0.3vw);
-  border-radius: 15px;
+  border-radius: 5px;
 
 }
 
