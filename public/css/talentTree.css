@@ -1,6 +1,6 @@
 .talent-tree-box {
   width: 100%;
-  max-width: 1250px;
+  max-width: 850px;
   margin-top: -20px;
   z-index: 10;
 }
@@ -13,36 +13,48 @@
 
 
 .btn-luchador {
-  background-color: rgb(211, 88, 0);
+  background: none;
   color: white;
   transition: 0.5s ease-in-out all;
 }
 .btn-luchador:hover {
-  border: 2px solid rgb(255, 230, 0);
+  border: 1px solid rgb(255, 230, 0);
 }
 
 .talent-tree-btn {
+  position: absolute;
+  top: 0px;
   margin: auto;
   padding: 3px 5px;
   font-size: calc(10px + 0.3vw);
-  width: 12vw;
-  min-width: 80px;
-  height: 12vw;
-  min-height: 80px;
-
+  width: 6vw;
+  height: 6vw;
+  min-width: 50px;
+  min-height: 50px;
   overflow-y: scroll;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 2px;
+  border:1px solid;
+  transition: 0.3s ease-in-out;
+
 }
+
 .talent-tree-btn:hover .talent-tree-img-hover-text {
   opacity: 1;
 }
+.talent-tree-btn:hover {
+  scale: 2;
+}
+.talent-tree-btn-hor-container{
+height: 15vw;
+min-height: 120px;
+}
+
 .talent-tree-btn-active {
   margin: auto;
-  border-radius: 10px;
 }
 
 .talent-tree-btn-line-hor {
@@ -51,15 +63,15 @@
   background-color: rgb(0, 0, 0);
   cursor: default; /* Cambia el cursor a la flecha por defecto */
   pointer-events: none;
-  border: none;
   align-items: center;
   margin: 0px -10px;
   z-index: -10;
 }
 
 .talent-tree-btn-line-ver {
+  height: 13vw;
+  min-height: 120px;
   min-width: 10px;
-  height: 60px;
   cursor: default; /* Cambia el cursor a la flecha por defecto */
   pointer-events: none;
   border: none;
@@ -79,18 +91,19 @@
 
 .talent-to-select {
   margin: auto;
-  border: 3px solid;
+  border: 1px solid;
   border-image: conic-gradient(from var(--angle), var(--c3), var(--c5) 0.1turn, var(--c4) 0.15turn, var(--c5) 0.25turn) 10;
   animation: borderRotate var(--d) linear infinite forwards;
-  bottom: 2px;
   border-radius: 10px;
   transition: all .4s ease-in-out;
   opacity: 1;
+  padding: 2px;
 }
 
 .talent-selected {
-  background-color: rgb(250, 194, 115);
+  background-color: var(--luchador);
   color: black;
+  border-radius: 10%;
 }
 
 @keyframes selectTalent {
@@ -157,8 +170,9 @@
   width: 90%;
   max-height: 70%;
   overflow: scroll;
-  font-size: calc(4px + 1.1vw);
+  font-size: calc(5px + 0.3vw);
   border-radius: 15px;
+
 }
 
 .talent-tree-img-hover-text span {
