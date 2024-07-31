@@ -17,14 +17,10 @@ function TalentTreeButtonComponent({ hClick, activated, points, nombre, imgUrl, 
 
   return (
     <>
-      {horLeft &&
-        <div    className={activated || selected  ? `talent-tree-btn-line-hor talent-tree-filled-hor` : `talent-tree-btn-line-hor`}></div>
-      }
+      {horLeft && <div className={activated || selected  ? `talent-tree-btn-line-hor talent-tree-filled-hor` : `talent-tree-btn-line-hor`}></div>}
       {nombre  &&
-      <div>
-      {verUp &&
-        <div style={{width:"10px", margin:verticalMargin, height:verticalHeight}} className={activated || selected  ? `talent-tree-btn-line-ver talent-tree-filled-ver` : `talent-tree-btn-line-ver`}></div>
-      }
+      <div> {verUp &&
+        <div style={{width:"10px", margin:verticalMargin, height:verticalHeight}} className={activated || selected  ? `talent-tree-btn-line-ver talent-tree-filled-ver` : `talent-tree-btn-line-ver`}></div>}
 
         <button style={{ width: btnSize, height: btnSize, margin: btnMargin, position: 'relative' }} onDoubleClick={handleClick}  
         className={selected || activated ?  `talent-to-select talent-tree-btn ${btn}` :" talent-tree-btn talent-selected" }>
@@ -41,9 +37,7 @@ function TalentTreeButtonComponent({ hClick, activated, points, nombre, imgUrl, 
       }
       </div>
       }
-      {horRight &&
-        <div    className={activated || selected  ? `talent-tree-btn-line-hor talent-tree-filled-hor` : `talent-tree-btn-line-hor`}></div>
-      }
+      {horRight && <div    className={activated || selected  ? `talent-tree-btn-line-hor talent-tree-filled-hor` : `talent-tree-btn-line-hor`}></div>}
 
     </>
   );
