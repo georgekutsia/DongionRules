@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import TalentTreeButtonComponent from './TalentTreeButtonComponent';
 
 const TalentNavComponent = ({amountOfPoints, img, color, description1, description2 }) => {
   const [loading, setLoading] = useState(true);
