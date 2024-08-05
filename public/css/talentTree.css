@@ -1,6 +1,6 @@
 .talent-tree-box {
   width: 100%;
-  max-width: 700px;
+  max-width: calc(550px + 20vw);
   margin-top: -20px;
   z-index: 10;
 }
@@ -10,7 +10,7 @@
   justify-content: space-evenly;
   align-items: center;
   /* background-color: blue; */
-  height: 200px;
+  height: calc(140px + 5vw);
 }
 
 
@@ -18,19 +18,16 @@
   background: none;
   color: white;
   transition: 0.5s ease-in-out all;
-}
-.btn-luchador:hover {
-  border: 1px solid rgb(255, 230, 0);
+  border-radius: 50%;
 }
 
+
 .talent-tree-btn {
-  position: absolute;
   top: 0px;
   margin: auto;
-  padding: 3px 5px;
   font-size: calc(10px + 0.3vw);
-  width: calc(30px + 5vw);
-  height: calc(30px + 5vw);
+  width: calc(10px + 8vw);
+  height: calc(10px + 8vw);
   min-width: 70px;
   min-height: 70px;
   overflow-y: scroll;
@@ -38,17 +35,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 22px;
-  border:1px dashed var(--luchador);
   transition: 0.3s ease-in-out all;
+  padding:0;
 }
 
 
 .talent-tree-btn-line-hor {
-  width: 50px;
+  width: calc(10px + 5vw);
   height: 10px;
   background: 
-    linear-gradient(to bottom, black, black, var(--luchador), black, black),
+    linear-gradient(to bottom, black, black, var(--lineaTalento), black, black),
     linear-gradient(to left, black, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), black);
   background-blend-mode: overlay;
   cursor: default; /* Cambia el cursor a la flecha por defecto */
@@ -68,7 +64,7 @@
   border: none;
   z-index: -10;
   border-radius: 30px;
-  background: linear-gradient(to left, black,black, var(--luchador), black,black),
+  background: linear-gradient(to left, black,black, var( --lineaTalento), black,black),
   linear-gradient(to bottom, black, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), black);
   background-blend-mode: overlay;
 }
@@ -128,6 +124,7 @@ min-height: 120px;
 .talent-tree-filled-ver{
   background: linear-gradient(to right,  var(--luchador), black,  var(--luchador));
   transition: 2s ease-in-out ;
+  
 }
 .talent-tree-filled-hor{
   background: linear-gradient(to bottom,  var(--luchador), black,  var(--luchador));
@@ -137,20 +134,19 @@ min-height: 120px;
 
 .talent-to-select {
   margin: auto;
-  border: 1px solid;
   border-image: conic-gradient(from var(--angle), var(--c3), var(--c5) 0.1turn, var(--c4) 0.15turn, var(--c5) 0.25turn) 10;
   animation: borderRotate var(--d) linear infinite forwards;
-  border-radius: 10px;
+  border-width: 3px;
+  border-radius: 0px;
   transition: all .4s ease-in-out;
   opacity: 1;
-  padding: 5px 10;
+  
 }
 
-.talent-selected {
-  /* background-color: var(--luchador); */
+/* .talent-selected {
   color: black;
-  border-radius: 10%;
-}
+  border-radius: 40%;
+} */
 
 @keyframes selectTalent {
   0%, 100% {
@@ -211,14 +207,13 @@ min-height: 120px;
   background-color: rgba(0, 0, 0, 0.691);
   color: white;
   padding: 1px 3px;
-  border-radius: 5px;
+  border-radius: 2px;
   opacity: 0;
   transition: 0.3s ease-in-out;
   width: 90%;
   max-height: 70%;
   overflow: scroll;
-  font-size: calc(5px + 0.3vw);
-  border-radius: 5px;
+  font-size: calc(3px + 0.2vw);
 
 }
 

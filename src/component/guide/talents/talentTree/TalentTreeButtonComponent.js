@@ -24,15 +24,15 @@ function TalentTreeButtonComponent({marginVertical, horRightSpace, horLeftSpace,
       {verUp && <div style={{width:"10px", margin:verticalMargin, height:verticalHeight}} className={activated || selected  ? `talent-tree-btn-line-ver talent-tree-filled-ver` : `talent-tree-btn-line-ver `}></div>}
 
         <button 
-        style={{ width: btnSize, height: btnSize, margin: btnMargin, position: 'relative' }} onDoubleClick={handleClick}   className={selected || activated ?  `talent-to-select talent-tree-btn ${btn}` : ` talent-tree-btn talent-selected ${btn}` }>
-        
+        style={{ minWidth: btnSize, minHeight: btnSize, margin: btnMargin, position: 'relative' }} onDoubleClick={handleClick}   className={selected || activated ?  `talent-to-select  talent-tree-btn ${btn}` : ` talent-tree-btn ${btn}` }>
+        {selected && <div  className='loader3' style={{zIndex:54, position:"absolute"}}></div>}       
         <img src={imgUrl} alt={nombre} style={{ width: '100%', height: '100%',  }} />
         <div className="talent-tree-img-hover-text"> {nombre} </div>
 
         </button>
 
       {verDown && <div style={{width:"10px", margin:verticalMargin, height:verticalHeight}} className={activated || selected  ? `talent-tree-btn-line-ver talent-tree-filled-ver` : `talent-tree-btn-line-ver verAnimation`}></div> } </div>}
-      {horRight && <div    className={activated || selected  ? `talent-tree-btn-line-hor talent-tree-filled-hor` : `talent-tree-btn-line-hor`}></div>}
+      {horRight && <div  style={{margin:horizontalMargin, width:horizontalWidth}}     className={activated || selected  ? `talent-tree-btn-line-hor talent-tree-filled-hor` : `talent-tree-btn-line-hor`}></div>}
       {horRightSpace && <div style={{width:horRightSpaceWidth}}></div>}
 
     </>

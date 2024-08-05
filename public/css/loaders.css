@@ -31,3 +31,40 @@
   1%, 100%  {scale: 1;}
   66%  {scale: 2}
 }
+
+
+/* HTML: <div class="loader"></div> */
+.loader3 {
+  width: 0px;
+  aspect-ratio: 1;
+  color: var(--luchador);
+  position: relative;
+  /* background: radial-gradient(10px,currentColor 94%,#ef040400); */
+  animation: resizing 1.5s  cubic-bezier(0.3,1,0,1);
+  animation-iteration-count: 1;
+
+}
+.loader3:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    radial-gradient(9px at bottom right,#0000 94%,currentColor) top    left,
+    radial-gradient(9px at bottom left ,#0000 94%,currentColor) top    right,
+    radial-gradient(9px at top    right,#0000 94%,currentColor) bottom left,
+    radial-gradient(9px at top    left ,#0000 94%,currentColor) bottom right;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  animation: l18 1.5s  cubic-bezier(0.3,1,0,1);
+  animation-iteration-count: 1;
+}
+@keyframes l18 {
+  96%  {inset:-50px;transform: rotate(290deg)}
+  100% {inset:0;transform: rotate(0deg)}
+}
+
+@keyframes resizing {
+  0% { width: 40px;}
+  100%  {width: 1px;}
+}

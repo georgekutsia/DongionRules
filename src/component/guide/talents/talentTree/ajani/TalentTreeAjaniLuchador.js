@@ -29,21 +29,26 @@ if(amountOfPoints>=1){
       <div className='talent-tree-row'>
         <TalentTreeButtonComponent verDown btn={"btn-luchador talent-tree-btn-left"}  hClick={hClick}  points={data[1]} imgUrl={img[0]}  nombre={"+2 en Esquiva"}  />
         <TalentTreeButtonComponent  horRightSpace  horLeft horRightSpaceWidth={"40px"} horizontalMargin={"0 0 9vw 0"}  btn={"btn-luchador"}  hClick={hClick}  points={data[2]}  nombre={"+2 en Esquiva"} imgUrl={img[0]}    />
-        <TalentTreeButtonComponent verDown  btn={"btn-luchador talent-tree-btn-right"}  hClick={hClick}  points={data[3]}  nombre={"Tras recibir daño, tienes una acción adicional ese turno"} imgUrl={img[2]}   
+        <TalentTreeButtonComponent verDown  btn={"btn-luchador talent-tree-btn-right"}  hClick={hClick}  points={data[3]}  nombre={"+2 en tu daño básico cuerpo a cuerpo"} imgUrl={img[2]}   
         />
       </div>
 
       <div className='talent-tree-row'>
-        <TalentTreeButtonComponent verDown  btn={"btn-luchador"}  hClick={hClick}   points={data[4]} nombre={`Tu "intervenir" obtienen doble de tu esquiva adicional`} imgUrl={img[3]}     />
-        {/* <TalentTreeButtonComponent  btn={"btn-luchador"}  hClick={hClick} points={data[5]} nombre={"+2 en acierto físico por la espalda"}   imgUrl={img[4]} /> */}
-        <TalentTreeButtonComponent  horLeft  horizontalMargin={"0 0 9vw 0"}  btn={"btn-luchador"}  hClick={hClick} points={data[0]} nombre={"+2 en daño físico por la espalda"}   imgUrl={img[5]} />
-        <TalentTreeButtonComponent  btn={"btn-luchador"}  hClick={hClick} points={data[0]} nombre={"x"}  imgUrl={img[6]}  />
+        <TalentTreeButtonComponent verDown  btn={"btn-luchador talent-tree-btn-left"}  hClick={hClick}   points={data[4]} nombre={`Tu "intervenir" obtienen doble de tu esquiva adicional`} imgUrl={img[6]}     />
+        <TalentTreeButtonComponent  horRight  horLeftSpace horizontalMargin={" 0 0  9vw 0"}  btn={"btn-luchador"}  hClick={hClick} points={data[0]} nombre={"Tu primer ataque en combate tiene un D6 adicional por nivel"}   imgUrl={img[5]} />
+        <TalentTreeButtonComponent  verDown btn={"btn-luchador talent-tree-btn-right"}  hClick={hClick} points={data[0]} nombre={"+2 en tu daño básico cuerpo a cuerpo"}  imgUrl={img[2]}  />
       </div>
       <div className='talent-tree-row'>
-        <TalentTreeButtonComponent   btn={"btn-luchador"}  hClick={hClick}   points={data[4]} nombre={`Tu "intervenir" obtienen doble de tu esquiva adicional`} imgUrl={img[7]}     />
-        <TalentTreeButtonComponent  btn={"btn-luchador"}  hClick={hClick} points={data[5]} nombre={"+2 en acierto físico por la espalda"}   imgUrl={img[8]} />
+        <TalentTreeButtonComponent btnSize={"55px"} btnMargin={"3vw 0 0 0 "}  btn={"btn-luchador talent-tree-btn-left"}  hClick={hClick}   points={data[4]} nombre={`Tu "intervenir" obtienen doble de tu esquiva adicional`} imgUrl={img[0]}     />
+        <TalentTreeButtonComponent btnSize={"55px"} btnMargin={"3vw 0 0 0 "} horLeft  horizontalMargin={"0 0 4vw 0"}   btn={"btn-luchador"}  hClick={hClick} points={data[5]} nombre={"+2 en acierto físico por la espalda"}   imgUrl={img[8 ]} />
+        <TalentTreeButtonComponent btnSize={"55px"} btnMargin={"3vw 0 0 0 "} horLeftSpace horLeftSpaceWidth={"20px"} btn={"btn-luchador"}  hClick={hClick} points={data[0]} nombre={"+2 en daño físico por la espalda"}   imgUrl={img[3]} />
+        <TalentTreeButtonComponent btnSize={"55px"} btnMargin={"3vw 0 0 0 "} horLeft  horizontalMargin={"0 0 4vw 0"}  btn={"btn-luchador talent-tree-btn-right"}  hClick={hClick} points={data[0]} nombre={"Al atacar o ser atacado de frente, tienes una acción adicinal esa ronda. Esta habilidad ocurre solo una vez por nivel y combate."}  imgUrl={img[1]}  />
+      </div>
+      <div className='talent-tree-row'>
+        <TalentTreeButtonComponent   btn={"btn-luchador talent-tree-btn-left"}  hClick={hClick}   points={data[4]} nombre={`Tu "intervenir" obtienen doble de tu esquiva adicional`} imgUrl={img[7]}     />
+        <TalentTreeButtonComponent  btn={"btn-luchador"}  hClick={hClick} points={data[5]} nombre={"+2 en acierto físico por la espalda"}   imgUrl={img[8 ]} />
         <TalentTreeButtonComponent  btn={"btn-luchador"}  hClick={hClick} points={data[0]} nombre={"+2 en daño físico por la espalda"}   imgUrl={img[1]} />
-        <TalentTreeButtonComponent  btn={"btn-luchador"}  hClick={hClick} points={data[0]} nombre={"x"}  imgUrl={img[0]}  />
+        <TalentTreeButtonComponent  btn={"btn-luchador talent-tree-btn-right"}  hClick={hClick} points={data[0]} nombre={"x"}  imgUrl={img[0]}  />
       </div>
 
 
