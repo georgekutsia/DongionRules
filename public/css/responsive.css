@@ -11,4 +11,11 @@ flex-direction: column;
 align-items: center;
 }
 
+.talent-tree-img-hover-text {
+
+  font-size: 3.5px;
+}
+.talent-tree-img-hover-text header {
+  font-size: 5px;
+}
 }

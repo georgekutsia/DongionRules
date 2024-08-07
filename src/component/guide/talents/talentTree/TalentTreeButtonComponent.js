@@ -22,10 +22,10 @@ function TalentTreeButtonComponent({marginVertical, horRightSpace, horLeftSpace,
       {nombre  && 
       <div className="talent-tree-btn-hor-container" style={{margin:marginVertical}}> 
       {verUp && <div style={{width:"10px", margin:verticalMargin, height:verticalHeight}} className={activated || selected  ? `talent-tree-btn-line-ver talent-tree-filled-ver` : `talent-tree-btn-line-ver `}></div>}
-
         <button 
+        
         style={{ minWidth: btnSize, minHeight: btnSize, margin: btnMargin, position: 'relative' }} onDoubleClick={handleClick}   className={selected || activated ?  `talent-to-select  talent-tree-btn ${btn}` : ` talent-tree-btn ${btn}` }>
-        {selected && <div  className='loader3' style={{zIndex:54, position:"absolute"}}></div>}       
+        {selected && <div  className='loader3' style={{zIndex:54, position:"absolute"}}></div>}     
         <img src={imgUrl} alt={nombre} style={{ width: '100%', height: '100%',  }} />
         <div className="talent-tree-img-hover-text"> <header>{titulo}</header> {nombre} </div>
 

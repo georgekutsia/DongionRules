@@ -25,7 +25,6 @@
 .talent-tree-btn {
   top: 0px;
   margin: auto;
-  font-size: calc(10px + 0.3vw);
   width: calc(10px + 8vw);
   height: calc(10px + 8vw);
   min-width: 70px;
@@ -100,7 +99,7 @@
   opacity: 1;
 }
 .talent-tree-btn:hover {
-  scale: 3;
+  scale: 4;
   position: absolute;
   z-index: 10;
 }
@@ -215,18 +214,18 @@ min-height: 120px;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.691);
   color: white;
-  padding: 1px 3px;
+  padding: 1px 2px;
   border-radius: 2px;
   opacity: 0;
   transition: 0.3s ease-in-out;
-  width: 90%;
-  max-height: 70%;
+  width: 95%;
+  max-height: 85%;
   overflow: scroll;
-  font-size: calc(3px + 0.2vw);
+  font-size: calc(5px + 0.1vw);
 
 }
 .talent-tree-img-hover-text header {
-  font-size: calc(3px + 0.3vw);
+  font-size: calc(8px + 0.1vw);
   text-shadow: 0.4px 0.4px rgb(113, 113, 113);
 }
 .talent-tree-img-hover-text span {
@@ -243,7 +242,7 @@ min-height: 120px;
 
 
 .hover:hover{
-  scale: 3;
+  scale: 3.5;
 }
 .hover{
   transition: 0.2s ease-in-out;;
