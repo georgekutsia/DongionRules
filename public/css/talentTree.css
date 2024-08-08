@@ -201,11 +201,14 @@ min-height: 120px;
   position: absolute;
   z-index: 1 ;
   left: 50%;
+  top:10%;
+  transform: translate(-50%, -50%);
   backdrop-filter: blur(0.5em);
   padding: 5px 10px;
   border-radius: 50%;
   color: var(--luchador);
   text-shadow: 1px 1px black;
+  background-color: rgba(127, 255, 212, 0.301);
 }
 
 

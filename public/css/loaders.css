@@ -68,3 +68,42 @@
   0% { width: 40px;}
   100%  {width: 1px;}
 }
+
+
+
+
+
+/* HTML: <div class="loader"></div> */
+.loaderTalentBtn {
+  width: 40px;
+  aspect-ratio: 1;
+  color: var(--luchador);
+  background: linear-gradient(to right,  var(--luchador), black,  var(--luchador));
+
+  /* background: currentColor; */
+  border-radius: 50%;
+  position: relative;
+}
+.loaderTalentBtn:before {
+  content: "";
+  position: absolute;
+  background:
+    radial-gradient(farthest-side at bottom right,#0000 94%,rgba(255, 166, 0, 0.684) 96%) 0    0   ,
+    radial-gradient(farthest-side at bottom left ,#0000 94%,rgba(255, 166, 0, 0.684) 96%) 100% 0   ,
+    radial-gradient(farthest-side at top    left ,#0000 94%,rgba(255, 166, 0, 0.684) 96%) 100% 100%,
+    radial-gradient(farthest-side at top    right,#0000 94%,rgba(255, 166, 0, 0.684) 96%) 0    100%;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  animation: 
+    l39-1 3s infinite,
+    l39-2 3s infinite;
+}
+@keyframes l39-1 {
+  0%,10%,90%,100% {inset:0}
+  40%,60% {inset:-10px}
+}
+
+@keyframes l39-2 {
+  0%,40%  {transform: rotate(0)}
+  60%,100%{transform: rotate(360deg)}
+}
