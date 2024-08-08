@@ -97,9 +97,11 @@
 
 .talent-tree-btn:hover .talent-tree-img-hover-text {
   opacity: 1;
+animation: backgroundDarker 2s ease-in-out  ;
+
 }
 .talent-tree-btn:hover {
-  scale: 4;
+  scale: 2;
   position: absolute;
   z-index: 10;
 }
@@ -212,7 +214,6 @@ min-height: 120px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.691);
   color: white;
   padding: 1px 2px;
   border-radius: 2px;
@@ -222,11 +223,16 @@ min-height: 120px;
   max-height: 85%;
   overflow: scroll;
   font-size: calc(5px + 0.1vw);
+  font-weight: 600;
+background-color: rgb(0, 0, 0);
 
 }
+
 .talent-tree-img-hover-text header {
   font-size: calc(8px + 0.1vw);
   text-shadow: 0.4px 0.4px rgb(113, 113, 113);
+  font-weight: 600;
+
 }
 .talent-tree-img-hover-text span {
   color: rgb(211, 88, 0);
@@ -234,8 +240,16 @@ min-height: 120px;
 
 .image-container-talent-tree:hover .talent-tree-img-hover-text {
   opacity: 1;
+  
 }
-
+@keyframes backgroundDarker {
+  1%,50%{
+    background-color: rgba(0, 0, 0, 0.408);
+  }
+  100%{
+      background-color: rgb(0, 0, 0);
+    }
+  }
 .image-container-talent-tree:hover .talent-tree-img-luchador {
   opacity: 0.4;
 }
