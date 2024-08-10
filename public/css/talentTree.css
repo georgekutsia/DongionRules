@@ -23,7 +23,6 @@
 
 .talent-tree-btn {
   border-radius: 50%;
-
   top: 0px;
   margin: auto;
   width: calc(10px + 8vw);
@@ -154,13 +153,15 @@ min-height: 120px;
   margin: auto;
   border-image: conic-gradient(from var(--angle), var(--c3), var(--c5) 0.1turn, var(--c4) 0.15turn, var(--c5) 0.25turn) 10;
   animation: borderRotate var(--d) linear infinite forwards;
-  border-width: 3px;
+  border-width: 4px;
   border-radius: 0px;
   transition: all .4s ease-in-out;
   opacity: 1;
   
 }
-
+.bg-select{
+  border-width: 10px;
+}
 /* .talent-selected {
   color: black;
   border-radius: 40%;
@@ -270,20 +271,42 @@ font-family: 'Montserrat', sans-serif;
 
 
 /* large */
-.talent-tree-btn-large {
-  top: 0px;
-  margin: auto;
-  width: 80%;
-  height: 20%;
-  min-width: 170px;
-  min-height: 170px;
-  overflow-y: scroll;
+
+.talent-tree-row-large {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: blue; */
+  width: calc(500px + 5vw); 
+  height: calc(250px + 5vw);
   position: relative;
+  /* margin-top: 5vw; */
+}
+.talent-tree-btn-large {
+  /* margin: auto; */
+  width: 33vw;
+  height: 17vw;
+  min-width: 270px;
+  min-height: 150px;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.3s ease-in-out all;
-  padding:0;
   border-radius: 5%;
+  padding: 0px;
+}
+.talent-tree-btn-large img{
+width: 100%;
+height: 100%;
+}
+.talent-tree-btn-large:hover .talent-tree-img-hover-text{
+  opacity: 1;
+  font-size: calc(5px + 0.8vw);
 
+}
+.talent-tree-btn-large:hover  .talent-tree-img-hover-text header{
+  font-size: calc(5px + 1.2vw);
 }

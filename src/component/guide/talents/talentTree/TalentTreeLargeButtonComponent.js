@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-function TalentTreeLargeButtonComponent({LS, hClick, btn, imgUrl, texto, nombre}) {
+function TalentTreeLargeButtonComponent({LS, hClick, btn, imgUrl, texto, texto1, nombre}) {
   const [selected, setSelected] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -25,11 +25,23 @@ function TalentTreeLargeButtonComponent({LS, hClick, btn, imgUrl, texto, nombre}
 
   return (
     <button 
-    onDoubleClick={handleClick} className={selected  ? `talent-to-select talent-tree-btn-large ${btn}` : `talent-tree-btn-large ${btn}`} >
-    {selected && ( <div className='loader3' style={{ zIndex: 54, position: "absolute" }}></div> )}
+    onDoubleClick={handleClick} className={selected  ? `talent-to-select bg-select talent-tree-btn-large ${btn}` : `talent-tree-btn-large ${btn}`} >
+    {selected && ( 
+      <>
+      <div className='bigLoaderAll loaderSelectedBig1'></div>
+      <div className='bigLoaderAll loaderSelectedBig2'></div>
+      <div className='bigLoaderAll loaderSelectedBig3'></div>
+      <div className='bigLoaderAll loaderSelectedBig4'></div>
+      <div className='bigLoaderAll loaderSelectedBig5'></div>
+      <div className='bigLoaderAll loaderSelectedBig6'></div>
+      <div className='bigLoaderAll loaderSelectedBig7'></div>
+      <div className='bigLoaderAll loaderSelectedBig8'></div>
+      <div className='bigLoaderAll loaderSelectedBig9'></div>
+      </>
+       )}
     <img src={imgUrl} alt={texto} style={{ display: loading ? 'none' : 'block', width: '100%', height: '100%' }} onLoad={handleImageLoad} onError={() => setLoading(false)}/>
     {loading && <div className='loaderTalentBtn'></div>}
-    <div className="talent-tree-img-hover-text"> <header>{nombre}</header> {texto} </div>
+    <div className="talent-tree-img-hover-text"> <header>{nombre}</header> {texto} <div>{texto1}</div></div>
   </button>
   )
 }

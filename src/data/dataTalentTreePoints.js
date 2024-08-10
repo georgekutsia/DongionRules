@@ -51,7 +51,10 @@ export const dataTalentsTreePoints = {
          "https://res.cloudinary.com/dfrda73uc/image/upload/v1723216846/donGions%20imgs/talentTreeImages/ajani/DALL_E_2024-08-09_17.18.57_-_Ajgo_the_humanoid_lion_with_long_straight_golden_hair_and_a_prominent_beard_dressed_in_armor_standing_with_his_back_to_the_viewer_facing_an_army_xteawr.webp",
          "https://res.cloudinary.com/dfrda73uc/image/upload/v1723216847/donGions%20imgs/talentTreeImages/ajani/DALL_E_2024-08-09_17.12.49_-_Ajgo_the_humanoid_lion_with_long_straight_golden_hair_and_a_prominent_beard_dressed_in_armor_standing_with_his_back_to_the_viewer_facing_an_army_m6la02.webp",
          "https://res.cloudinary.com/dfrda73uc/image/upload/v1723217213/donGions%20imgs/talentTreeImages/ajani/DALL_E_2024-08-09_17.26.32_-_Ajgo_the_humanoid_lion_with_long_straight_golden_hair_and_a_prominent_beard_dressed_in_armor_carrying_two_large_wooden_logs_one_on_each_shoulder_hystuo.webp",
-         
+         "https://res.cloudinary.com/dfrda73uc/image/upload/v1723228521/donGions%20imgs/talentTreeImages/ajani/DALL_E_2024-08-09_20.24.47_-_Ajgo_the_humanoid_lion_with_long_straight_golden_hair_and_a_prominent_beard_dressed_in_armor_with_weapons_strapped_to_his_back_crouching_like_a_li_a0e1u4.webp",
+         "https://res.cloudinary.com/dfrda73uc/image/upload/v1723228521/donGions%20imgs/talentTreeImages/ajani/DALL_E_2024-08-09_20.25.28_-_Ajgo_the_humanoid_lion_with_long_straight_golden_hair_and_a_prominent_beard_dressed_in_armor_crouching_like_a_lion_on_a_tree_branch_ready_to_leap_lamrel.webp",
+         "https://res.cloudinary.com/dfrda73uc/image/upload/v1723228520/donGions%20imgs/talentTreeImages/ajani/DALL_E_2024-08-09_20.34.31_-_Ajgo_the_humanoid_lion_with_long_straight_golden_hair_and_a_prominent_beard_dressed_in_armor_crouching_like_a_lion_on_a_tree_branch_ready_to_leap_m418qk.webp",
+         "https://res.cloudinary.com/dfrda73uc/image/upload/v1723228520/donGions%20imgs/talentTreeImages/ajani/DALL_E_2024-08-09_20.25.49_-_Ajgo_the_humanoid_lion_with_long_straight_golden_hair_and_a_prominent_beard_dressed_in_armor_crouching_like_a_lion_on_a_tree_branch_ready_to_leap_ledoxn.webp",
       ]
    }
 

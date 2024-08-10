@@ -34,7 +34,7 @@ function TalentTreeButtonComponent({
 
       {/* horLeft */}
       {horLeft && ( <div style={{ margin: horizontalMargin, width: horizontalWidth }} 
-      className={ selected   ? `talent-tree-btn-line-hor talent-tree-filled-hor horLeft`   : `talent-tree-btn-line-hor horAnimation horLeft`}></div>)}
+      className={ selected   ? `talent-tree-btn-line-hor talent-tree-filled-hor horLeft`:`talent-tree-btn-line-hor horAnimation horLeft`}></div>)}
 
 
       {texto && (
@@ -45,10 +45,10 @@ function TalentTreeButtonComponent({
         {/* button */}
           <button style={{ minWidth: btnSize, minHeight: btnSize, margin: btnMargin, position: 'relative' }}
             onDoubleClick={handleClick} className={selected  ? `talent-to-select talent-tree-btn ${btn}` : `talent-tree-btn ${btn}`} >
-            {selected && ( <div className='loader3' style={{ zIndex: 54, position: "absolute" }}></div> )}
+            {selected && ( <div className='loaderSelected' style={{ zIndex: 54, position: "absolute" }}></div> )}
             <img src={imgUrl} alt={texto} style={{ display: loading ? 'none' : 'block', width: '100%', height: '100%' }} onLoad={handleImageLoad} onError={() => setLoading(false)}/>
             {loading && <div className='loaderTalentBtn'></div>}
-            <div className="talent-tree-img-hover-text"> <header>{nombre}</header> {texto} </div>
+            <div className="talent-tree-img-hover-text"> <header>{nombre}</header> {texto}  </div>
           </button>
        {/* verDown */}
           {verDown && (
