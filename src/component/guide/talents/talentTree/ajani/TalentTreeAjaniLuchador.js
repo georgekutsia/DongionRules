@@ -16,10 +16,18 @@ function TalentTreeAjaniLuchador({handleAmount, amountOfPoints}) {
     localStorage.setItem(nam, JSON.stringify(newState));
     
     if(amountOfPoints >= 1) {
+      // sumar o restar según si está activado o no
       sel ? handleAmount(1) : handleAmount(-1);
-    } else if(amountOfPoints === 0 && sel === true) {
-      handleAmount(1);
-      setSel(true);
+    } 
+     if(amountOfPoints === 0 ) {
+      setTimeout(() => {
+        if(sel){
+          setSel(false);
+          handleAmount(1)
+        } else{
+          setSel(false);
+        }
+      }, 100);
     }
     
     setActivatedNames(prevState => ({
@@ -54,7 +62,7 @@ function TalentTreeAjaniLuchador({handleAmount, amountOfPoints}) {
 
       <div className='talent-tree-row' >
         <TalentTreeButtonComponent btn={"btn-luchador talent-tree-btn-left"} hClick={hClick} nombre={"Fuerza mejorada"} texto={`+3 en tu capacidad de carga y +1 en tu daño cuerpo a cuerpo`} imgUrl={img[42]} LS={"ajluonce"} />
-        <TalentTreeButtonComponent horRight horLeft verDown btnSize={"175px"} btn={"btn-luchador talent-tree-btn big-img"} hClick={hClick} nombre={"Presteza natural"} texto={`+3 en Esquiva y +2 en Movimiento`} imgUrl={img[30]} LS={"ajludoce"} />
+        <TalentTreeButtonComponent horRight horLeft verDown btnSize={" calc(70px + 9vw)"} btn={"btn-luchador talent-tree-btn big-img"} hClick={hClick} nombre={"Presteza natural"} texto={`+3 en Esquiva y +2 en Movimiento`} imgUrl={img[30]} LS={"ajludoce"} />
         <TalentTreeButtonComponent btn={"btn-luchador talent-tree-btn-right"} hClick={hClick} nombre={"Precisión mejorada"} texto={"+1 en precisión con armas cuerpo a cuerpo"} imgUrl={img[31]} LS={"ajlutrece"} />
       </div>
       <div className='talent-tree-row-large' >

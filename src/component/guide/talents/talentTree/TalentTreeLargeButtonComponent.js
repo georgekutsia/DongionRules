@@ -17,9 +17,7 @@ function TalentTreeLargeButtonComponent({LS, hClick, btn, imgUrl, texto, texto1,
   };
 
   const handleImageLoad = () => {
-    setTimeout(() => {
       setLoading(false);
-    }, 2500);
   };
 
 

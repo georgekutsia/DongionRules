@@ -5,7 +5,7 @@ talentsNavbar:[
   "https://res.cloudinary.com/dfrda73uc/image/upload/v1722158137/donGions%20imgs/talentTreeImages/DALL_E_2024-07-12_19.04.46_-_A_video_game-style_image_featuring_a_pistol_and_a_bow._The_pistol_has_a_sleek_modern_design_with_intricate_engravings_while_the_bow_is_elegantly_cra_b8tgxk.webp",
 ],
 talentsNavbarDecription:[
-  "Puedes usar la acción de concentración también para el daño y puedes adquirir una ",
+  "Puedes usar la acción de concentración también para el daño y obtienes una ",
   "Habilidad De Sorín",
   "Aumenta tu Daño Base de hechizos +2. Elige 3 hechizos de ",
   "Sangromancia de nivel O",

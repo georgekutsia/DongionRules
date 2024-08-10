@@ -22,9 +22,7 @@ function TalentTreeButtonComponent({
   };
 
   const handleImageLoad = () => {
-    setTimeout(() => {
       setLoading(false);
-    }, 2500);
   };
 
   return (

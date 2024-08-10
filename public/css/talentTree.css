@@ -280,7 +280,7 @@ font-family: 'Montserrat', sans-serif;
   justify-content: space-evenly;
   align-items: center;
   /* background-color: blue; */
-  width: calc(500px + 5vw); 
+  width: 100%; 
   height: calc(250px + 5vw);
   position: relative;
   /* margin-top: 5vw; */
