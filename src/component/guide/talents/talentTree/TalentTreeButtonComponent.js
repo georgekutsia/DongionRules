@@ -44,7 +44,7 @@ function TalentTreeButtonComponent({
           className={ selected     ? `talent-tree-btn-line-ver talent-tree-filled-ver`     : `talent-tree-btn-line-ver`}></div>)}
         {/* button */}
           <button style={{ minWidth: btnSize, minHeight: btnSize, margin: btnMargin, position: 'relative' }}
-            onDoubleClick={handleClick} className={selected  ? `talent-to-select talent-tree-btn ${btn}` : `talent-tree-btn ${btn}`} >
+            onDoubleClick={handleClick} className={selected  ? `talent-to-select talent-tree-btn ${btn}` : `talent-tree-btn opacityImg ${btn}`} >
             {selected && ( <div className='loaderSelected' style={{ zIndex: 54, position: "absolute" }}></div> )}
             <img src={imgUrl} alt={texto} style={{ display: loading ? 'none' : 'block', width: '100%', height: '100%' }} onLoad={handleImageLoad} onError={() => setLoading(false)}/>
             {loading && <div className='loaderTalentBtn'></div>}

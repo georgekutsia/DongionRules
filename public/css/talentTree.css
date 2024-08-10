@@ -37,8 +37,12 @@
   transition: 0.3s ease-in-out all;
   padding:0;
 }
-
-
+.opacityImg{
+opacity: 0.4;
+}
+ .opacityImg:hover{
+opacity: 1;
+}
 .talent-tree-btn-line-hor {
   width: calc(10px + 5vw);
   height: 10px;
@@ -157,7 +161,6 @@ min-height: 120px;
   border-radius: 0px;
   transition: all .4s ease-in-out;
   opacity: 1;
-  
 }
 .bg-select{
   border-width: 10px;
