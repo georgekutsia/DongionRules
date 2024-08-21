@@ -6,19 +6,16 @@ import TalentTreeAjaniCazador from "../talentTree/ajani/TalentTreeAjaniCazador";
 import TalentNavComponent from "../talentTree/TalentNavComponent";
 import { dataTalentTreeAll } from "../../../../data/dataTalentTreeAll";
 
-function AjaniGoldmane() {
+function AjaniGoldmane({ points, setPoints }) {
   const [showLuchador, setShowLuchador] = useState(true);
   const [showHechicero, setShowHechicero] = useState(false);
   const [showCazador, setShowCazador] = useState(false);
   const [dataTalentTree, setDataTalentTree] = useState(dataTalentTreeAll);
-  const [amountOfPoints, setAmountOfPoints] = useState(() => {
-    const savedPoints = localStorage.getItem("amountOfPoints");
-    return savedPoints !== null ? JSON.parse(savedPoints) : 2;
-  });
+  const [amountOfPoints, setAmountOfPoints] = useState(points);
 
   useEffect(() => {
-    localStorage.setItem("amountOfPoints", JSON.stringify(amountOfPoints));
-  }, [amountOfPoints]);
+    setAmountOfPoints(points);
+  }, [points]);
 
   const handleCloseAll = () => {
     setShowLuchador(false);
@@ -36,22 +33,22 @@ function AjaniGoldmane() {
   const handleCazador = () => {
     handleCloseAll();
     setShowCazador(!showCazador);
+
   };
-  const handleAmount = (what) => {
-    setAmountOfPoints((amountOfPoints) => amountOfPoints + what);
+  const handleAmount = (am) => {
+    setAmountOfPoints((prevAmount) => {
+      const newAmount = prevAmount + am;
+      setPoints(newAmount);
+      return newAmount;
+    });
   };
 
   return (
     <>
-      <Talent
-        handleLuchador={() => handleLuchador()}
-        handleHechicero={() => handleHechicero()}
-        handleCazador={() => handleCazador()}
-      />
+      <Talent handleLuchador={() => handleLuchador()} handleHechicero={() => handleHechicero()} handleCazador={() => handleCazador()}/>
       {showLuchador && (
         <>
-          <TalentNavComponent amountOfPoints={amountOfPoints} img={`${dataTalentTree.talentsNavbar[0]}`} color={"luchador-color"} description1={`${dataTalentTree.talentsNavbarDecription[0]}`} description2={`${dataTalentTree.talentsNavbarDecription[1]}`}
-          />
+          <TalentNavComponent amountOfPoints={amountOfPoints} img={`${dataTalentTree.talentsNavbar[0]}`} color={"luchador-color"} description1={`${dataTalentTree.talentsNavbarDecription[0]}`} description2={`${dataTalentTree.talentsNavbarDecription[1]}`}/>
           <TalentTreeAjaniLuchador handleAmount={handleAmount} amountOfPoints={amountOfPoints}
           />
         </>
@@ -61,7 +58,7 @@ function AjaniGoldmane() {
         <>
           <TalentNavComponent img={`${dataTalentTree.talentsNavbar[1]}`} color={"hechicero-color"} description1={`${dataTalentTree.talentsNavbarDecription[2]}`} description2={`${dataTalentTree.talentsNavbarDecription[3]}`}
           />
-          <TalentTreeAjaniHechicero />
+          <div> <TalentTreeAjaniHechicero />  </div>
         </>
       )}
 
@@ -69,7 +66,7 @@ function AjaniGoldmane() {
         <>
           <TalentNavComponent img={`${dataTalentTree.talentsNavbar[2]}`} color={"cazador-color"} description1={`${dataTalentTree.talentsNavbarDecription[4]}`} description2={`${dataTalentTree.talentsNavbarDecription[5]}`}
           />
-          <TalentTreeAjaniCazador />
+          <div> <TalentTreeAjaniCazador /> </div>
         </>
       )}
     </>

@@ -208,6 +208,7 @@ min-height: 120px;
   width: 30%;
   min-width: 250px;
   transition: 0.3s ease-in-out;
+  height: 200px;
 }
 .image-container-talent-tree-counter {
   position: absolute;

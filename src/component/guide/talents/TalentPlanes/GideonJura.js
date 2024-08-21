@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import Talent from '../Talent'
-import TalentTreeComponent from '../talentTree/ajani/TalentTreeAjaniLuchador'
+import TalentTreeAjaniHechicero from "../talentTree/ajani/TalentTreeAjaniHechicero";
+import TalentTreeAjaniCazador from "../talentTree/ajani/TalentTreeAjaniCazador";
+
+
 
 function GideonJura() {
-  const [showLuchador, setShowLuchador] = useState(false)
+  const [showLuchador, setShowLuchador] = useState(true)
 const [showHechicero, setShowHechicero] = useState(false)
 const [showCazador, setShowCazador] = useState(false)
 
@@ -27,9 +30,9 @@ const handleCloseAll = ()=>{
   return (
     <>
       <Talent  handleLuchador={()=>handleLuchador()}  handleHechicero={()=>handleHechicero()}  handleCazador={()=>handleCazador()}   />
-      {showLuchador && <TalentTreeComponent   nombre={"Gideon Luchador"}  />}
-      {showHechicero && <TalentTreeComponent   nombre={"Gideon Hechicero"}  />}
-      {showCazador && <TalentTreeComponent   nombre={"Gideon Cazador"}  />}
+      {showLuchador && <div className='loaderDesarrollo'  style={{ color: "yellow" }}></div>}
+      {showHechicero && <TalentTreeAjaniHechicero />}
+      {showCazador && <TalentTreeAjaniCazador    />}
     </>
   )
 }

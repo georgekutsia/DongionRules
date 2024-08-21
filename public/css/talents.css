@@ -72,7 +72,7 @@ font-size: calc(10px + 1vw);
   }
   50% {
     background-color: #ffffff; /* Light blue background */
-    box-shadow: 0 0 20px #ffffff, 0 0 40px ffffff#aa06f0; /* Add shadow */
+    box-shadow: 0 0 20px #ffffff, 0 0 40px ffffff#414141; /* Add shadow */
     color: black;
   }
   100% {
@@ -83,52 +83,52 @@ font-size: calc(10px + 1vw);
 }
 @keyframes shining1 {
   0% {
-    background-color: #41006d; /* Light green background */
-    box-shadow: 0 0 10px #41006d, 0 0 20px #41006d; /* Add shadow */
+    background-color: var(--luchador); /* Light green background */
+    box-shadow: 0 0 10px var(--luchador), 0 0 20px var(--luchador); /* Add shadow */
     color: white;
   }
   50% {
-    background-color: #a312e1; /* Light blue background */
-    box-shadow: 0 0 20px #9306f1, 0 0 40px #aa06f0; /* Add shadow */
+    background-color: #e18b12; /* Light blue background */
+    box-shadow: 0 0 20px #bebebe, 0 0 40px #a5a4a5; /* Add shadow */
     color: white;
   }
   100% {
-    background-color: #41006d; /* Green background */
-    box-shadow: 0 0 10px #41006d, 0 0 20px #41006d; /* Add shadow */
+    background-color: var(--luchador); /* Green background */
+    box-shadow: 0 0 10px var(--luchador), 0 0 20px var(--luchador); /* Add shadow */
     color: white;
   }
 }
 @keyframes shining2 {
   0% {
-    background-color: #6d0000; /* Light green background */
-    box-shadow: 0 0 10px #6d0000, 0 0 20px #6d0000; /* Add shadow */
+    background-color: var(--hechicero); /* Light green background */
+    box-shadow: 0 0 10px var(--hechicero), 0 0 20px var(--hechicero); /* Add shadow */
     color: white;
   }
   50% {
-    background-color: #ec0a0a; /* Light blue background */
-    box-shadow: 0 0 20px #f10a06, 0 0 40px #f10a06; /* Add shadow */
+    background-color: #dd0aec; /* Light blue background */
+    box-shadow: 0 0 20px #aaa9a9, 0 0 40px #838383; /* Add shadow */
     color: white;
   }
   100% {
-    background-color: #6d0000; /* Green background */
-    box-shadow: 0 0 10px #6d0000, 0 0 20px #6d0000; /* Add shadow */
+    background-color: var(--hechicero); /* Green background */
+    box-shadow: 0 0 10px var(--hechicero), 0 0 20px var(--hechicero); /* Add shadow */
     color: white;
   }
 }
 @keyframes shining3 {
   0% {
-    background-color: #f19008; /* Light green background */
-    box-shadow: 0 0 10px #f19008, 0 0 20px #f19008; /* Add shadow */
+    background-color: var(--cazador); /* Light green background */
+    box-shadow: 0 0 10px var(--cazador), 0 0 20px var(--cazador); /* Add shadow */
     color: white;
   }
   50% {
-    background-color: #ffcf0d; /* Light blue background */
-    box-shadow: 0 0 20px #ecc834, 0 0 40px #ecc834; /* Add shadow */
+    background-color: #01c3a9; /* Light blue background */
+    box-shadow: 0 0 20px #c3c4c4, 0 0 40px #ababab; /* Add shadow */
     color: white;
   }
   100% {
-    background-color: #f19008; /* Green background */
-    box-shadow: 0 0 10px #f19008, 0 0 20px #f19008; /* Add shadow */
+    background-color: var(--cazador); /* Green background */
+    box-shadow: 0 0 10px var(--cazador), 0 0 20px var(--cazador); /* Add shadow */
     color: white;
   }
 }

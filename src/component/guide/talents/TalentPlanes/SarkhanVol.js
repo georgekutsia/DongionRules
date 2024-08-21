@@ -1,20 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Talent from '../Talent'
+import TalentTreeAjaniHechicero from "../talentTree/ajani/TalentTreeAjaniHechicero";
+import TalentTreeAjaniCazador from "../talentTree/ajani/TalentTreeAjaniCazador";
+
 
 function SarkhanVol() {
+  const [showLuchador, setShowLuchador] = useState(true)
+const [showHechicero, setShowHechicero] = useState(false)
+const [showCazador, setShowCazador] = useState(false)
+
+const handleCloseAll = ()=>{
+  setShowLuchador(false); setShowHechicero(false); setShowCazador(false); 
+}
+  const handleLuchador = ()=>{
+    handleCloseAll();
+    setShowLuchador(!showLuchador)
+  }
+  const handleHechicero = ()=>{
+    handleCloseAll();
+    setShowHechicero(!showHechicero)
+
+  }
+  const handleCazador = ()=>{
+    handleCloseAll();
+    setShowCazador(!showCazador)
+
+  }
   return (
-    <div>
-        <h3 className="mt-5">En desarrollo</h3>
-    <div className="talents-rama-imgs">
-      <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688333097/donGions%20imgs/rama/Sarkhan_PDF-1_cxbfdn.jpg" alt="Ajani Img" />
-      <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1688333096/donGions%20imgs/rama/Sarkhan_PDF-2_scnn9t.jpg" alt="Ajani Img" />
-    </div>
-      <Talent
-        talentfirst1={"Luchador"}
-        talentfirst2={"Hechicero"}
-        talentfirst3={"Cazador"}
- 
-      /></div>
+    <>
+      <Talent  handleLuchador={()=>handleLuchador()}  handleHechicero={()=>handleHechicero()}  handleCazador={()=>handleCazador()}   />
+      {showLuchador && <div className='loaderDesarrollo'  style={{ color: "yellow" }}></div>}
+      {showHechicero && <TalentTreeAjaniHechicero />}
+      {showCazador && <TalentTreeAjaniCazador    />}
+    </>
   )
 }
 
